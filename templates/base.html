@@ -44,8 +44,13 @@
         <title>Proper Clobber {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-        <header class="container-fluid fixed-top">
-
+        <header class="container-fluid fixed-top site-header">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center text-lg-left">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/proper-clobber-logo.png' %}" id="site-logo"
+                            alt="logo"></a>
+                </div>
+            </div>
         </header>
 
         {% if messages %}
