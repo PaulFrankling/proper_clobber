@@ -46,9 +46,23 @@
     <body>
         <header class="container-fluid fixed-top site-header">
             <div class="row">
-                <div class="col-12 col-lg-4 text-center text-lg-left">
+                <div class="col-12 col-lg-4 text-center text-lg-left my-auto">
                     <a href="{% url 'home' %}"><img src="{% static 'images/proper-clobber-logo.png' %}" id="site-logo"
                             alt="logo"></a>
+                </div>
+                <div class="col-12 col-lg-4 my-auto py-1 site-search">
+                    <form method="GET" action="">
+                        <div class="input-group w-100">
+                            <input class="form-control border border-white" type="text" name="q" placeholder="Search for items">
+                                <div class="input-group-append">
+                                <button class="form-control btn btn-dark border border-white" type="submit">
+                                    <span class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </header>
