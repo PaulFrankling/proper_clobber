@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: Archivo, Montserrat, Sans-serif;
+}
+
 .site-header {
     background-color: #000000;
 }
@@ -9,4 +13,13 @@ html {
 #site-logo {
     height: 100px;
     margin: 10px;
+}
+
+.site-search i {
+    color: #CEFF1A;
+}
+
+.account-link p i {
+    color: #CEFF1A;
+    margin-left: 5px;
 }
