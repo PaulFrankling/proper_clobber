@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="col-12 col-lg-4 py-1 my-auto">
-                    <ul class="list-inline list-unstyled text-center my-auto">
+                    <ul class="list-inline list-unstyled text-center my-auto text-lg-right">
                         <li class="list-inline-item dropdown">
                             <a href="#" class="nav-link text-white" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
@@ -88,6 +88,20 @@
                                 <a href="{% url 'account_login' %}" class="dropdown-item">Log In</a>
                             {% endif %}
                             </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="nav-link text-white">
+                                <div class="text-center shop-basket">
+                                    <div><i class="fas fa-shopping-bag fa-2x"></i></div>
+                                    <p class="my-auto">
+                                        {% if grand_total %}
+                                            £{{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            £0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
