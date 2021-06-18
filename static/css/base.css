@@ -12,9 +12,10 @@ body {
     background-color: #000000;
 }
 
-#site-logo {
-    height: 100px;
-    margin: 10px;
+.site-logo {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .site-search i {
