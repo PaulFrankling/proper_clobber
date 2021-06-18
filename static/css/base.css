@@ -74,3 +74,9 @@ body {
         padding-top: 250px;
     }
 }
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 250px;
+    }
+}
