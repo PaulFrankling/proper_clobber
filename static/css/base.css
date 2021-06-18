@@ -16,6 +16,11 @@ body {
     color: #FFFFFF;
     font-size: 30px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.site-logo:hover {
+    color: #FFFFFF;
 }
 
 .site-search i {
@@ -29,4 +34,43 @@ body {
 
 .shop-basket p {
     color: #CEFF1A;
+}
+
+.home-slogan {
+    display: inline-flex;
+    padding: 5px 20px;
+    color: #CEFF1A;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.shop-now-btn {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.shop-now-btn:hover {
+    background-color: #CEFF1A;
+    color: #000000;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 250px;
+    }
 }
