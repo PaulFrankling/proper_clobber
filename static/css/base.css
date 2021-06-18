@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: Archivo, Montserrat, Sans-serif;
+    background: url("/static/images/homepage-bg.jpg") no-repeat center top fixed;
+    background-size: cover;
 }
 
 .site-header {
