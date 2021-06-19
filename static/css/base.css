@@ -48,11 +48,13 @@ body {
 .shop-now-btn {
     color: #FFFFFF;
     background-color: #000000;
+    min-width: 180px;
 }
 
 .shop-now-btn:hover {
     background-color: #CEFF1A;
     color: #000000;
+    font-weight: bold;
 }
 
 @media (min-width: 1200px) {
