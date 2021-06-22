@@ -32,6 +32,11 @@ body {
     margin-left: 5px;
 }
 
+.navbar-toggler i {
+    color: #CEFF1A;
+    font-size: 22px;
+}
+
 .mob-nav-icons {
     font-size: 22px;
 }
