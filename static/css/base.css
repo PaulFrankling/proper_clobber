@@ -32,6 +32,10 @@ body {
     margin-left: 5px;
 }
 
+.mob-nav-icons {
+    font-size: 22px;
+}
+
 .home-slogan {
     display: inline-flex;
     padding: 5px 20px;

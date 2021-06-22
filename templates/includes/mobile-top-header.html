@@ -2,8 +2,7 @@
     <li class="list-inline-item">
         <a class="text-white nav-link mt-4 d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
-                <div><i class="fas fa-search"></i></div>
-                <p class="my-0 mob-font-size">Search</p>
+                <div><i class="fas fa-search mob-nav-icons"></i></div>
             </div>
         </a>
         <div class="dropdown-menu border-0 p-3 rounded-0 my-0 w-100" aria-labelledby="mobile-search">
@@ -25,8 +24,7 @@
         <a href="#" class="nav-link text-white d-block d-lg-none" id="user-options" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
                 <div class="text-center">
-                    <div><i class="fas fa-user-circle"></i></div>
-                    <p class="my-0">Account</p>
+                    <div><i class="fas fa-user-circle mob-nav-icons"></i></div>
                 </div>
             </a>
             <div class="dropdown-menu" aria-labelledby="user-options">
@@ -45,14 +43,7 @@
         <li class="list-inline-item">
             <a href="" class="nav-link text-white d-block d-lg-none">
                 <div class="text-center shop-basket">
-                    <div><i class="fas fa-shopping-bag"></i></div>
-                    <p class="my-0">
-                        {% if grand_total %}
-                            £{{ grand_total|floatformat:2 }}
-                        {% else %}
-                            £0.00
-                        {% endif %}
-                    </p>
+                    <div><i class="fas fa-shopping-bag mob-nav-icons"></i></div>
                 </div>
             </a>
         </li>
