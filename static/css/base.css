@@ -32,8 +32,8 @@ body {
     margin-left: 5px;
 }
 
-.shop-basket p {
-    color: #CEFF1A;
+.shop-basket {
+    margin-left: 5px;
 }
 
 .home-slogan {

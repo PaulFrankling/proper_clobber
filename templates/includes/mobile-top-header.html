@@ -26,7 +26,7 @@
             aria-expanded="false">
                 <div class="text-center account-link">
                     <div><i class="fas fa-user-circle"></i></div>
-                    <p class="my-auto">My Account<i class="fas fa-caret-down"></i></p>
+                    <p class="my-0">My Account</p>
                 </div>
             </a>
             <div class="dropdown-menu" aria-labelledby="user-options">
@@ -46,7 +46,7 @@
             <a href="" class="nav-link text-white d-block d-lg-none">
                 <div class="text-center shop-basket">
                     <div><i class="fas fa-shopping-bag"></i></div>
-                    <p class="my-auto">
+                    <p class="my-0">
                         {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                         {% else %}
