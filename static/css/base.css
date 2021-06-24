@@ -28,9 +28,12 @@ body {
     color: #CEFF1A;
 }
 
-.account-link p i {
-    color: #CEFF1A;
-    margin-left: 5px;
+.account-link p {
+    font-size: 14px;
+}
+
+.shop-total p {
+    font-size: 14px;
 }
 
 .navbar-toggler i {
@@ -50,6 +53,14 @@ body {
 
 .navbar-nav li a:hover {
     color: #CEFF1A;
+}
+
+.dropdown-menu a {
+    color: #000000 !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
 }
 
 .home-slogan {
