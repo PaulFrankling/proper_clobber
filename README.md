@@ -21,3 +21,14 @@
 
 The primary font for the project is Archivo and the secondary font is Montserrat. 
 Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Archivo?query=archivo#standard-styles).
+
+### Imagery
+
+## Wireframes:
+
+## Technology used:
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
