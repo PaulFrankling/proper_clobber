@@ -19,16 +19,24 @@
 
 ### Typography
 
-The primary font for the project is Archivo and the secondary font is Montserrat. 
+The primary font for the project is **Archivo** and the secondary font is **Montserrat**. 
 Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Archivo?query=archivo#standard-styles).
 
 ### Imagery
 
 ## Wireframes:
 
-## Technology used:
+### Technology used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+
+### Frameworks, Libraries and Programs
+
+1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is used to form the layout of the website and make it responsive. It is also used to add components to the project.
+1. [Google Fonts](https://fonts.google.com/specimen/Archivo?query=archivo#standard-styles) is used to implement the primary font of **Archivo** and the secondary font of **Montserrat**.
+1. [Coolor](https://coolors.co/ffffff-000000-7e7f83-ceff1a) is used to develop a colour scheme for the project.
+1. [Flaticon](https://www.flaticon.com/) is used to create and style a shortcut icon/favicon for the project.
+1. [TinyPNG](https://tinypng.com/) is used to compress the imagery memory size of the repository to help improve the speed of the website.
