@@ -57,6 +57,9 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 #### Product images
 
 * Brown Leather Belt image is by insidehenderson from [Pixabay](https://pixabay.com/photos/menswear-man-male-clothing-fashion-952835/)
-* Pale Pink Skinny Suit Jacket is by Heng Films from [Unsplash](https://unsplash.com/photos/mpdIPhYqZ4Y)
+* Mauve Suit Jacket is by Heng Films from [Unsplash](https://unsplash.com/photos/mpdIPhYqZ4Y)
 * Dark Grey Suit Jacket is by Phil Shaw from [Unsplash](https://unsplash.com/photos/2WcoiQ_C4b0)
-* Silver Watch is by SplitShire from [Pixabay](https://pixabay.com/photos/wristwatch-watch-accessory-407096/)
+* PC Silver Watch is by SplitShire from [Pixabay](https://pixabay.com/photos/wristwatch-watch-accessory-407096/)
+* Leather Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-shoes-6078951/)
+* Leather Brogue Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-leather-shoes-5983822/)
+* Brown Leather Loafers is by smithnoah373 from [Pixabay](https://pixabay.com/photos/loafers-shoes-leather-brown-shoes-6079036/)
