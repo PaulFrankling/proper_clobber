@@ -98,6 +98,15 @@ body {
     position: fixed;
 }
 
+.product-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
