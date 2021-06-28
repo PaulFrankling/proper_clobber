@@ -104,16 +104,18 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .card-text {
     color: #7E7F83;
+    font-size: 20px;
 }
 
 .card-text i {
     color: #CEFF1A;
+    font-size: 20px;
     margin-right: 5px;
     text-shadow: -1px 0 #000000, 0 1px #000000,
      1px 0 #000000, 0 -1px #000000;
