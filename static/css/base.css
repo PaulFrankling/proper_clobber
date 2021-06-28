@@ -105,6 +105,18 @@ body {
 
 .card-title {
     font-size: 16px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #7E7F83;
+}
+
+.card-text i {
+    color: #CEFF1A;
+    margin-right: 5px;
+    text-shadow: -1px 0 #000000, 0 1px #000000,
+     1px 0 #000000, 0 -1px #000000;
 }
 
 @media (min-width: 1200px) {
