@@ -108,17 +108,13 @@ body {
     font-weight: bold;
 }
 
-.card-text {
-    color: #7E7F83;
-    font-size: 20px;
+.product-detail-img {
+    height: 350px;
+    object-fit: cover;
 }
 
-.card-text i {
-    color: #CEFF1A;
-    font-size: 20px;
-    margin-right: 5px;
-    text-shadow: -1px 0 #000000, 0 1px #000000,
-     1px 0 #000000, 0 -1px #000000;
+.product-desc {
+    color: #7E7F83;
 }
 
 @media (min-width: 1200px) {
