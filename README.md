@@ -67,3 +67,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 * Leather Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-shoes-6078951/)
 * Leather Brogue Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-leather-shoes-5983822/)
 * Brown Leather Loafers is by smithnoah373 from [Pixabay](https://pixabay.com/photos/loafers-shoes-leather-brown-shoes-6079036/)
+* Blue Suit is by scronfinixio from [Pixabay](https://pixabay.com/photos/groom-suit-style-1536233/)
+* Light Grey Suit is by Samantha Gades from [Unsplash](https://unsplash.com/photos/bFYoyKivbmg)
+* Maroon Suit is by The Lazy Artist Gallery from [Pexels](https://www.pexels.com/photo/person-sitting-on-stairs-beside-sunglasses-1300550/)
+* Grey Suit is by Andrew Neel from [Pexels](https://www.pexels.com/photo/photo-of-man-sitting-on-chair-3178767/)
