@@ -71,3 +71,6 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 * Light Grey Suit is by Samantha Gades from [Unsplash](https://unsplash.com/photos/bFYoyKivbmg)
 * Maroon Suit is by The Lazy Artist Gallery from [Pexels](https://www.pexels.com/photo/person-sitting-on-stairs-beside-sunglasses-1300550/)
 * Grey Suit is by Andrew Neel from [Pexels](https://www.pexels.com/photo/photo-of-man-sitting-on-chair-3178767/)
+* Pink Bow Tie is by stokpic from [Pixabay](https://pixabay.com/photos/man-bow-tie-fashion-bow-tie-suit-642063/)
+* Red Bow Tie is by AttractionMagazine from [Pixabay](https://pixabay.com/photos/tie-howe-fashion-elegance-style-809378/)
+* Blue Tie is by gksayaan22 from [Pixabay](https://pixabay.com/photos/suit-tie-men-1971663/)
