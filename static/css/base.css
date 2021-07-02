@@ -108,6 +108,11 @@ body {
     font-weight: bold;
 }
 
+.product-rating {
+    color: #7E7F83;
+    font-size: 14px;
+}
+
 .product-detail-img {
     height: 350px;
     object-fit: cover;
