@@ -16,10 +16,10 @@
                 Tailoring <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="tailoring-link">
-                <a href="" class="dropdown-item">Suits</a>
-                <a href="" class="dropdown-item">Suit Jackets</a>
-                <a href="" class="dropdown-item">Suit Trousers</a>
-                <a href="" class="dropdown-item">All Tailoring</a>
+                <a href="{% url 'products' %}?category=suits" class="dropdown-item">Suits</a>
+                <a href="{% url 'products' %}?category=suit_jackets" class="dropdown-item">Suit Jackets</a>
+                <a href="{% url 'products' %}?category=suit_trousers" class="dropdown-item">Suit Trousers</a>
+                <a href="{% url 'products' %}?category=suits,suit_jackets,suit_trousers" class="dropdown-item">All Tailoring</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -28,10 +28,10 @@
                 Footwear <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="footwear-link">
-                <a href="" class="dropdown-item">Brogue</a>
-                <a href="" class="dropdown-item">Loafers</a>
-                <a href="" class="dropdown-item">Oxford</a>
-                <a href="" class="dropdown-item">All Footwear</a>
+                <a href="{% url 'products' %}?category=brogue" class="dropdown-item">Brogue</a>
+                <a href="{% url 'products' %}?category=loafers" class="dropdown-item">Loafers</a>
+                <a href="{% url 'products' %}?category=oxford" class="dropdown-item">Oxford</a>
+                <a href="{% url 'products' %}?category=brogue,loafers,oxford" class="dropdown-item">All Footwear</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -40,10 +40,10 @@
                 Accessories <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Belts</a>
-                <a href="" class="dropdown-item">Ties</a>
-                <a href="" class="dropdown-item">Watches</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=belts" class="dropdown-item">Belts</a>
+                <a href="{% url 'products' %}?category=ties" class="dropdown-item">Ties</a>
+                <a href="{% url 'products' %}?category=watches" class="dropdown-item">Watches</a>
+                <a href="{% url 'products' %}?category=belts,ties,watches" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>
