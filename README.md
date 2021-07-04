@@ -83,3 +83,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 * PC Brown & Silver Watch is by from [Pixabay](https://pixabay.com/photos/time-clock-background-wrist-watch-3090387/)
 * Black Leather Belt is by Couleur from [Pixabay](https://pixabay.com/photos/belts-belt-buckle-buckle-metal-2172333/)
 * Black & White Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-fashion-3528032/)
+* Brown & Green Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-style-pair-3453489/)
+* Brown & Red Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-oxford-shoes-5998489)
+* Yellow Trousers is by NordWood Themes from [Unsplash](https://unsplash.com/photos/XG-fPA4Nu6k)
+* Navy Blue Trousers is by Clangs from [Pixabay](https://pixabay.com/photos/trousers-clothing-men-s-pants-2685231/)
