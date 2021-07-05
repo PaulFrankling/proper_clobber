@@ -35,10 +35,17 @@
                         <hr>
                         <p class="product-desc">{{ product.description }}</p>
                         <hr>
+                        {% if product.category %}
+                        <span class="card-text product-category">
+                            <a href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-tshirt mr-1"></i>{{ product.category.friendly_name }}
+                            </a>
+                        </span>
+                        {% endif %}
                         {% if product.rating %}
-                        <p class="card-text product-rating"><i class="fas fa-star mr-1"></i>{{ product.rating }}/ 5.00</p>
+                        <span class="card-text product-rating"><i class="fas fa-star mr-1"></i>{{ product.rating }}/ 5.00</span>
                         {% else %}
-                        <p class="card-text product-rating">No Rating Available</p>
+                        <span class="card-text product-rating">No Rating Available</span>
                         {% endif %}
                     </div>
                     </div>
