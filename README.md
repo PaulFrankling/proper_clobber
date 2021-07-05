@@ -86,4 +86,4 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 * Brown & Green Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-style-pair-3453489/)
 * Brown & Red Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-oxford-shoes-5998489)
 * Yellow Trousers is by NordWood Themes from [Unsplash](https://unsplash.com/photos/XG-fPA4Nu6k)
-* Navy Blue Trousers is by Clangs from [Pixabay](https://pixabay.com/photos/trousers-clothing-men-s-pants-2685231/)
+* Black Trousers is by cottonbro from [Pexels](https://www.pexels.com/photo/a-person-sitting-on-a-bar-stool-7764009/)
