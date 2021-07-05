@@ -113,6 +113,15 @@ body {
     font-size: 14px;
 }
 
+.product-category {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.product-category a {
+    color: #7E7F83;
+}
+
 .product-detail-img {
     height: 350px;
     object-fit: cover;
