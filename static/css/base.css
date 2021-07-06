@@ -109,14 +109,26 @@ footer {
     padding-top: 10px;
 }
 
+.site-footer h6 {
+    font-size: 14px;
+}
+
 .site-footer i {
     color: #FFFFFF;
     margin: 0 5px 0 5px;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .site-footer i:hover {
     color: #CEFF1A;
+}
+
+.site-footer a {
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: none;
 }
 
 .copyright-info {
@@ -125,7 +137,9 @@ footer {
 }
 
 .copyright-info h6 {
-    margin: 8px 0 8px 0;
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .overlay {
