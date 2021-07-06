@@ -94,7 +94,7 @@ body {
     flex: 1 0 auto;
 }
 
-.product-detail-page {
+.product-pages {
     flex: 1 0 auto;
 }
 
@@ -103,6 +103,16 @@ body {
     bottom: 0;
     width: 100%;
     position: relative;
+}
+
+footer {
+    padding: 20px 0 20px 0;
+}
+
+.site-footer i {
+    color: #FFFFFF;
+    margin: 0 10px 0 10px;
+    font-size: 30px;
 }
 
 .overlay {
