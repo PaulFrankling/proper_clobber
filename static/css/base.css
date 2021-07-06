@@ -131,6 +131,14 @@ footer {
     text-decoration: none;
 }
 
+.contact-info {
+    margin-top: 5px;
+}
+
+.contact-info span {
+    text-transform: uppercase;
+}
+
 .copyright-info {
     background-color: #7E7F83;
     margin-top: 10px;
