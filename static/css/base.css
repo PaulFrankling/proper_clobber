@@ -6,6 +6,9 @@ body {
     font-family: Archivo, Montserrat, Sans-serif;
     background: url("/media/homepage-bg.jpg") no-repeat center top fixed;
     background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .site-header {
@@ -88,6 +91,13 @@ body {
 
 .homepage {
     padding-top: 75px;
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    width: 100%;
 }
 
 .overlay {
