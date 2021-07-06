@@ -20,6 +20,22 @@
                 </div>
             </div>
 
+            <div class="row mt-2">
+                <div class="col-12 col-md-3 my-auto">
+                    <div class="sort-select">
+                        <select id="sort-selector" class="custom-select border border-black rounded-2">
+                            <option value="reset" {% if current_sorting != 'None_None' %}selected{% endif %}>Sort by</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Product name (From A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Product name (From Z-A)</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (High to Low)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (Low to High)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (High to Low)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (Low to High)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
             <div class="row mt-4">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
