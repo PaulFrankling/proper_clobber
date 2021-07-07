@@ -111,7 +111,7 @@ footer {
 
 .social-title h6 {
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .site-footer i {
@@ -133,7 +133,7 @@ footer {
 }
 
 .contact-info h6 {
-    margin-top: 5px;
+    margin: 10px 0 10px 0;
     font-size: 14px;
 }
 
