@@ -91,3 +91,4 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 * Chequered Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/male-shirt-red-fashion-design-4792234/)
 * Black Trousers is by StockSnap from [Pixabay](https://pixabay.com/photos/white-tshirt-vneck-fashion-guy-926838/)
 * Dark Grey Trousers is by Olichel from [Pixabay](https://pixabay.com/photos/suit-man-business-person-923133/)
+* Light Grey Trousers is by StockSnap from [Pixabay](https://pixabay.com/photos/table-pants-cap-shoes-clothes-2576387/)
