@@ -109,8 +109,9 @@ footer {
     padding-top: 10px;
 }
 
-.site-footer h6 {
+.social-title h6 {
     font-size: 14px;
+    margin-top: 5px;
 }
 
 .site-footer i {
@@ -131,8 +132,9 @@ footer {
     text-decoration: none;
 }
 
-.contact-info {
+.contact-info h6 {
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .contact-info span {
