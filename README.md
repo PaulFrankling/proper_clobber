@@ -26,6 +26,8 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 ## Wireframes:
 
+* [Home-page-wireframe](readme/wireframes/home-page-wireframe.png)
+
 ### Technology used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
