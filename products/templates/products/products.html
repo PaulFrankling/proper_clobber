@@ -69,13 +69,18 @@
                     </div>
                 {% endfor %}
                 </div>
-            </div> 
+            </div>
+
+            <div class="back-to-top-btn">
+                <a class="back-to-top-link">
+                    <i class="fas fa-arrow-up fa-2x"></i>
+                </a>
+            </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
-
     // Function that sorts products via option selected 
 
         $('#sort-selector').change(function() {

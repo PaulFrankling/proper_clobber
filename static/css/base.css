@@ -193,6 +193,18 @@ footer {
     color: #7E7F83;
 }
 
+.back-to-top-btn i {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #CEFF1A;
+    text-shadow: -1px 0 #000, 0 1px #000, 
+        1px 0 #000, 0 -1px #000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 7.5px;
+    z-index: 1000;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
