@@ -1,6 +1,6 @@
 ## Image Credits
 
-### The credits below are for each image taken online to represent a specific product of this website.
+### The credits below are for each image taken from other websites to represent a specific product of this website.
 
 #### Suits
 
