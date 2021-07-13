@@ -25,12 +25,14 @@
 #### Shirts
 
 * Chequered Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/male-shirt-red-fashion-design-4792234/)
+* Red Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-male-man-fashion-person-3737408/)
+* Blue Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-male-man-fashion-person-3737408/)
 
 #### Brogue Shoes
 
 * Leather Brogue Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-leather-shoes-5983822/)
 * Blue Brogue Shoes is by smithnoah373 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-fashion-6122445/)
-* Wingtip Brogue Shoes is by smithnoah373 from [Pixabay](https://pixabay.com/photos/men-s-brogues-wingtip-brogues-6104666/)
+* Wingtip Brogue Shoes is by smithnoah373 from [Pixabay](https://pixabay.com/photos/shirt-clothes-male-model-genre-2604729/)
 
 #### Loafers
 
