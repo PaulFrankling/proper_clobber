@@ -99,6 +99,10 @@ body {
     flex: 1 0 auto;
 }
 
+.basket-page {
+    flex: 1 0 auto;
+}
+
 .site-footer {
     background: rgba(0, 0, 0, 0.8);
     bottom: 0;
@@ -224,6 +228,15 @@ footer {
 .search-not-found {
     font-weight: bold;
     color: #000000;
+}
+
+.basket-icon i {
+    padding-top: 20px;
+}
+
+.basket-empty-p {
+    padding-top: 10px;
+    font-size: 20px;
 }
 
 @media (min-width: 1200px) {
