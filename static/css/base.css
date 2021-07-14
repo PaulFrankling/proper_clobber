@@ -166,6 +166,11 @@ footer {
     object-fit: cover;
 }
 
+.title-line {
+    border-top: 1px solid #000000;
+    box-shadow: 0 0 5px #7E7F83;
+}
+
 .card-title {
     font-size: 14px;
     font-weight: bold;
