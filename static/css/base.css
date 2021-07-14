@@ -212,6 +212,15 @@ footer {
     cursor: pointer;
 }
 
+.product-amount {
+    color: #7E7F83;
+}
+
+.search-not-found {
+    font-weight: bold;
+    color: #000000;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;

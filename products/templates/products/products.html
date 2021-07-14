@@ -34,6 +34,11 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-12 col-md-3 my-auto">
+                    <p class="text-center text-md-left text-uppercase mt-3 product-amount">
+                    <small><b>{{ products|length }} Products</b>{% if search_term %} found for <strong class="search-not-found">"{{ search_term }}"</strong>{% endif %}</small>
+                    </p>
+                </div>
             </div>
 
             <div class="row mt-4">
