@@ -269,12 +269,12 @@ footer {
     }
 
     .header-container {
-        padding-top: 175px;
+        padding-top: 190px;
     }
 }
 
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 125px;
+        padding-top: 160px;
     }
 }
