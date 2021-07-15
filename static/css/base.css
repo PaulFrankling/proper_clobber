@@ -99,6 +99,11 @@ body {
     margin-right: 5px;
 }
 
+.delivery-notice {
+    background-color: #CEFF1A;
+    color: #000000;
+}
+
 .homepage {
     padding-top: 75px;
     flex: 1 0 auto;
