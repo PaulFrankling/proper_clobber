@@ -76,14 +76,23 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.shop-now-btn, .basket-btn {
+.shop-now-btn, 
+.basket-btn {
     color: #FFFFFF;
     background-color: #000000;
     min-width: 180px;
     border: 3px solid #000000;
 }
 
-.shop-now-btn:hover, .basket-btn:hover {
+.add-to-basket-btn {
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 3px solid #000000;
+}
+
+.shop-now-btn:hover,
+.basket-btn:hover,
+.add-to-basket-btn:hover {
     background-color: #CEFF1A;
     color: #000000;
     font-weight: bold;
@@ -95,7 +104,12 @@ body {
     font-size: 16px;
 }
 
-.basket-btn i {
+.add-to-basket-btn {
+    font-size: 16px;
+}
+
+.basket-btn i,
+.add-to-basket-btn i {
     margin-right: 5px;
 }
 
