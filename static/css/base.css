@@ -267,6 +267,10 @@ footer {
     font-size: 20px;
 }
 
+.basket-amount {
+    color: #CEFF1A;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
