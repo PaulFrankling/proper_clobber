@@ -271,6 +271,12 @@ footer {
     color: #CEFF1A;
 }
 
+.basket-image {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;

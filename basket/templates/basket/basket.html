@@ -32,7 +32,7 @@
                 <div class="col">
                     {% if basket_items %}
                     <div class="table-responsive rounded-0 d-none d-md-block">
-                        <table class="table table-sm table-borderless">
+                        <table class="table table-sm">
                             <thead class="text-uppercase text-black">
                                 <tr>
                                     <th scope="col">Product Details</th>
@@ -42,6 +42,27 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
+
+                            {% for item in basket_items %}
+                            <tr>
+                                <td class="py-3 w-25">
+                                    <img src="{{ item.product.image.url }}" class="card-img-top img-fluid basket-image">
+                                </td>
+                                <td class="py-3 pl-2">
+                                    <p class="my-0 text-uppercase">{{ item.product.name }}</p>
+                                    <p class="my-0 text-uppercase text-muted small">{{ item.product.sku }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"><b>£{{ item.product.price }}</b></p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"><b>{{ item.quantity }}</b></p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"><b>£{{ item.product.price }}</b></p>
+                                </td>
+                            </tr>
+                            {% endfor %}
                         </table>
                     </div>
                 </div>
