@@ -13,6 +13,8 @@
 
 * Mauve Suit Jacket is by Heng Films from [Unsplash](https://unsplash.com/photos/mpdIPhYqZ4Y)
 * Dark Grey Suit Jacket is by Phil Shaw from [Unsplash](https://unsplash.com/photos/2WcoiQ_C4b0)
+* Grey Suit Jacket is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-male-man-fashion-person-3737405/)
+* Light Grey Suit Jacket is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-male-man-fashion-person-3737407/)
 
 #### Suit Trousers
 
@@ -27,6 +29,9 @@
 * Chequered Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/male-shirt-red-fashion-design-4792234/)
 * Red Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-male-man-fashion-person-3737408/)
 * Blue Shirt is by Engin_Akyurt from [Pixabay](https://pixabay.com/photos/shirt-clothes-male-model-genre-2604729/)
+* Blue Patterned Shirt is by renzonovoa1 from [Pixabay](https://pixabay.com/photos/shirt-man-blue-fashion-peru-2947549/)
+* White Shirt is by renzonovoa1 from [Pixabay](https://pixabay.com/photos/shirt-man-white-fashion-2017-2947548/)
+* Black & White Shirt is by 6689062 from [Pixabay](https://pixabay.com/photos/blur-box-business-checkered-shirt-2841225/)
 
 #### Brogue Shoes
 
@@ -45,19 +50,24 @@
 * Black & White Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-fashion-3528032/)
 * Brown & Green Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-style-pair-3453489/)
 * Brown & Red Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-oxford-shoes-5998489)
+* Brown Oxford Shoes is by haryatimahmod from [Pixabay](https://pixabay.com/photos/men-shoes-oxford-classic-feet-1888670/)
 
 #### Belts
 
 * Brown Leather Belt image is by insidehenderson from [Pixabay](https://pixabay.com/photos/menswear-man-male-clothing-fashion-952835/)
 * Grey Belt is by mmaaurora from [Pixabay](https://pixabay.com/photos/fashion-belt-model-buckle-male-3441990/)
 * Black Leather Belt is by Couleur from [Pixabay](https://pixabay.com/photos/belts-belt-buckle-buckle-metal-2172333/)
+* Blue Leather Belt is by gmsjs90 from [Pixabay](https://pixabay.com/photos/belt-leather-belt-men-accessories-5538613/)
+* Brown Belt is by gmsjs90 from [Pixabay](https://pixabay.com/photos/belt-leather-belt-men-accessories-5538613/)
 
 #### Ties
 
 * Pink Bow Tie is by stokpic from [Pixabay](https://pixabay.com/photos/man-bow-tie-fashion-bow-tie-suit-642063/)
 * Red Bow Tie is by AttractionMagazine from [Pixabay](https://pixabay.com/photos/tie-howe-fashion-elegance-style-809378/)
 * Blue Tie is by gksayaan22 from [Pixabay](https://pixabay.com/photos/suit-tie-men-1971663/)
+* Chequered Tie is by MiraCosic from [Pixabay](https://pixabay.com/photos/necktie-business-man-s-clothing-987784/)
 * Crimson Tie is by MatthiasSchild from [Pixabay](https://pixabay.com/photos/tie-clothing-suit-fashion-elegant-2946772/)
+* Black Bow Tie is by Hans from [Pixabay](https://pixabay.com/photos/fly-suit-groom-loop-collar-693663/)
 
 #### Watches
 
