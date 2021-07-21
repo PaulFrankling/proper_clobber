@@ -8,6 +8,7 @@
 * Light Grey Suit is by Samantha Gades from [Unsplash](https://unsplash.com/photos/bFYoyKivbmg)
 * Maroon Suit is by The Lazy Artist Gallery from [Pexels](https://www.pexels.com/photo/person-sitting-on-stairs-beside-sunglasses-1300550/)
 * Grey Suit is by Andrew Neel from [Pexels](https://www.pexels.com/photo/photo-of-man-sitting-on-chair-3178767/)
+* Dark Green Suit is by Benjamin Rascoe from [Unsplash](https://unsplash.com/photos/NxtxmmHc2OE)
 
 #### Suit Jackets
 
@@ -68,6 +69,8 @@
 * Chequered Tie is by MiraCosic from [Pixabay](https://pixabay.com/photos/necktie-business-man-s-clothing-987784/)
 * Crimson Tie is by MatthiasSchild from [Pixabay](https://pixabay.com/photos/tie-clothing-suit-fashion-elegant-2946772/)
 * Black Bow Tie is by Hans from [Pixabay](https://pixabay.com/photos/fly-suit-groom-loop-collar-693663/)
+* Maroon Tie is by mattiaverga from [Pixabay](https://pixabay.com/photos/clothes-tie-clothing-shirt-590567/)
+* Blue Bow Tie is by jungkyuyoung from [Pixabay](https://pixabay.com/photos/necktie-botha-shirt-1970981/)
 
 #### Watches
 
@@ -75,3 +78,4 @@
 * Silver Pocket Watch is by LMorganCreative from [Pixabay](https://pixabay.com/photos/pocket-watch-watch-vintage-old-5500840/)
 * Silver & Gold Watch is by Free-Photos from [Pixabay](https://pixabay.com/photos/wristwatch-pocket-hand-time-male-1149669/)
 * PC Brown & Silver Watch is by from [Pixabay](https://pixabay.com/photos/time-clock-background-wrist-watch-3090387/)
+* Blue Watch is by from Klickors Moe from [Unsplash](https://unsplash.com/photos/1CjiCJgHOOY)
