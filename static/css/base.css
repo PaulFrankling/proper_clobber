@@ -210,6 +210,10 @@ footer {
     font-weight: bold;
 }
 
+.card-body {
+    background-color: #F5F5F5;
+}
+
 .product-rating {
     color: #7E7F83;
     font-size: 14px;
