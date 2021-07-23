@@ -1,4 +1,4 @@
-{% if product.category.name == 'brogue' or 'loafers' or 'oxford' %}
+{% if product.has_footwear_sizing %}
 
 <div class="col-12 col-md-6">
     <span class="mt-2 ml-1 pr-5">Size:</span>
@@ -13,9 +13,9 @@
         <option value="13">UK 13</option>
     </select>
 </div>
+{% endif %}
 
-{% else %}
-
+{% if product.has_clothing_sizing %}
 <div class="col-12 col-md-6">
     <span class="mt-2 ml-1 pr-5">Size:</span>
     <select class="form-control rounded-0 w-100" name="product_size" id="id_product_size">
@@ -27,5 +27,4 @@
         <option value="xxl">XXL</option>
     </select>
 </div>
-
 {% endif %}
