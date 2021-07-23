@@ -39,11 +39,16 @@
 * Leather Brogue Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-leather-shoes-5983822/)
 * Blue Brogue Shoes is by smithnoah373 from [Pixabay](https://pixabay.com/photos/brogue-shoes-shoes-fashion-6122445/)
 * Wingtip Brogue Shoes is by smithnoah373 from [Pixabay](https://pixabay.com/photos/men-s-brogues-wingtip-brogues-6104666/)
+* Hi-Top Brogues is by Greyson Joralemon from [Unsplash](https://unsplash.com/photos/ySVIn-6O3uo)
+* Brown Suede Brogues is by Noah Smith from [Unsplash](https://unsplash.com/photos/1z2hBTKHdWI)
 
 #### Loafers
 
 * Brown Leather Loafers is by smithnoah373 from [Pixabay](https://pixabay.com/photos/loafers-shoes-leather-brown-shoes-6079036/)
 * Suede Loafers is by smithnoah373 from [Pixabay](https://pixabay.com/photos/loafer-shoes-shoes-men-s-shoes-6109687/)
+* Light Brown Loafers is by David Lezcano from [Unsplash](https://unsplash.com/photos/b_L9iE1DUHo)
+* Mixed Brown Loafers is by Alexander Andrews from [Unsplash](https://unsplash.com/photos/OfvV-jkgrfQ)
+* Beige Loafers is by Alex Hudson from [Unsplash](https://unsplash.com/photos/Cpip61Lp28Q)
 
 #### Oxford Shoes
 
@@ -52,6 +57,7 @@
 * Brown & Green Oxford Shoes is by nipunharitash from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-style-pair-3453489/)
 * Brown & Red Oxford Shoes is by tylermike525 from [Pixabay](https://pixabay.com/photos/oxford-shoes-leather-oxford-shoes-5998489)
 * Brown Oxford Shoes is by haryatimahmod from [Pixabay](https://pixabay.com/photos/men-shoes-oxford-classic-feet-1888670/)
+* Black Oxford Shoes is by Adrien from [Pexels](https://www.pexels.com/photo/person-wearing-black-leather-dress-shoes-999455/)
 
 #### Belts
 
