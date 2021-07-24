@@ -10,11 +10,12 @@
 
 ![Colour Scheme](readme/design/colour-scheme.png)
 
-[Coolor](https://coolors.co/ffffff-000000-7e7f83-ceff1a) was used to create a colour scheme for the project:
+[Coolor](https://coolors.co/ffffff-f5f5f5-7e7f83-000000-ceff1a) was used to create a colour scheme for the project:
 
 * White `#FFFFFF`
-* Black `#000000`
+* Cultured `#F5F5F5`
 * Gray Web `#7E7F83`
+* Black `#000000`
 * Electric Lime `#CEFF1A`
 
 ### Typography
