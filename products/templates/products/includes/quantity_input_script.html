@@ -1,3 +1,19 @@
-<script>
+<script type="text/javascript">
     
+    // Increment quantity of product function
+    $('.increment-quantity').click(function(e){
+        e.preventDefault();
+        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
+        let currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue + 1);
+    });
+
+    // Decrement quantity of product function
+    $('.decrement-quantity').click(function(e){
+        e.preventDefault();
+        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
+        let currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue - 1);
+    });
+
 </script>
