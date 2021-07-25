@@ -237,6 +237,18 @@ footer {
     color: #7E7F83;
 }
 
+.increment-quantity,
+.decrement-quantity {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.increment-quantity:hover,
+.decrement-quantity:hover {
+    background-color: #CEFF1A;
+    color: #000000;
+}
+
 .back-to-top-btn i {
     position: fixed;
     bottom: 10px;
