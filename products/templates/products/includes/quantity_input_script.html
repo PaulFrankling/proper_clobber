@@ -1,19 +1,45 @@
 <script type="text/javascript">
     
-    // Increment quantity of product function
+    // Disables minus/plus buttons outside of 1-99 range 
+    function handleEnableDisable(itemId){
+        let currentValue = parseInt($(`#id_quantity_${itemId}`).val());
+        let minusDisabled = currentValue < 2; 
+        let plusDisabled = currentValue > 98;
+        $(`#decrement-quantity_${itemId}`).prop('disabled', minusDisabled); // Disables minus button when quantity is at 1
+        $(`#increment-quantity_${itemId}`).prop('disabled', plusDisabled); // Disables plus button when quantity is at 99
+    }
+
+    // Ensures correct enabling and disabling of all inputs on page load
+    let allQuantityInputs = $('.quantity_input');
+    for (let i = 0; i < allQuantityInputs.length; i++){
+        let itemId = $(allQuantityInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
+
+    // Checks enabling and disabling whenever the input is changed
+    $('.quantity_input').change(function(){
+        let itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
+
+    // Increment quantity function
     $('.increment-quantity').click(function(e){
         e.preventDefault();
         let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
         let currentValue = parseInt($(closestInput).val());
         $(closestInput).val(currentValue + 1);
+        let itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
     });
 
-    // Decrement quantity of product function
+    // Decrement quantity function
     $('.decrement-quantity').click(function(e){
         e.preventDefault();
         let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
         let currentValue = parseInt($(closestInput).val());
         $(closestInput).val(currentValue - 1);
+        let itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
     });
 
 </script>
