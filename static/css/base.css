@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: Archivo, Montserrat, Sans-serif;
-    background: url("/media/homepage-bg.jpg") no-repeat center top fixed;
+    background: url("/media/homepage-bg.jpg") no-repeat top center fixed;
     background-size: cover;
     display: flex;
     min-height: 100vh;
@@ -13,7 +13,7 @@ body {
 }
 
 .site-header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000;
 }
 
 .site-logo {
@@ -134,7 +134,7 @@ body {
 }
 
 .site-footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: #000000;
     bottom: 0;
     width: 100%;
     position: relative;

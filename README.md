@@ -59,5 +59,5 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 ### Media Used
 
-* Home page image is by Dennis Ottink from [Pixabay](https://unsplash.com/photos/SpqyMw0lrhw)
+* Home page image is by Cody Nottingham from [Unsplash](https://unsplash.com/photos/BAd_f3owqNc)
 * The images for each product on the website are available to view [here](IMG_CREDITS.md)
