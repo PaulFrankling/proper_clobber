@@ -52,18 +52,30 @@
                             <div class="form-row">
                                 {% include 'products/includes/sizing.html' %}
                                 <div class="col-12 col-md-6">
-                                    <span class="mt-2 ml-1 pr-5">Quantity:</span>
+                                    <h6 class="my-2">Quantity:</h6>
                                         <div class="form-group w-100">
                                             <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-black btn-dark rounded-0 decrement-quantity"
+                                                    data-item_id="{{ product.id }}" id="decrement-quantity_{{ product.id }}">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </div>
                                                 <input class="form-control quantity_input rounded-0" type="number"
                                                 name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}"
                                                 id="id_quantity_{{ product.id }}">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-black btn-dark rounded-0 increment-quantity"
+                                                    data-item_id="{{ product.id }}" id="increment-quantity_{{ product.id }}">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                <div class="col-12">
+                                <div class="col-12 text-md-left text-center">
                                     <input type="submit" value="Add to basket"
-                                        class="add-to-basket-btn btn btn-dark text-uppercase rounded-0 mt-1 mb-3">
+                                        class="add-to-basket-btn btn btn-dark text-uppercase rounded-0 mt-3 mb-5">
                                     </div>
                                 </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
