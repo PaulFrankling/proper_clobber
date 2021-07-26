@@ -4,9 +4,9 @@
     function handleEnableDisable(itemId){
         let currentValue = parseInt($(`#id_quantity_${itemId}`).val());
         let minusDisabled = currentValue < 2; 
-        let plusDisabled = currentValue > 98;
+        let plusDisabled = currentValue > 9;
         $(`#decrement-quantity_${itemId}`).prop('disabled', minusDisabled); // Disables minus button when quantity is at 1
-        $(`#increment-quantity_${itemId}`).prop('disabled', plusDisabled); // Disables plus button when quantity is at 99
+        $(`#increment-quantity_${itemId}`).prop('disabled', plusDisabled); // Disables plus button when quantity is at 10
     }
 
     // Ensures correct enabling and disabling of all inputs on page load
