@@ -17,6 +17,12 @@
                     <i class="fas fa-plus fa-sm"></i>
                 </button>
             </div>
+            {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
+                <input type="hidden" name="product_size" value="{{ item.size }}">
+            {% endif %}
         </div>
     </div>
 </form>
+<a class="update-qty-link text-uppercase"><small>Update</small></a>
+<a class="remove-item-link text-uppercase float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">
+    <small>Remove</small></a>
