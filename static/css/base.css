@@ -301,6 +301,11 @@ footer {
     color: #CEFF1A;
 }
 
+.update-qty-link,
+.remove-item-link {
+    cursor: pointer;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;

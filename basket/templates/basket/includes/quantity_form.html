@@ -1,4 +1,5 @@
-<form class="" method="POST" action="">
+<!-- Quantity form for basket page -->
+<form class="form update-form" method="POST" action="{% url 'adjust_basket' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
         <div class="input-group">
@@ -24,5 +25,5 @@
     </div>
 </form>
 <a class="update-qty-link text-uppercase"><small>Update</small></a>
-<a class="remove-item-link text-uppercase float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">
+<a class="remove-item-link text-uppercase float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
     <small>Remove</small></a>
