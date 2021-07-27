@@ -62,7 +62,7 @@
                                     <p class="my-0"><b>£{{ item.product.price }}</b></p>
                                 </td>
                                 <td class="py-2">
-                                    <p class="my-0"><b>{{ item.quantity }}</b></p>
+                                    {% include 'basket/includes/quantity_form.html' %}
                                 </td>
                                 <td class="py-2">
                                     <p class="my-0"><b>£{{ item.product.price }}</b></p>
@@ -103,4 +103,9 @@
                 </div>
             </div>
         </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
