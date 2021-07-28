@@ -1,12 +1,42 @@
 <div class="toast custom-toast rounded-0" data-autohide="false">
-    <div class="arrow-up"></div>
-    <div class="toast-header rounded-0 bg-white">
-      <strong class="mr-auto text-uppercase">Great news!</strong>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="toast-header rounded-0">
+        <strong class="mr-auto text-uppercase">Great news!</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-    <div class="toast-body">
-      {{ message }}
+      <div class="toast-body bg-white">
+        <div class="row">
+            <div class="col">
+            {{ message }}
+            <hr class="title-line mt-2 mb-3">
+            </div>
+        </div>
+        {% if grand_total %}
+        <h6 class="bg-white font-weight-bold text-uppercase">Your Basket - {{ product_amount }} item(s)</h6>
+        <div class="basket-wrapper">
+            {% for item in basket_items %}
+            <div class="row">
+                <div class="col-4 my-1">
+                  {% if item.product.image %}
+                      <img src="{{ item.product.image.url }}" class="w-100 toast-image" alt="{{ item.product.name }}">
+                  {% else %}
+                      <img src="{{ MEDIA_URL }}no_image.png" class="w-100 toast-image" alt="{{ item.product.name }}">
+                  {% endif %}
+                </div>
+                <div class="col-8 my-1 text-uppercase">
+                    <p class="my-0"><b>{{ item.product.name }}</b></p>
+                    <p class="text-muted my-0 small">Size:<b>
+                    {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
+                        {{ item.size }}
+                    {% else %}
+                        N/A
+                    {% endif %}</b></p>
+                    <p class="text-muted my-0 small">Quantity: <b>{{ item.quantity }}</b></p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
-  </div>
+</div>

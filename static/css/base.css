@@ -330,6 +330,18 @@ footer {
     overflow: visible;
 }
 
+.toast-header {
+    background-color: #CEFF1A;
+    color: #000000;
+}
+
+.toast-image {
+    object-fit: cover;
+    height: 75px;
+    width: 100px;
+    box-shadow: 4px 2px 4px #000000;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
