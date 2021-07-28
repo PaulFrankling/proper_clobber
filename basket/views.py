@@ -122,5 +122,5 @@ def remove_from_bask(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'There was an error removing item {e}')
+        messages.error(request, f'There was an error removing item: {e}')
         return HttpResponse(status=500)
