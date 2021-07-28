@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import (render, redirect, reverse,
+                              HttpResponse, get_object_or_404)
 from django.contrib import messages
 from products.models import Product
 
@@ -14,7 +15,7 @@ def view_basket(request):
 def add_to_basket(request, item_id):
     """ Add a quantity of a specific product to the basket """
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -59,6 +60,7 @@ def add_to_basket(request, item_id):
 def adjust_basket(request, item_id):
     """ Adjust the quantity of a specific product to the specified amount """
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
@@ -68,6 +70,10 @@ def adjust_basket(request, item_id):
     if size:
         if quantity > 0:
             basket[item_id]['items_by_size'][size] = quantity
+            messages.success(
+                request, f'You have updated to \
+                {basket[item_id]["items_by_size"][size]} \
+                x {size.upper()}, {product.name}')
         else:
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
