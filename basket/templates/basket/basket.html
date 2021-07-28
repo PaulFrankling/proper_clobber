@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load basket_tools %}
 
 {% block page_header %}
 
@@ -65,7 +66,7 @@
                                     {% include 'basket/includes/quantity_form.html' %}
                                 </td>
                                 <td class="py-2">
-                                    <p class="my-0"><b>£{{ item.product.price }}</b></p>
+                                    <p class="my-0"><b>£{{ item.product.price | calc_subtotal:item.quantity }}</b></p>
                                 </td>
                             </tr>
                             {% endfor %}
