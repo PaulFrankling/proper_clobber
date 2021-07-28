@@ -319,6 +319,17 @@ footer {
     text-decoration: underline;
 }
 
+.message-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000000;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
