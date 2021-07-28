@@ -30,17 +30,17 @@ def add_to_basket(request, item_id):
                 messages.success(
                     request, f'Updated to \
                     {basket[item_id]["items_by_size"][size]} \
-                    x Size: {size.upper()}, {product.name}')
+                    x (Size: {size.upper()}), {product.name}')
 
             else:
                 basket[item_id]['items_by_size'][size] = quantity
                 messages.success(
-                    request, f'Added Size: {size.upper()}, \
+                    request, f'Added (Size: {size.upper()}), \
                         {product.name} to your basket.')
         else:
             basket[item_id] = {'items_by_size': {size: quantity}}
             messages.success(
-                request, f'Added Size: {size.upper()}, \
+                request, f'Added (Size: {size.upper()}), \
                     {product.name} to your basket.')
     else:
         if item_id in list(basket.keys()):
@@ -73,13 +73,13 @@ def adjust_basket(request, item_id):
             messages.success(
                 request, f'Updated to \
                 {basket[item_id]["items_by_size"][size]} \
-                x Size: {size.upper()}, {product.name}')
+                x (Size: {size.upper()}), {product.name}')
         else:
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
             messages.success(
-                request, f'Removed Size: {size.upper()}, \
+                request, f'Removed (Size: {size.upper()}), \
                 {product.name} from your basket.')
     else:
         if quantity > 0:
@@ -111,7 +111,7 @@ def remove_from_bask(request, item_id):
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
             messages.success(
-                request, f'Removed Size: {size.upper()}, \
+                request, f'Removed (Size: {size.upper()}), \
                 {product.name} from your basket.')
         else:
             basket.pop(item_id)
