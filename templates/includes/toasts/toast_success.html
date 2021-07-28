@@ -1,6 +1,6 @@
 <div class="toast custom-toast rounded-0" data-autohide="false">
-    <div class="toast-header rounded-0">
-        <strong class="mr-auto text-uppercase">Great news!</strong>
+    <div class="toast-header toast-header-success rounded-0">
+        <strong class="mr-auto text-uppercase">Good news!</strong>
         <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -14,7 +14,7 @@
         </div>
         {% if grand_total %}
         <h6 class="bg-white font-weight-bold text-uppercase">Your Basket - {{ product_amount }} item(s)</h6>
-        <div class="basket-wrapper">
+        <div class="toast-wrapper">
             {% for item in basket_items %}
             <div class="row">
                 <div class="col-4 my-1">
@@ -36,6 +36,24 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col text-uppercase">
+                <h6 class="mt-3 mb-2">
+                    Total:{% if free_delivery_delta > 0 %}(Exc. Delivery){% endif %}
+                    <span class="float-right">£{{ total|floatformat:2 }}</span>
+                </h6>
+                <hr class="title-line mt-2 mb-1">
+                {% if free_delivery_delta > 0 %}
+                <p class="p-1 mb-1 toast-delivery-notice text-center">
+                    Receive free delivery by spending <b>£{{ free_delivery_delta }}</b> more!
+                </p>
+                {% endif %}
+                <a href="{% url 'view_basket' %}" class="checkout-btn btn btn-dark btn-block text-uppercase rounded-0">
+                    <span>Go To Secure Checkout</span>
+                    <span><i class="fas fa-lock"></i></span>
+                </a>
+            </div>
         </div>
         {% endif %}
     </div>

@@ -328,9 +328,16 @@ footer {
 
 .custom-toast {
     overflow: visible;
+    border: 2px solid #000000;
 }
 
-.toast-header {
+.toast-wrapper {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.toast-header-success {
     background-color: #CEFF1A;
     color: #000000;
 }
@@ -339,7 +346,12 @@ footer {
     object-fit: cover;
     height: 75px;
     width: 100px;
-    box-shadow: 4px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.toast-delivery-notice {
+    background-color: #7E7F83;
+    color: #CEFF1A;
 }
 
 @media (min-width: 1200px) {
