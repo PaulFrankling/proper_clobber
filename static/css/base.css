@@ -308,6 +308,9 @@ footer {
 
 .update-qty-link small {
     font-weight: bold;
+}
+
+.update-qty-link small:hover {
     text-decoration: underline;
 }
 
