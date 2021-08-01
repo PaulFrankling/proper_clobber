@@ -31,6 +31,8 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 * [Home Page Wireframe](readme/wireframes/home-page-wireframe.png)
 
+* [Products Page Wireframe](readme/wireframes/products-page-wireframe.png)
+
 ### Technology used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
