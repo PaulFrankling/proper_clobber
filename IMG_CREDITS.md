@@ -65,7 +65,7 @@
 * Grey Belt is by mmaaurora from [Pixabay](https://pixabay.com/photos/fashion-belt-model-buckle-male-3441990/)
 * Black Leather Belt is by Couleur from [Pixabay](https://pixabay.com/photos/belts-belt-buckle-buckle-metal-2172333/)
 * Blue Leather Belt is by gmsjs90 from [Pixabay](https://pixabay.com/photos/belt-leather-belt-men-accessories-5538613/)
-* Brown Belt is by gmsjs90 from [Pixabay](https://pixabay.com/photos/belt-leather-belt-men-accessories-5538613/)
+* Brown Belt is by gmsjs90 from [Pixabay](https://pixabay.com/photos/belt-leather-belt-men-accessories-5538614/)
 
 #### Ties
 

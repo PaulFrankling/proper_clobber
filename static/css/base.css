@@ -73,7 +73,7 @@ body {
     color: #CEFF1A;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .shop-now-btn, 
@@ -123,6 +123,17 @@ body {
 .homepage {
     padding-top: 75px;
     flex: 1 0 auto;
+}
+
+.about-us-section {
+    margin-top: 260px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #CEFF1A;
+}
+
+.about-us-title {
+    margin: 25px;
 }
 
 .product-pages {
@@ -380,5 +391,11 @@ footer {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 160px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us-section {
+        margin-top: 160px;
     }
 }
