@@ -2,35 +2,71 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
 
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-        <div class="container basket-page">
-            <div class="row">
-                <div class="col-12 text-center text-md-left text-uppercase">
-                    <h3>Shopping Basket</h3>
-                    <hr class="title-line">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="col-12 col-lg-6">
-                        <h6 class="text-uppercase text-muted">To complete the order, please fill out the form below:</h6>
-                    </div>
-                </div>
-            </div>
+<div class="overlay"></div>
+<div class="container basket-page">
+    <div class="row">
+        <div class="col-12 text-center text-md-left text-uppercase">
+            <h3>Checkout</h3>
+            <hr class="title-line">
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h6 class="text-uppercase text-md-left text-muted mb-2">To complete the order, please fill out the form
+                below:</h6>
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <fieldset class="my-3 px-3">
+                    <legend class="fieldset-label text-uppercase small text-black mb-3">Personal Details</legend>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            {{ order_form.full_name | as_crispy_field }}
+                        </div>
+                        <div class="col-lg-6">
+                            {{ order_form.phone_number | as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ order_form.email | as_crispy_field }}
+                </fieldset>
+                <fieldset class="mb-5 px-3">
+                    <legend class="fieldset-label text-uppercase small text-black mb-3">Delivery Details</legend>
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    <div class="form-check form-check-inline">
+                        {% if user.is_authenticated %}
+                        <label class="form-check-label small text-uppercase" for="id-save-info">Save delivery
+                            information to your profile</label>
+                        <input class="form-check-input ml-3" type="checkbox" id="id-save-info" name="save-info" checked>
+                        {% else %}
+                        <label class="form-check-label text-uppercase small" for="id-save-info">
+                            <a class="text-link" href="{% url 'account_signup' %}">Create account</a> or
+                            <a class="text-link" href="{% url 'account_login' %}">Login </a>to your account to
+                            save delivery information
+                        </label>
+                        {% endif %}
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
