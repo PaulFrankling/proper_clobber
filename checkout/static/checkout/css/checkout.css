@@ -23,3 +23,8 @@
     font-weight: bold;
     border: 3px solid #000000;
 }
+
+.form-control {
+    color: #000000;
+    border: 1px solid #000000;
+}
