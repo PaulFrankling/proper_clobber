@@ -1,0 +1,25 @@
+.adjust-basket-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+.order-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.adjust-basket-btn:hover {
+    background-color: #7E7F83;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 3px solid #000000;
+}
+
+.order-btn:hover {
+    background-color: #CEFF1A;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #000000;
+}
