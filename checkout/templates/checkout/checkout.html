@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load basket_tools %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -26,12 +27,64 @@
     </div>
 
     <div class="row">
+        <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <h6 class="text-uppercase text-muted mb-2">Order Summary ({{ product_amount }}):</h6>
+            <div class="row">
+                <div class="col-7 offset-2">
+                    <p class="mb-2 small">Item</p>
+                </div>
+                <div class="col-3 text-right">
+                    <p class="mb-2 small">Subtotal</p>
+                </div>
+            </div>
+            {% for item in basket_items %}
+                <div class="row">
+                    <div class="col-2 mb-3">
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            {% if item.product.image %}
+                                <img src="{{ item.product.image.url }}" class="w-100" alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                                <img src="{{ MEDIA_URL }}no_image.png" class="w-100" alt="{{ product.name }}">
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="col-7 mb-3 text-uppercase">
+                        <p class="my-0 small"><b>{{ item.product.name }}</b></p>
+                        <p class="text-muted my-0 small">Size:<b>
+                        {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
+                            {{ item.size }}
+                        {% else %}
+                            N/A
+                        {% endif %}</b></p>
+                        <p class="text-muted my-0 small">Quantity: <b>{{ item.quantity }}</b></p>
+                    </div>
+                    <div class="col-3 text-right">
+                        <p class="my-0 small">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <hr class="title-line">
+            <div class="row text-uppercase">
+                <div class="col-8">
+                    <p class="my-0">Order Total:</p>
+                    <p class="my-0">Delivery:</p>
+                    <p class="my-0">Grand Total:</p>
+                </div>
+                <div class="col-4 text-right">
+                    <p class="my-0">£{{ total | floatformat:2 }}</p>
+                    <p class="my-0">£{{ delivery | floatformat:2 }}</p>
+                    <p class="my-0"><b>£{{ grand_total | floatformat:2 }}</b></p>
+                </div>
+            </div>
+            <hr class="title-line">
+        </div>
         <div class="col-12 col-lg-6">
             <h6 class="text-uppercase text-md-left text-muted mb-2">To complete the order, please fill out the form
                 below:</h6>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
-                <fieldset class="my-3 px-3">
+                <fieldset class="my-3">
                     <legend class="fieldset-label text-uppercase small text-black mb-3">Personal Details</legend>
                     <div class="row">
                         <div class="col-lg-6">
@@ -43,7 +96,7 @@
                     </div>
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
-                <fieldset class="mb-5 px-3">
+                <fieldset class="mb-3">
                     <legend class="fieldset-label text-uppercase small text-black mb-3">Delivery Details</legend>
                     {{ order_form.street_address1 | as_crispy_field }}
                     {{ order_form.street_address2 | as_crispy_field }}
@@ -65,7 +118,8 @@
                         {% endif %}
                     </div>
                 </fieldset>
-                <fieldset class="px-3">
+                <hr class="title-line">
+                <fieldset>
                     <legend class="fieldset-label text-uppercase small text-black mb-3">Payment</legend>
                     <!-- Stripe card element will go here -->
                     <div class="mb-3" id="card-element"></div>
