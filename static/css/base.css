@@ -242,6 +242,7 @@ footer {
 .product-detail-img {
     height: 350px;
     object-fit: cover;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .product-desc {
@@ -304,6 +305,7 @@ footer {
     height: 200px;
     width: 300px;
     object-fit: cover;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .table-header,
