@@ -26,11 +26,12 @@
 
 .form-control {
     color: #000000;
-    border: 2px solid #000000;
 }
 
 .StripeElement,
-.stripe-style-input {
+.stripe-style-input,
+select,
+select option {
     box-sizing: border-box;
     height: 40px;
     padding: 10px 12px;
@@ -44,7 +45,9 @@
 
 .StripeElement--focus,
 .stripe-style-input:focus,
-.stripe-style-input:active {
+.stripe-style-input:active,
+select,
+select option  {
     box-shadow: 0 1px 3px 0 #7E7F83;
 }
 
@@ -54,6 +57,16 @@
 
 .stripe-style-input::placeholder {
     color: #7E7F83;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #7E7F83 !important;
 }
 
 .order-confirm-wrapper {
