@@ -229,7 +229,8 @@ footer {
 }
 
 .login a,
-.sign-up-link a {
+.sign-up-link a,
+.sign-in-link a {
     color: #FFFFFF;
 }
 
