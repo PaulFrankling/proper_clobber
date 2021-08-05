@@ -221,6 +221,10 @@ footer {
     font-weight: bold;
 }
 
+.product-card {
+    box-shadow: 2px 2px 4px #000000;
+}
+
 .card-body {
     background-color: #F5F5F5;
 }
