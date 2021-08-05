@@ -140,11 +140,10 @@ body {
     margin: 25px;
 }
 
-.product-pages {
-    flex: 1 0 auto;
-}
-
-.basket-page {
+.product-pages,
+.basket-page,
+.checkout-page,
+.profile-page {
     flex: 1 0 auto;
 }
 
