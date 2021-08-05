@@ -227,6 +227,7 @@ footer {
 
 .card-body {
     background-color: #F5F5F5;
+    border-top: 1px solid #7E7F83;
 }
 
 .product-rating {

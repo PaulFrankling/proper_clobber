@@ -46,10 +46,10 @@
 
                             {% for item in basket_items %}
                             <tr>
-                                <td class="py-2 w-25">
+                                <td class="py-3 w-25">
                                     <img src="{{ item.product.image.url }}" class="card-img-top img-fluid basket-image">
                                 </td>
-                                <td class="py-2 pl-2">
+                                <td class="py-3 pl-2">
                                     <p class="my-0 text-uppercase">{{ item.product.name }}</p>
                                     <p class="my-0 text-uppercase text-muted small">{{ item.product.sku }}</p>
                                     <p class="my-2 text-uppercase small">Size:<b>
@@ -59,13 +59,13 @@
                                         N/A
                                     {% endif %}</b></p>
                                 </td>
-                                <td class="py-2">
+                                <td class="py-3">
                                     <p class="my-0"><b>£{{ item.product.price }}</b></p>
                                 </td>
-                                <td class="py-2">
+                                <td class="py-3">
                                     {% include 'basket/includes/quantity_form.html' %}
                                 </td>
-                                <td class="py-2">
+                                <td class="py-3">
                                     <p class="my-0"><b>£{{ item.product.price | calc_subtotal:item.quantity }}</b></p>
                                 </td>
                             </tr>
