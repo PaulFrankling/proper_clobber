@@ -2,12 +2,14 @@
     background-color: #FFFFFF;
     color: #000000;
     border: 3px solid #000000;
+    margin: 5px 5px 5px 0;
 }
 
 .order-btn {
     background-color: #000000;
     color: #FFFFFF;
     border: 3px solid #000000;
+    margin: 5px 5px 5px 0;
 }
 
 .adjust-basket-btn:hover {
@@ -100,7 +102,7 @@ select option[value=""] {
 
 .checkout-image {
     object-fit: cover;
-    height: 75px;
+    height: 80px;
     width: 100px;
     box-shadow: 2px 2px 4px #000000;
 }

@@ -30,7 +30,7 @@
         <div class="col-12 col-lg-6 order-lg-last mb-5">
             <h6 class="text-uppercase text-muted mb-2">Order Summary ({{ product_amount }}):</h6>
             <div class="row">
-                <div class="col-7 offset-2">
+                <div class="col-6 offset-3">
                     <p class="mb-2 small">Item</p>
                 </div>
                 <div class="col-3 text-right">
@@ -39,7 +39,7 @@
             </div>
             {% for item in basket_items %}
                 <div class="row">
-                    <div class="col-2 mb-3">
+                    <div class="col-3 mb-3">
                         <a href="{% url 'product_detail' item.product.id %}">
                             {% if item.product.image %}
                                 <img src="{{ item.product.image.url }}" class="checkout-image w-100" alt="{{ product.name }}">
@@ -49,7 +49,7 @@
                             {% endif %}
                         </a>
                     </div>
-                    <div class="col-7 mb-3 text-uppercase">
+                    <div class="col-6 mb-3 text-uppercase">
                         <p class="my-0 small"><b>{{ item.product.name }}</b></p>
                         <p class="text-muted my-0 small">Size:<b>
                         {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
