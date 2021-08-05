@@ -228,13 +228,12 @@ footer {
     padding: 20px;
 }
 
-.login a,
-.sign-up-link a,
-.sign-in-link a {
+.allauth-link a {
     color: #FFFFFF;
+    font-weight: 700;
 }
 
-.sign-up-link a:hover {
+.allauth-link a:hover {
     color: #FFFFFF;
     text-decoration: underline;
 }
@@ -393,6 +392,21 @@ footer {
 
 .toast-header-success {
     background-color: #CEFF1A;
+    color: #000000;
+}
+
+.toast-header-info {
+    background-color: lightseagreen;
+    color: #000000;
+}
+
+.toast-header-warning {
+    background-color: orange;
+    color: #000000;
+}
+
+.toast-header-error {
+    background-color: red;
     color: #000000;
 }
 

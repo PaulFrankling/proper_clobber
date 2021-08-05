@@ -13,7 +13,7 @@
   {% get_providers as socialaccount_providers %}
 
   {% if socialaccount_providers %}
-  <p class="small">{% blocktrans with site.name as site_name %}Please sign in with one
+  <p class="allauth-link">{% blocktrans with site.name as site_name %}Please sign in with one
     of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
     for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
@@ -30,8 +30,8 @@
   {% include "socialaccount/snippets/login_extra.html" %}
 
   {% else %}
-  <p class="sign-up-link">{% blocktrans %}If you have not created an account yet, then please
-    <a class="font-weight-bold" href="{{ signup_url }}">sign up</a> first{% endblocktrans %}</p>
+  <p class="allauth-link">{% blocktrans %}If you have not created an account yet, then please
+    <a href="{{ signup_url }}">sign up</a> first{% endblocktrans %}</p>
   {% endif %}
 
   <form class="login" method="POST" action="{% url 'account_login' %}">
@@ -41,7 +41,7 @@
     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
     {% endif %}
     <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-    <p class="mt-2">
+    <p class="allauth-link mt-2">
       <a class="font-weight-bold button secondaryAction"
         href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
     </p>
