@@ -38,7 +38,7 @@
             <h6 class="text-black mb-3">Order History</h6>
             <div class="order-history table-responsive rounded-0">
                 <table class="table table-sm table-borderless">
-                    <thead>
+                    <thead class="table-header">
                         <tr>
                             <th>Order No</th>
                             <th>Date</th>
@@ -48,7 +48,26 @@
                     </thead>
                     <tbody>
                         {% for order in orders %}
-                        {% endfor }
+                        <tr class="small">
+                            <td>
+                                <a href="{% url 'order_history' order.order_number %}"
+                                title="{{ order.order_number }}">
+                                    {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </td>
+                            <td>{{ order.date }}</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                        <li>
+                                            {{ item.product.name }} x {{ item.quantity }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td>£{{ order.grand_total }}</td>
+                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div> 
