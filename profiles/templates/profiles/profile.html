@@ -36,7 +36,22 @@
         </div>
         <div class="col-12 col-lg-6 pb-3">
             <h6 class="text-black mb-3">Order History</h6>
-            {{ orders }}
+            <div class="order-history table-responsive rounded-0">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Order No</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Order Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        {% endfor }
+                    </tbody>
+                </table>
+            </div> 
         </div>
     </div>
 </div>

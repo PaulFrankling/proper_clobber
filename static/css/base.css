@@ -390,8 +390,8 @@ footer {
 
 .table-header,
 .table-footer {
-    background-color: #7E7F83;
-    color: #CEFF1A;
+    box-shadow: 2px 2px 4px #000000;
+    background-color: #F5F5F5;
 }
 
 .update-qty-link,
