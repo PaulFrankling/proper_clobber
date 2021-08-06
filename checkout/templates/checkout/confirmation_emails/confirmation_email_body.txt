@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}!
+
+This is confirmation of your order with Proper Clobber. Your order information is below:
+
+Order No : {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery Fee: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be delivered to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We've got your phone number on file as {{ order.phone_number }}.
+
+If you have any questions, don't hesitate to contact us at {{ contact_email }}.
+
+Thank you for shopping with Proper Clobber!
+
+Kind regards,
+
+Proper Clobber
