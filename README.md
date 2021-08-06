@@ -63,5 +63,6 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 ### Media Used
 
-* Home page image is by Cody Nottingham from [Unsplash](https://unsplash.com/photos/BAd_f3owqNc)
+* Home page background image is by Cody Nottingham from [Unsplash](https://unsplash.com/photos/BAd_f3owqNc)
+* All allauth pages background image is by Free-Photos from [Pixabay](https://pixabay.com/photos/guy-man-suit-railway-railroad-690483/)
 * The images for each product on the website are available to view [here](IMG_CREDITS.md)

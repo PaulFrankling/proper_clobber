@@ -20,8 +20,22 @@
 <div class="container profile-page">
     <div class="row">
         <div class="col-12 text-md-left text-center text-uppercase">
-            <h3>My Profile ({{ profile }})</h3>
+            <h3>My Profile</h3>
             <hr class="title-line">
+        </div>
+    </div>
+
+    <div class="row text-uppercase">
+        <div class="col-12 col-lg-6 pb-3">
+            <h6 class="text-black mb-3">Default Delivery Information</h6>
+            <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+            </form>
+        </div>
+        <div class="col-12 col-lg-6 pb-3">
+            <h6 class="text-black mb-3">Order History</h6>
+            {{ orders }}
         </div>
     </div>
 </div>
