@@ -11,7 +11,7 @@
             {{ message }}
             </div>
         </div>
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
         <h6 class="bg-white font-weight-bold text-uppercase">Your Basket - {{ product_amount }} item(s)</h6>
         <div class="toast-wrapper">
             {% for item in basket_items %}
