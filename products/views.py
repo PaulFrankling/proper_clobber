@@ -3,12 +3,15 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
-    """ A view to showing all products, including sorting and searching """
-    
+    """
+    A view to showing all products,
+    including sorting and searching
+    """
+
     products = Product.objects.all()
     query = None
     categories = None
@@ -58,8 +61,10 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to showing the specific details of an individual product """
-    
+    """
+    A view to showing the specific details of an individual product
+    """
+
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
@@ -67,3 +72,14 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """Add a product to website store"""
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

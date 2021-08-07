@@ -117,6 +117,34 @@ body {
     margin-right: 5px;
 }
 
+.cancel-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 3px solid #000000;
+    margin: 5px 5px 5px 0;
+}
+
+.add-product-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 3px solid #000000;
+    margin: 5px 5px 5px 0;
+}
+
+.cancel-btn:hover {
+    background-color: #7E7F83;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 3px solid #000000;
+}
+
+.add-product-btn:hover {
+    background-color: #CEFF1A;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #000000;
+}
+
 .delivery-notice {
     background-color: #CEFF1A;
     color: #000000;
@@ -145,7 +173,8 @@ body {
 .product-pages,
 .basket-page,
 .checkout-page,
-.profile-page {
+.profile-page,
+.add-product-page {
     flex: 1 0 auto;
 }
 
