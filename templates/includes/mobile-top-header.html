@@ -1,6 +1,7 @@
 <ul class="list-inline">
     <li class="list-inline-item">
-        <a class="text-white nav-link mt-4 d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="text-white nav-link mt-4 d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-search mob-nav-icons"></i></div>
             </div>
@@ -21,30 +22,30 @@
         </div>
     </li>
     <li class="list-inline-item dropdown">
-        <a href="#" class="nav-link text-white d-block d-lg-none" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-                <div class="text-center">
-                    <div><i class="fas fa-user-circle mob-nav-icons"></i></div>
-                </div>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                    <a href="" class="dropdown-item">Product Management</a>
-                {% endif %}
-                <a href="" class="dropdown-item">Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a>
-            {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Log In</a>
-            {% endif %}
+        <a href="#" class="nav-link text-white d-block d-lg-none" id="user-options" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user-circle mob-nav-icons"></i></div>
             </div>
-        </li>
-        <li class="list-inline-item">
-            <a href="{% url 'view_basket' %}" class="nav-link text-white d-block d-lg-none">
-                <div class="text-center shop-basket">
-                    <div><i class="fas fa-shopping-basket mob-nav-icons"></i></div>
-                </div>
-            </a>
-        </li>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+            {% endif %}
+            <a href="" class="dropdown-item">Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Log In</a>
+            {% endif %}
+        </div>
+    </li>
+    <li class="list-inline-item">
+        <a href="{% url 'view_basket' %}" class="nav-link text-white d-block d-lg-none">
+            <div class="text-center shop-basket">
+                <div><i class="fas fa-shopping-basket mob-nav-icons"></i></div>
+            </div>
+        </a>
+    </li>
 </ul>
