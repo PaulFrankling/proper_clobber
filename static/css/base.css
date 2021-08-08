@@ -124,7 +124,8 @@ body {
     margin: 5px 5px 5px 0;
 }
 
-.add-product-btn {
+.add-product-btn,
+.edit-product-btn {
     background-color: #000000;
     color: #FFFFFF;
     border: 3px solid #000000;
@@ -138,7 +139,8 @@ body {
     border: 3px solid #000000;
 }
 
-.add-product-btn:hover {
+.add-product-btn:hover,
+.edit-product-btn:hover {
     background-color: #CEFF1A;
     color: #000000;
     font-weight: bold;
