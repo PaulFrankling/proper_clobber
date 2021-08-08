@@ -336,6 +336,10 @@ footer {
     border-top: 1px solid #7E7F83;
 }
 
+.card-footer {
+    border-top: 1px solid #7E7F83;
+}
+
 .product-rating {
     color: #7E7F83;
     font-size: 14px;
@@ -358,6 +362,26 @@ footer {
 
 .product-desc {
     color: #7E7F83;
+}
+
+.admin-btns {
+    text-align: right;
+}
+
+.edit-icon-btn {
+    color: blue;
+}
+
+.delete-icon-btn {
+    color: red;
+}
+
+.edit-icon-btn:hover {
+    color: blue;
+}
+
+.delete-icon-btn:hover {
+    color: red;
 }
 
 .increment-quantity,

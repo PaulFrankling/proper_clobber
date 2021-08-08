@@ -71,6 +71,14 @@
                                 <span class="card-text product-rating">No Rating Available</span>
                                 {% endif %}
                             </div>
+                            {% if request.user.is_superuser %}
+                            <div class="card-footer admin-btns">
+                                    <a href="{% url 'edit_product' product.id %}" class="edit-icon-btn" type="button" data-toggle="tooltip" data-placement="bottom"
+                                        title="Edit Product"><i class="fas fa-pen-square fa-2x"></i></a>
+                                    <a href="" class="delete-icon-btn" type="button" data-toggle="tooltip" data-placement="bottom"
+                                        title="Delete Product"><i class="fas fa-minus-square fa-2x"></i></a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 {% endfor %}
@@ -114,6 +122,13 @@
 
                 window.location.replace(currentUrl);
             }
+        });
+    </script>
+
+    <script type="text/javascript">
+    // Edit and delete button tooltip function
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 {% endblock %}

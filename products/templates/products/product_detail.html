@@ -46,6 +46,14 @@
                         {% else %}
                         <span class="card-text product-rating">No Rating Available</span>
                         {% endif %}
+                        {% if request.user.is_superuser %}
+                        <div class="admin-btns">
+                                <a href="{% url 'edit_product' product.id %}" class="edit-icon-btn" type="button" data-toggle="tooltip" data-placement="bottom"
+                                    title="Edit Product"><i class="fas fa-pen-square fa-2x"></i></a>
+                                <a href="" class="delete-icon-btn" type="button" data-toggle="tooltip" data-placement="bottom"
+                                    title="Delete Product"><i class="fas fa-minus-square fa-2x"></i></a>
+                        </div>
+                        {% endif %}
                         <hr>
                         <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                             {% csrf_token %}
@@ -87,6 +95,12 @@
 {% endblock %}
 
 {% block postloadjs %}
-{{ block.super }}
+    {{ block.super }}
+    <script type="text/javascript">
+        // Edit and delete button tooltip function
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
