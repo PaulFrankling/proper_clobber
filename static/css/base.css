@@ -368,20 +368,8 @@ footer {
     text-align: right;
 }
 
-.edit-icon-btn {
-    color: blue;
-}
-
-.delete-icon-btn {
-    color: red;
-}
-
-.edit-icon-btn:hover {
-    color: blue;
-}
-
-.delete-icon-btn:hover {
-    color: red;
+.modal-footer {
+    pointer-events: auto;
 }
 
 .increment-quantity,
