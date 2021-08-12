@@ -512,6 +512,40 @@ footer {
     color: #CEFF1A;
 }
 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+    border: 3px solid #000000;
+}
+
+.btn-file:hover {
+    background-color: #CEFF1A;
+    border: 3px solid #000000;
+    color: #000000;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: red;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: red;
+    border-color: red;
+    border-radius: 0;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
