@@ -81,8 +81,13 @@ To run this project locally, you need to follow these steps:
 1. Next, open **Git Bash**.
 1. By using the `cd` command, change to the current working directory you want the cloned repository to be made.
 1. Input `git clone` into the terminal and add the URL copied from step 3, then press enter.
-1. Your local clone will now be created.
+1. Your local clone is now created.
 
+Once you have opened up the project in the source-code editor, you need to install the required packages to run it. You can do this by inputting the following in the terminal and pressing enter:
+
+`pip install -r requirements.txt`
+
+> You can also download the ZIP folder of the project by clicking the 'Code' button above the folders and files in the GitHub repository and selecting 'Download ZIP'.
 
 
 ## Credits:
