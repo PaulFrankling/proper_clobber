@@ -65,11 +65,11 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 * My changes were continually added, committed and pushed to [GitHub](https://github.com/) in the CLI. The commands inputted were as follows:
 
-    `git add <filename>`
-
-    `git commit -m "descriptive commit message"`
-
-    `git push`
+    ```
+    git add <filename>
+    git commit -m "descriptive commit message"
+    git push
+    ```
 
 ### Making a local clone
 
@@ -88,6 +88,10 @@ Once you have opened up the project in the source-code editor, you need to insta
 `pip install -r requirements.txt`
 
 > You can also download the ZIP folder of the project by clicking the 'Code' button above the folders and files in the GitHub repository and selecting 'Download ZIP'.
+
+### Deployment to Heroku
+
+The project was deployed to [Heroku](https://www.heroku.com/) by taking the following steps:
 
 
 ## Credits:
