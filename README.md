@@ -57,6 +57,34 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 ## Deployment:
 
+* This project repository was created on [GitHub](https://github.com/) using the Code Institute Gitpod Template.
+
+* Once the repository was created, the process of building my project started by clicking the green 'Gitpod' button above the repositories folders and files.
+
+* Once the workspace loaded, I used the CLI(Command Line Interface) to create the relevant folders and files to start applying code to the project.
+
+* My changes were continually added, committed and pushed to [GitHub](https://github.com/) in the CLI. The commands inputted were as follows:
+
+    `git add <filename>`
+
+    `git commit -m "descriptive commit message"`
+
+    `git push`
+
+### Making a local clone
+
+To run this project locally, you need to follow these steps:
+
+1. Go to the [Proper Clobber repository](https://github.com/PaulFrankling/proper_clobber).
+1. Above the repositories folders and files, click the 'Code' button.
+1. In the 'HTTP' section, copy the URL shown.
+1. Next, open **Git Bash**.
+1. By using the `cd` command, change to the current working directory you want the cloned repository to be made.
+1. Input `git clone` into the terminal and add the URL copied from step 3, then press enter.
+1. Your local clone will now be created.
+
+
+
 ## Credits:
 
 ### Content
