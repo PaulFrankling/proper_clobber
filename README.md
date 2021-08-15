@@ -67,7 +67,11 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
     ```
     git add <filename>
+    ```
+    ```
     git commit -m "descriptive commit message"
+    ```
+    ```
     git push
     ```
 
@@ -91,7 +95,71 @@ Once you have opened up the project in the source-code editor, you need to insta
 
 ### Deployment to Heroku
 
-The project was deployed to [Heroku](https://www.heroku.com/) by taking the following steps:
+#### Creating the app on Heroku
+
+This [project](https://github.com/PaulFrankling/proper_clobber) may be deployed to [Heroku](https://www.heroku.com/) by taking the following steps:
+
+* Firstly, click on the 'New' button at the top right of the screen in [Heroku](https://www.heroku.com/).
+* Then select 'Create a new app' from the two options provided.
+* From there, give your new app a name and choose the region closest to you.
+* Then select 'Create app'.
+
+#### Setting up Postgres Database
+
+The next step is to link it to the Postgres Database by doing the following:
+
+* Firstly, you need to navigate to the 'Resources' tab.
+* Then you need to search Postgres in the 'Add-ons' section and select 'Heroku Postgres'.
+* Select the Free plan and click 'Provision'.
+* The next step is to install two required dependencies by inputting them in the terminal:
+
+    ```
+    pip3 install dj_database_url
+    ```
+    ```
+    pip3 install psycopg2_binary
+    ```
+
+* Then these dependencies need adding to the requirements.txt file by using the following command:
+
+    ```
+    pip3 freeze > requirements.txt
+    ```
+
+* Next you need to make sure the following is added at the top of your settings.py file: `import dj_database_url`
+
+* The current Database settings need commenting out and the following needs to be added to the settings.py file:
+
+    ```
+        DATABASES = {
+            'default': dj_database_url.parse('DATABASE_URL')
+        }
+    ```
+
+    > The 'DATABASE_URL' can be found in the 'Config Vars' which are in the 'Settings' section of your Heroku app.
+
+* It is important to note 'DATBASE_URL' is an environmental variable and that you need to make sure it is **NOT** shown in version control.
+
+* Once you set up the above, the models need migrating to the new database. This is done by first inputting in the terminal:
+
+    ```
+    python3 manage.py makemigrations
+    ```
+
+* Then you need to input:
+
+    ```
+    python3 manage.py migrate
+    ```
+
+* A superuser for the app is then needed to be created with the command:
+
+    ```
+    python3 manage.py createsuperuser
+    ```
+
+
+
 
 
 ## Credits:
