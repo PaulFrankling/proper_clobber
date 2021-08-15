@@ -106,7 +106,7 @@ This [project](https://github.com/PaulFrankling/proper_clobber) may be deployed 
 
 #### Setting up Postgres Database
 
-The next step is to link it to the Postgres Database by doing the following:
+The next step is to link it to the [Postgres](https://en.wikipedia.org/wiki/PostgreSQL) Database by doing the following:
 
 * Firstly, you need to navigate to the 'Resources' tab.
 * Then you need to search Postgres in the 'Add-ons' section and select 'Heroku Postgres'.
@@ -170,10 +170,67 @@ The next step is to link it to the Postgres Database by doing the following:
         }
     ```
 
-* Now the Postgres database should be ready for use.
+* Now the [Postgres](https://en.wikipedia.org/wiki/PostgreSQL) database should be ready for use.
 
+#### Gunicorn
 
+* In order for the app to work, [Gunicorn](https://en.wikipedia.org/wiki/Gunicorn) needs to be installed.
 
+    ```
+    pip3 install Gunicorn
+    ```
+
+* Next, the Procfile needs to be created:
+
+    ```
+    touch Procfile
+    ```
+
+* The Procfile code should look like this:
+
+    ```
+    web: gunicorn <app name>.wsgi:application
+    ```
+
+#### Connecting to Heroku
+
+* Now to connect to Heroku through the terminal, input the following command:
+
+    ```
+    heroku login -i
+    ```
+
+* Login to your Heroku account and you next need to input in the terminal:
+
+    ```
+    heroku config:set DISABLE_COLLECTSTATIC=1 --app <appname>
+    ```
+
+    > `--app` needs adding if you have more than one Heroku app.
+
+* In the settings.py file, add the following code:
+
+    ```
+    ALLOWED_HOSTS = ["<heroku app name>.herokuapp.com", "localhost"]
+    ```
+
+    > This add Heroku to the list of allowed hosts and also 'localhost' so the project can be run locally.
+
+* Commit and push your changes to GitHub.
+
+* Then start the process of pushing to Heroku by inputting:
+
+    ```
+    heroku git:remote -a <heroku app name>
+    ```
+
+* Push those changes to Heroku by then inputting in the terminal:
+
+    ```
+    heroku git:remote -a <heroku app name>
+    ```
+
+* Heroku will now start building the app.
 
 ## Credits:
 
