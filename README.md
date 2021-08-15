@@ -232,6 +232,23 @@ The next step is to link it to the [Postgres](https://en.wikipedia.org/wiki/Post
 
 * Heroku will now start building the app.
 
+#### Deploying on Heroku
+
+* Navigate to the 'Deploy' section of Heroku.
+* Then search for the repository.
+* When it finds the repository, select 'connect'.
+* Then navigate further down the page and click on 'Enable Automatic Deploys'.
+
+    > Now any changes pushed to GitHub will also be pushed to Heroku too
+
+#### Amazon AWS
+
+Amazon AWS is used to store static and media files belonging to the project.
+
+* 
+
+
+
 ## Credits:
 
 ### Content
