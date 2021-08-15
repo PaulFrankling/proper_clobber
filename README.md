@@ -239,14 +239,50 @@ The next step is to link it to the [Postgres](https://en.wikipedia.org/wiki/Post
 * When it finds the repository, select 'connect'.
 * Then navigate further down the page and click on 'Enable Automatic Deploys'.
 
-    > Now any changes pushed to GitHub will also be pushed to Heroku too
+    > Now any changes pushed to GitHub will also be pushed to Heroku too.
 
 #### Amazon AWS
 
 Amazon AWS is used to store static and media files belonging to the project.
 
-* 
+* Firstly, create an AWS account and work through the sign up process. Once the account is set up, you are able to set the project up on AWS.
 
+##### Creating a bucket
+
+* In the main dashboard, search for S3 and then click to get started.
+* Click on 'Create Bucket'.
+* Provide the bucket with a name and select a region.
+* Then uncheck the 'Block all public access' box and take note that the bucket is now public.
+* Then click 'Create Bucket'.
+
+##### Bucket Settings
+
+###### Properties
+
+* Now go to the 'Properties' section and turn on static website hosting.
+* Input index.html and error.html in the boxes containing their namesakes and click 'Save'.
+
+###### Permissions
+
+* Next, navigate to 'Permissions'.
+* Then you need to input the following into the CORS Config:
+
+    ```
+    [
+      {
+          "AllowedHeaders": [
+              "Authorization"
+          ],
+          "AllowedMethods": [
+              "GET"
+          ],
+          "AllowedOrigins": [
+              "*"
+          ],
+          "ExposedHeaders": []
+      }
+    ]
+    ```
 
 
 ## Credits:
