@@ -300,6 +300,57 @@ Amazon AWS is used to store static and media files belonging to the project.
 * Go back to the group and select 'Permissions' and go to 'Attach Policy'.
 * Find the policy you just created and attach it.
 
+###### Creating the User
+
+* Select 'Users' from the IAM Dashboard sidebar and click 'Add user'.
+* Create a username, check the 'Programmatic access' box and click 'Next'.
+* Then select the group to add your user too.
+* Click through to the send then click on 'Create user'.
+* **Then it is important to download the CSV File at the end as it contains the user keys needed to access the app.**
+
+##### Connecting to Django
+
+Once the AWS has been set up, it can now be connected to Django.
+
+* Firstly, you need to install the following packages, `boto3` and `django-storages` by inputting the following in the terminal:
+
+    ```
+    pip3 install boto3
+    ```
+    ```
+    pip3 install django-storages
+    ```
+
+* These dependencies then need adding to the requirements.txt file by adding the following into the terminal:
+
+    ```
+    pip3 freeze > requirements.txt
+    ```
+
+* 'Storages' then needs to be added to the INSTALLED_APPS section of settings.py.
+* The following code then needs adding to the settings.py file:
+
+    > USE_AWS is an environmental variable created to only run this code when on Heroku.
+
+    ```
+    if "USE_AWS" in os.environ:
+
+        AWS_STORAGE_BUCKET_NAME = '<bucket name>'
+        AWS_S3_REGION_NAME = '<bucket region>'
+        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+        AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+        STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+        STATICFILES_LOCATION = 'static'
+        DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+        MEDIAFILES_LOCATION = 'media'
+
+        STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+        MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    ```
+
+    > The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY can be found in the downloaded **CSV File**.
 
 ### Making a local clone
 
