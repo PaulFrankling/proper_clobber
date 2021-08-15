@@ -138,26 +138,39 @@ The next step is to link it to the Postgres Database by doing the following:
 
     > The 'DATABASE_URL' can be found in the 'Config Vars' which are in the 'Settings' section of your Heroku app.
 
-* It is important to note 'DATBASE_URL' is an environmental variable and that you need to make sure it is **NOT** shown in version control.
+* It is important to note 'DATABASE_URL' is an environmental variable and that you need to make sure it is **NOT** shown in version control.
 
-* Once you set up the above, the models need migrating to the new database. This is done by first inputting in the terminal:
-
-    ```
-    python3 manage.py makemigrations
-    ```
-
-* Then you need to input:
+* Once you set up the above, the models need migrating to the new database. This is done by inputting in the terminal:
 
     ```
     python3 manage.py migrate
     ```
 
-* A superuser for the app is then needed to be created with the command:
+* A superuser for the app is then needed to be created with the following command:
 
     ```
     python3 manage.py createsuperuser
     ```
 
+* Commit and push your changes without including any environment variables in version control.
+
+* Next, an if-else statement can be added to the settings.py file. This statement means Postgres will be used if the 'DATABASE_URL' variable is available. If not the default database will be used.
+
+    ```
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+        }
+    ```
+
+* Now the Postgres database should be ready for use.
 
 
 
