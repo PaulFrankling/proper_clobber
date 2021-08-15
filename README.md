@@ -284,6 +284,25 @@ Amazon AWS is used to store static and media files belonging to the project.
     ]
     ```
 
+###### Policy
+
+* Next, you want to go to 'Bucket Policy'.
+* Then go to 'Policy generator'.
+* Select S3 bucket policy.
+* Add * in the principal field to select all principals.
+* Then set the action to 'GetObject'.
+* Copy and paste your ARN which is available on the previous page.
+* Then click, 'Add Statement'.
+* Now click on 'Generate Policy'.
+* Copy and paste the new policy into the bucket policy.
+* Then, add /* onto the end of the resources key.
+* Click 'Save'.
+
+###### Access Control List
+
+* Go to the 'Access Control List' section.
+* Then under 'Public access', click on 'Everyone'.
+* Then check the 'List objects' box and click 'Save'.
 
 ## Credits:
 
