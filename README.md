@@ -200,7 +200,7 @@ The next step is to link it to the [Postgres](https://en.wikipedia.org/wiki/Post
     heroku login -i
     ```
 
-* Login to your Heroku account and you next need to input in the terminal:
+* Login to your Heroku account. Then to temporarily disable the static files until set up in Amazon AWS, you next need to input in the terminal:
 
     ```
     heroku config:set DISABLE_COLLECTSTATIC=1 --app <appname>
@@ -227,7 +227,7 @@ The next step is to link it to the [Postgres](https://en.wikipedia.org/wiki/Post
 * Push those changes to Heroku by then inputting in the terminal:
 
     ```
-    heroku git:remote -a <heroku app name>
+    git push heroku master
     ```
 
 * Heroku will now start building the app.
