@@ -352,6 +352,32 @@ Once the AWS has been set up, it can now be connected to Django.
 
     > The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY can be found in the downloaded **CSV File**.
 
+* Now, go back to 'Settings' in Heroku and click 'Reveal Config Vars'.
+* Then set up the required environmental variables.
+* A custom_storages.py file now needs creating to tell Django that in production, the S3 bucket contains the static and media files.
+* In the custom_storages.py file, S3Boto3Storage needs importing.
+* Then the following classes need setting up in that file:
+
+    ```
+    class StaticStorage(S3Boto3Storage):
+        location = settings.STATICFILES_LOCATION
+
+
+    class MediaStorage(S3Boto3Storage):
+        location = settings.MEDIAFILES_LOCATION
+    ```
+
+* Once all the above is completed, commit and push changes to GitHub and Heroku.
+
+##### Adding Media to AWS
+
+Lastly, the media file needs to be added to the bucket.
+
+* In the bucket, create a new folder and name it 'media'.
+* Select upload and add the relevant images.
+* Then select the option to grant public access.
+* Then upload the files.
+
 ### Making a local clone
 
 To run this project locally, you need to follow these steps:
