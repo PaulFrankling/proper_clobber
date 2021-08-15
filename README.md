@@ -75,24 +75,6 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
     git push
     ```
 
-### Making a local clone
-
-To run this project locally, you need to follow these steps:
-
-1. Go to the [Proper Clobber repository](https://github.com/PaulFrankling/proper_clobber).
-1. Above the repositories folders and files, click the 'Code' button.
-1. In the 'HTTP' section, copy the URL shown.
-1. Next, open **Git Bash**.
-1. By using the `cd` command, change to the current working directory you want the cloned repository to be made.
-1. Input `git clone` into the terminal and add the URL copied from step 3, then press enter.
-1. Your local clone is now created.
-
-Once you have opened up the project in the source-code editor, you need to install the required packages to run it. You can do this by inputting the following in the terminal and pressing enter:
-
-`pip install -r requirements.txt`
-
-> You can also download the ZIP folder of the project by clicking the 'Code' button above the folders and files in the GitHub repository and selecting 'Download ZIP'.
-
 ### Deployment to Heroku
 
 #### Creating the app on Heroku
@@ -249,7 +231,7 @@ Amazon AWS is used to store static and media files belonging to the project.
 
 ##### Creating a bucket
 
-* In the main dashboard, search for S3 and then click to get started.
+* In the main dashboard, search for 'S3' and then click to get started.
 * Click on 'Create Bucket'.
 * Provide the bucket with a name and select a region.
 * Then uncheck the 'Block all public access' box and take note that the bucket is now public.
@@ -303,6 +285,39 @@ Amazon AWS is used to store static and media files belonging to the project.
 * Go to the 'Access Control List' section.
 * Then under 'Public access', click on 'Everyone'.
 * Then check the 'List objects' box and click 'Save'.
+
+###### Creating a User
+
+* To create a user for the bucket, search for 'IAM' and click on it.
+* Navigate to 'Groups' and click on 'Create New Group'.
+* Give it a name, follow the steps, and click 'Create Group'.
+* Then go to 'Policies' and select 'Create policy'.
+* Select the JSON tab and go to 'Import managed policy'.
+* Then search 'S3' in the search engine and select 'AmazonS3FullAccess' and click 'Import'.
+* In the resources section, paste in the ARN from before.
+* Then click 'Review Policy'.
+* Fill in name and description and click 'Create policy'.
+* Go back to the group and select 'Permissions' and go to 'Attach Policy'.
+* Find the policy you just created and attach it.
+
+
+### Making a local clone
+
+To run this project locally, you need to follow these steps:
+
+1. Go to the [Proper Clobber repository](https://github.com/PaulFrankling/proper_clobber).
+1. Above the repositories folders and files, click the 'Code' button.
+1. In the 'HTTP' section, copy the URL shown.
+1. Next, open **Git Bash**.
+1. By using the `cd` command, change to the current working directory you want the cloned repository to be made.
+1. Input `git clone` into the terminal and add the URL copied from step 3, then press enter.
+1. Your local clone is now created.
+
+Once you have opened up the project in the source-code editor, you need to install the required packages to run it. You can do this by inputting the following in the terminal and pressing enter:
+
+`pip install -r requirements.txt`
+
+> You can also download the ZIP folder of the project by clicking the 'Code' button above the folders and files in the GitHub repository and selecting 'Download ZIP'.
 
 ## Credits:
 
