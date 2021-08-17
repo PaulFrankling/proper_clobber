@@ -396,6 +396,57 @@ Once you have opened up the project in the source-code editor, you need to insta
 
 > You can also download the ZIP folder of the project by clicking the 'Code' button above the folders and files in the GitHub repository and selecting 'Download ZIP'.
 
+Once that is done, you must set up the required environmental variables to access full functionality of the site:
+
+* DJANGO_SECRET_KEY = Your Secret key
+* STRIPE_PUBLIC_KEY = Your Stripe Public key
+* STRIPE_SECRET_KEY = Your Stripe Secret key
+* STRIPE_WH_KEY = Your Stripe Webhook key
+* IN_DEVELOPMENT = True
+
+> Your Stripe variables and keys can be found on your Stripe dashboard.
+
+> You need to create a new Django secret key too which can be taken from the [Django secret key generator](https://miniwebtool.com/django-secret-key-generator/).
+
+Once you have the added the environmental variables and their relevant keys, you need to migrate the the models to set your database.
+
+* Firstly, input in the terminal:
+
+    ```
+    python3 manage.py makemigrations --dry-run
+    ```
+
+* You then need to make migrations:
+
+    ```
+    python3 manage.py makemigrations
+    ```
+
+* Then check the migration plan by inputting:
+
+    ```
+    python3 manage.py migrate --plan
+    ```
+
+* Now you can migrate the changes:
+
+    ```
+    python3 manage.py migrate
+    ```
+
+* You then need to create a superuser to access the admin section:
+
+    ```
+    python3 manage.py createsuperuser
+    ```
+
+* Enter a username and password to set up your superuser, then finally you can run the project by inputting:
+
+    ```
+    python3 manage.py runserver
+    ```
+
+
 ## Credits:
 
 ### Content
