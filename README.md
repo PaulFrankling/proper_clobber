@@ -43,7 +43,13 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 ### Frameworks, Libraries and Programs
 
 1. [Django](https://www.djangoproject.com/) is the main high level Python web framework used to speed up the process of building this application.
+1. [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) is used to set up user authentication on the site.
+1. [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) is used to initialise bootstrap form classes in all forms in the project.S
+1. [Django Countries](https://pypi.org/project/django-countries/) is installed for the countries select field on the order form.
+1. [Gunicorn](https://gunicorn.org/) is used for deploying the project to Heroku.
 1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is used to form the layout of the website and make it responsive. It is also used to add components to the project.
+1. [Stripe](https://stripe.com/gb) is used as a payment processing platform for the project.
+1. [Amazon AWS](https://aws.amazon.com/) is used to store the static files and media files belonging to the project.
 1. [Google Fonts](https://fonts.google.com/specimen/Archivo?query=archivo#standard-styles) is used to implement the primary font of **Archivo** and the secondary font of **Montserrat**.
 1. [Font Awesome](https://fontawesome.com/) is used to add icons to the website.
 1. [Coolor](https://coolors.co/ffffff-000000-7e7f83-ceff1a) is used to develop a colour scheme for the project.
@@ -52,6 +58,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.
+1. [Heroku](https://signup.heroku.com/) has been used to deploy the project.
 
 ## Testing:
 
@@ -408,7 +415,7 @@ Once that is done, you must set up the required environmental variables to acces
 
 > You need to create a new Django secret key too which can be taken from the [Django secret key generator](https://miniwebtool.com/django-secret-key-generator/).
 
-Once you have the added the environmental variables and their relevant keys, you need to migrate the the models to set your database.
+Once you have the added the environmental variables and their relevant keys, you need to migrate the the models to set up your database.
 
 * Firstly, input in the terminal:
 
