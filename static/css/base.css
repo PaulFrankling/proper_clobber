@@ -161,17 +161,6 @@ body {
     flex: 1 0 auto;
 }
 
-.about-us-section {
-    margin-top: 260px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #CEFF1A;
-}
-
-.about-us-title {
-    margin: 25px;
-}
-
 .product-pages,
 .basket-page,
 .checkout-page,
