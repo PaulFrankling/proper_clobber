@@ -44,7 +44,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 1. [Django](https://www.djangoproject.com/) is the main high level Python web framework used to speed up the process of building this application.
 1. [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) is used to set up user authentication on the site.
-1. [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) is used to initialise bootstrap form classes in all forms in the project.S
+1. [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) is used to initialise bootstrap form classes in all forms in the project.
 1. [Django Countries](https://pypi.org/project/django-countries/) is installed for the countries select field on the order form.
 1. [Gunicorn](https://gunicorn.org/) is used for deploying the project to Heroku.
 1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is used to form the layout of the website and make it responsive. It is also used to add components to the project.
