@@ -25,13 +25,9 @@
                 {% for post in posts %}
                 <div class="col-12 col-md-4 my-3">
                     {% if post.image %}
-                    <a href="">
                         <img src="{{ post.image.url }}" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
-                    </a>
                     {% else %}
-                    <a href="">
-                        <img src="" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
-                    </a>
+                        <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
                     {% endif %}
                 </div>
                 <div class="col-12 col-md-8">
@@ -42,7 +38,7 @@
                     <hr class="title-line">
                     <p class="blog-preview text-uppercase">{{ post.preview }}</p>
                     <p class="blog-credit text-muted">Posted: {{ post.post_date }}</p>
-                    <a href="" class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mb-3">Read More</a>
+                    <a href="{% url 'blog_detail' post.id %}" class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mb-3">Read More</a>
                 </div>
                 {% endfor %}
             </div>
