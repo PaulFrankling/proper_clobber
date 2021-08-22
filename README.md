@@ -465,3 +465,4 @@ Once you have the added the environmental variables and their relevant keys, you
 * The images for each product on the website are available to view [here](IMG_CREDITS.md)
 * Blog credits:
     * Are bespoke shoes worth it? by Simon Crompton from [Permanent Style](https://www.permanentstyle.com/2021/08/are-bespoke-shoes-worth-it.html)
+    * What watch should I wear with a suit? by Katy Eriks from [Suit Shop](https://suitshop.com/blogs/news/what-watch-should-i-wear-with-a-suit/)

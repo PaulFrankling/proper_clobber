@@ -29,13 +29,13 @@
             <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
             {% endif %}
         </div>
-        <div class="col-12 col-md-8 text-uppercase">
-            <h4 class="my-3">{{ post.title }}</h4>
+        <div class="col-12 col-md-8">
+            <h4 class="text-uppercase my-3">{{ post.title }}</h4>
             {% if post.author %}
-            <p class="text-muted small">Author: {{ post.author }}</p>
+            <p class="text-muted">Author: {{ post.author }}</p>
             {% endif %}
-            <p class="text-muted small">Posted: {{ post.post_date }}</p>
-            <p class="text-muted small">Credit: 
+            <p class="text-muted">Posted: {{ post.post_date }}</p>
+            <p class="text-muted">Credit: 
             {% if post.author %}
                 {{ post.author }}
             {% endif %} | 
@@ -48,7 +48,7 @@
         <div class="col-12">
             <p class="blog-preview text-uppercase">{{ post.article|linebreaks }}</p>
             <a href="{{ post.source_url }}" target="_blank"
-                class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mt-2 mb-5">Read Full Article Here</a>
+                class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mt-2 mb-4">Read Full Article Here</a>
         </div>
     </div>
 </div>
