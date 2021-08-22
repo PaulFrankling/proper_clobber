@@ -86,7 +86,8 @@ body {
 
 .add-to-basket-btn,
 .checkout-btn,
-.update-info-btn {
+.update-info-btn,
+.read-more-btn {
     color: #FFFFFF;
     background-color: #000000;
     border: 3px solid #000000;
@@ -96,7 +97,8 @@ body {
 .basket-btn:hover,
 .add-to-basket-btn:hover,
 .checkout-btn:hover,
-.update-info-btn:hover {
+.update-info-btn:hover,
+.read-more-btn:hover {
     background-color: #CEFF1A;
     color: #000000;
     font-weight: bold;
@@ -165,7 +167,8 @@ body {
 .basket-page,
 .checkout-page,
 .profile-page,
-.add-product-page {
+.add-product-page,
+.blog-pages {
     flex: 1 0 auto;
 }
 
@@ -304,6 +307,12 @@ footer {
 .product-image {
     height: 250px;
     object-fit: cover;
+}
+
+.post-image {
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .title-line {

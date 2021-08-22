@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+        <div class="container blog-pages">
+            <div class="row">
+                <div class="col-12 text-center text-uppercase">
+                    <h3>Blog</h3>
+                    <hr class="title-line">
+                </div>
+            </div>
+
+            <div class="row">
+                {% for post in posts %}
+                <div class="col-12 col-md-4 my-3">
+                    {% if post.image %}
+                    <a href="">
+                        <img src="{{ post.image.url }}" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img src="" class="card-img-top img-fluid post-image" alt="{{ post.title }}">
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="col-12 col-md-8">
+                    <h4 class="blog-title text-uppercase my-3">{{ post.title }}</h4>
+                    {% if post.author %}
+                    <p class="blog-author mb-3 text-muted">Author: {{ post.author }}</p>
+                    {% endif %}
+                    <hr class="title-line">
+                    <p class="blog-preview text-uppercase">{{ post.preview }}</p>
+                    <p class="blog-credit text-muted">Posted: {{ post.post_date }}</p>
+                    <a href="" class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mb-3">Read More</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+            <div class="back-to-top-btn">
+                <a class="back-to-top-link">
+                    <i class="fas fa-arrow-up fa-2x"></i>
+                </a>
+            </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+    // Back to top button
+        $('.back-to-top-link').click(function() {
+            $('html, body').scrollTop(0); // Takes the user to the top of the page
+        });
+    </script>
+{% endblock %}

@@ -463,3 +463,5 @@ Once you have the added the environmental variables and their relevant keys, you
 * Home page background image is by Cody Nottingham from [Unsplash](https://unsplash.com/photos/BAd_f3owqNc)
 * All allauth pages background image is by Free-Photos from [Pixabay](https://pixabay.com/photos/guy-man-suit-railway-railroad-690483/)
 * The images for each product on the website are available to view [here](IMG_CREDITS.md)
+* Blog credits:
+    * Are bespoke shoes worth it? by Simon Crompton from [Permanent Style](https://www.permanentstyle.com/2021/08/are-bespoke-shoes-worth-it.html)
