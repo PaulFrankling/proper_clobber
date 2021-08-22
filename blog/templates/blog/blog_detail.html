@@ -40,7 +40,7 @@
                 {{ post.author }}
             {% endif %} | 
             {% if post.blog_source %}
-                {{ post.blog_source }}
+                <a href="{{ post.source_url }}" target="_blank">{{ post.blog_source }}</a>
             {% endif %}</p>
         </div>
     </div>
