@@ -23,7 +23,7 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6 text-uppercase">
+        <div class="col-12 col-lg-6 offset-lg-3 text-uppercase">
             <form class="form my-3" method="POST" action="{% url 'add_post' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
