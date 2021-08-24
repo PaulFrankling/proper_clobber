@@ -1,5 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import BlogPost
+from .forms import BlogForm
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def all_posts(request):
@@ -20,3 +23,30 @@ def blog_detail(request, post_id):
     }
 
     return render(request, 'blog/blog_detail.html', context)
+
+
+@login_required
+def add_post(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, \
+            only store owners are authorised to do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save()
+            messages.success(request, 'Added Post successfully!')
+            return redirect(reverse('blog_detail', args=[post.id]))
+        else:
+            messages.error(request, 'Failed to add post. \
+                Please ensure the form is valid.')
+    else:
+        form = BlogForm()
+
+    form = BlogForm()
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'blog/add_post.html', context)
