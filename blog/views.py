@@ -79,3 +79,16 @@ def edit_post(request, post_id):
     }
 
     return render(request, 'blog/edit_post.html', context)
+
+
+@login_required
+def delete_post(request, post_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, \
+            only store owners are authorised to do that.')
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(BlogPost, pk=post_id)
+    post.delete()
+    messages.success(request, 'Post deleted!')
+    return redirect(reverse('blog'))
