@@ -456,6 +456,10 @@ Once you have the added the environmental variables and their relevant keys, you
 
 ## Credits:
 
+### Code
+
+* [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari/) was used to prevent the telephone number from hyperlinking on mobile devices. 
+
 ### Content
 
 ### Media Used
