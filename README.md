@@ -31,7 +31,15 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 * [Home Page Wireframe](readme/wireframes/home-page-wireframe.png)
 
-* [Products Page Wireframe](readme/wireframes/products-page-wireframe.png)
+* [Products Page Wireframe](readme/wireframes/product-page-wireframe.png)
+
+* [Product Detail Page Wireframe](readme/wireframes/product-detail-wireframe.png)
+
+* [Basket Page Wireframe](readme/wireframes/basket-page-wireframe.png)
+
+* [Blog Page Wireframe](readme/wireframes/blog-page-wireframe.png)
+
+* [Blog Detail Page Wireframe](readme/wireframes/blog-detail-wireframe.png)
 
 ### Technology used:
 
@@ -56,6 +64,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 1. [Flaticon](https://www.flaticon.com/) is used to create and style a shortcut icon/favicon for the project.
 1. [TinyPNG](https://tinypng.com/) is used to compress the imagery memory size of the repository to help improve the speed of the website.
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
+1. [Balsamiq](https://balsamiq.com/) is used to create the wireframing for the project.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.
 1. [Heroku](https://signup.heroku.com/) has been used to deploy the project.
