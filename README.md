@@ -37,6 +37,8 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 * [Basket Page Wireframe](readme/wireframes/basket-page-wireframe.png)
 
+* [Checkout Page Wireframe](readme/wireframes/checkout-page-wireframe.png)
+
 * [Blog Page Wireframe](readme/wireframes/blog-page-wireframe.png)
 
 * [Blog Detail Page Wireframe](readme/wireframes/blog-detail-wireframe.png)
