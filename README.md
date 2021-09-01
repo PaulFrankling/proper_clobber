@@ -29,6 +29,10 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 ### Imagery
 
+The Imagery for the project was taken from [Pixabay](https://pixabay.com/), [Pexels](https://www.pexels.com/) & [Unsplash](https://unsplash.com/).
+The homepage background was used to present a sunny landscape of New York to give a warm feeling to the user.
+The sign in/register pages background was a black and white image of a suited man to provide a stylish and sophisticated feel to the website.
+
 ## Wireframes:
 
 * [Home Page Wireframe](readme/wireframes/home-page-wireframe.png)
@@ -486,12 +490,21 @@ Once you have the added the environmental variables and their relevant keys, you
 
 ### Content
 
+* The Blog credits:
+    * Are bespoke shoes worth it? by Simon Crompton from [Permanent Style](https://www.permanentstyle.com/2021/08/are-bespoke-shoes-worth-it.html)
+    * What watch should I wear with a suit? by Katy Eriks from [Suit Shop](https://suitshop.com/blogs/news/what-watch-should-i-wear-with-a-suit/)
+    * How to take care of your suit and make it last, by Natalie Kenney from [Suit Shop](https://suitshop.com/blogs/news/how-to-take-care-of-your-suit-and-make-it-last/)
+
 ### Media Used
 
 * Home page background image is by Cody Nottingham from [Unsplash](https://unsplash.com/photos/BAd_f3owqNc)
 * All allauth pages background image is by Free-Photos from [Pixabay](https://pixabay.com/photos/guy-man-suit-railway-railroad-690483/)
 * The images for each product on the website are available to view [here](IMG_CREDITS.md)
-* Blog credits:
-    * Are bespoke shoes worth it? by Simon Crompton from [Permanent Style](https://www.permanentstyle.com/2021/08/are-bespoke-shoes-worth-it.html)
-    * What watch should I wear with a suit? by Katy Eriks from [Suit Shop](https://suitshop.com/blogs/news/what-watch-should-i-wear-with-a-suit/)
-    * How to take care of your suit and make it last, by Natalie Kenney from [Suit Shop](https://suitshop.com/blogs/news/how-to-take-care-of-your-suit-and-make-it-last/)
+
+### Acknowledgements
+
+* The Slack community for all their help and support.
+* The Code Institute Tutor Support team for responding to any difficulty or query quickly and efficiently.
+* My Mentor Gurjot Singh for his advice, guidance and incredible support.
+
+> This project was created for educational purposes only.
