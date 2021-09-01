@@ -41,9 +41,17 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 
 * [Checkout Page Wireframe](readme/wireframes/checkout-page-wireframe.png)
 
+* [Checkout Success Page Wireframe](readme/wireframes/checkout-success-wireframe.png)
+
+* [Profile Page Wireframe](readme/wireframes/profile-page-wireframe.png)
+
+* [Add & Edit Blog/Products Pages Wireframes](readme/wireframes/add-edit-forms-wireframe.png)
+
 * [Blog Page Wireframe](readme/wireframes/blog-page-wireframe.png)
 
 * [Blog Detail Page Wireframe](readme/wireframes/blog-detail-wireframe.png)
+
+* [Contact Page Wireframe](readme/wireframes/contact-page-wireframe.png)
 
 ### Technology used:
 
@@ -67,6 +75,7 @@ Both fonts were taken from [Google Fonts](https://fonts.google.com/specimen/Arch
 1. [Coolor](https://coolors.co/ffffff-000000-7e7f83-ceff1a) is used to develop a colour scheme for the project.
 1. [Flaticon](https://www.flaticon.com/) is used to create and style a shortcut icon/favicon for the project.
 1. [TinyPNG](https://tinypng.com/) is used to compress the imagery memory size of the repository to help improve the speed of the website.
+1. [Pinetools](https://pinetools.com/) was used to resize wireframes.
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
 1. [Balsamiq](https://balsamiq.com/) is used to create the wireframing for the project.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
@@ -471,7 +480,9 @@ Once you have the added the environmental variables and their relevant keys, you
 
 ### Code
 
-* [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari/) was used to prevent the telephone number from hyperlinking on mobile devices. 
+* The project was helped established by the Code Institute Tutorial **Boutique Ado** created by Chris Zielinski.
+* [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari/) was used to prevent the telephone number from hyperlinking on mobile devices.
+* [Stack Overflow](https://stackoverflow.com/questions/61058107/remove-char-from-the-required-field-label-in-form) was used to remove asterisks from the contact page input field labels.
 
 ### Content
 
