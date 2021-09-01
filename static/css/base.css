@@ -87,7 +87,8 @@ body {
 .add-to-basket-btn,
 .checkout-btn,
 .update-info-btn,
-.read-more-btn {
+.read-more-btn,
+.contact-btn {
     color: #FFFFFF;
     background-color: #000000;
     border: 3px solid #000000;
@@ -98,7 +99,8 @@ body {
 .add-to-basket-btn:hover,
 .checkout-btn:hover,
 .update-info-btn:hover,
-.read-more-btn:hover {
+.read-more-btn:hover,
+.contact-btn:hover {
     background-color: #CEFF1A;
     color: #000000;
     font-weight: bold;
@@ -171,7 +173,8 @@ body {
 .basket-page,
 .checkout-page,
 .profile-page,
-.blog-pages {
+.blog-pages,
+.contact-page {
     flex: 1 0 auto;
 }
 
@@ -545,6 +548,10 @@ footer {
     background-color: red;
     border-color: red;
     border-radius: 0;
+}
+
+.asteriskField {
+    display: none;
 }
 
 @media (min-width: 1200px) {
