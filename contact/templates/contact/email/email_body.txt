@@ -1,0 +1,9 @@
+Hello!
+
+Thanks for contacting us {{ case.first_name}} {{ case.last_name }}.
+
+We will endeavour to get back to you as soon as possible.
+
+Kind regards,
+
+Proper Clobber

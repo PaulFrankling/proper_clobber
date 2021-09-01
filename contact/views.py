@@ -15,14 +15,14 @@ def contact(request):
             contact_form.save()
             messages.success(request, 'Thank you for contacting us. \
                     We will be in touch as soon as possible')
-            instance = contact_form.save()
-            user_email = instance.email
+            case = contact_form.save()
+            user_email = case.email
             subject = render_to_string(
                 'contact/email/email_subject.txt',
-                {'instance': instance})
+                {'case': case})
             body = render_to_string(
                 'contact/email/email_body.txt',
-                {'instance': instance,
+                {'case': case,
                  'contact_email': settings.DEFAULT_FROM_EMAIL})
             send_mail(
                 subject,
