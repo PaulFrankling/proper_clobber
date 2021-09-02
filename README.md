@@ -25,10 +25,10 @@ Proper Clobber is an e-commerce website that sells smart tailored clothing for m
 
     * I would like to view all the products the website is selling.
     * I want to be able to search in the header for a specific product I am looking for.
-    * I want to be able to filter the products be specific details such as price or alphabetical order.
+    * I want to be able to filter the products by specific details such as price or alphabetical order.
     * I would like to be able to view separate categories of clothing for convenience.
-    * I would like to be able to be able to view individual products on another page.
-    * I would like to interact with that product, be changing quantity, choosing size or adding it to the basket.
+    * I would like to be able to view individual products on another page.
+    * I would like to interact with that product, by changing quantity, choosing size or adding it to the basket.
     * I want a toast message to appear every time I add a product to see the current contents of my basket.
 
     #### Basket
@@ -58,7 +58,7 @@ Proper Clobber is an e-commerce website that sells smart tailored clothing for m
     * I want to be able to view my personal profile.
     * I want to be able to save default delivery details to skip the process of adding them in on a second order.
     * I want to be able to update my default delivery details.
-    * I want to be able to view my order history.
+    * I want to be able to view previous orders in the order history.
 
 * As the store owner:
 
@@ -119,6 +119,12 @@ The sign in/register pages background was a black and white image of a suited ma
 * [Blog Detail Page Wireframe](readme/wireframes/blog-detail-wireframe.png)
 
 * [Contact Page Wireframe](readme/wireframes/contact-page-wireframe.png)
+
+### Development
+
+#### Database Schema:
+
+![Database Schema](readme/database_schema/database-schema.png)
 
 ### Technology used:
 
