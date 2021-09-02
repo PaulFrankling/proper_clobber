@@ -6,9 +6,70 @@
 
 [Click here to view the website](https://proper-clobber-project.herokuapp.com/)
 
-Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order.
+Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order. The user is also able view different blogs and contact the owners of the website via the contact app.
 
 ## UX (User Experience):
+
+### User Stories
+
+* As an unregistered customer...
+
+    #### General
+
+    * I want to be able to understand the purpose of the website.
+    * I want to be able to easily navigate around the website.
+    * I want to be able to easily locate and create a new account.
+    * I want to be notified when making specific actions on the website.
+
+    #### Products
+
+    * I would like to view all the products the website is selling.
+    * I want to be able to search in the header for a specific product I am looking for.
+    * I want to be able to filter the products be specific details such as price or alphabetical order.
+    * I would like to be able to view separate categories of clothing for convenience.
+    * I would like to be able to be able to view individual products on another page.
+    * I would like to interact with that product, be changing quantity, choosing size or adding it to the basket.
+    * I want a toast message to appear every time I add a product to see the current contents of my basket.
+
+    #### Basket
+
+    * I want to be able to view my selected products in the basket.
+    * I would like to update quantity amount of a certain product or remove it from the basket.
+    * I want to be able to see the total of my basket and see it regularly updated by any changes.
+    
+    #### Checkout
+
+    * I want to be able to securely checkout and purchase the products.
+    * I want to receive an order confirmation once the items are purchased and for it to possess all the details of the order.
+
+    #### Blog
+
+    * I want to view the website blog and see what useful insights there might be.
+
+    #### Contact
+
+    * I would like to be able to contact the store owners with any query I have.
+    * I want to receive a confirmation email notifying me they know of my query.
+
+* As a registered customer:
+
+    * I want to be able to login and out of the website comfortably.
+    * I want to be able to reset my password.
+    * I want to be able to view my personal profile.
+    * I want to be able to save default delivery details to skip the process of adding them in on a second order.
+    * I want to be able to update my default delivery details.
+    * I want to be able to view my order history.
+
+* As the store owner:
+
+    * I want customers to be able to select and purchase products comfortably.
+    * I want customers to enjoy reading the blogs and insights the website has to offer.
+    * I want to the user to be able to contact us with any queries or problems.
+    * I want to be able to add/edit/update products.
+    * I want to be able to delete products.
+    * I want to be able to add/edit/update blog posts.
+    * I want to be able to delete blog posts.
+    * I want to be able to maintain the use of the website information with the use of the admin panel.
 
 ## Design:
 
