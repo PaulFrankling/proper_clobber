@@ -120,9 +120,9 @@ The sign in/register pages background was a black and white image of a suited ma
 
 * [Contact Page Wireframe](readme/wireframes/contact-page-wireframe.png)
 
-### Development
+## Development
 
-#### Database Schema:
+### Database Schema
 
 ![Database Schema](readme/database_schema/database-schema.png)
 
@@ -143,6 +143,7 @@ The sign in/register pages background was a black and white image of a suited ma
 1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is used to form the layout of the website and make it responsive. It is also used to add components to the project.
 1. [Stripe](https://stripe.com/gb) is used as a payment processing platform for the project.
 1. [Amazon AWS](https://aws.amazon.com/) is used to store the static files and media files belonging to the project.
+1. [Postgres](https://www.postgresql.org/) is the database used by the deployed project.
 1. [Google Fonts](https://fonts.google.com/specimen/Archivo?query=archivo#standard-styles) is used to implement the primary font of **Archivo** and the secondary font of **Montserrat**.
 1. [Font Awesome](https://fontawesome.com/) is used to add icons to the website.
 1. [Coolor](https://coolors.co/ffffff-000000-7e7f83-ceff1a) is used to develop a colour scheme for the project.
@@ -151,6 +152,7 @@ The sign in/register pages background was a black and white image of a suited ma
 1. [Pinetools](https://pinetools.com/) was used to resize wireframes.
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
 1. [Balsamiq](https://balsamiq.com/) is used to create the wireframing for the project.
+1. [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) is used to create the database schema for the project.
 1. [Am I responsive?](http://ami.responsivedesign.is/) is used to create a mockup of the project.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.
