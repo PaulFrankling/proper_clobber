@@ -2,6 +2,8 @@
 
 ## Code Institute - Milestone Project 4
 
+![Proper Clobber Site Mockup](readme/mockup/site-mockup.png)
+
 [Click here to view the website](https://proper-clobber-project.herokuapp.com/)
 
 Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order.
