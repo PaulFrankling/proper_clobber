@@ -84,6 +84,7 @@ The sign in/register pages background was a black and white image of a suited ma
 1. [Pinetools](https://pinetools.com/) was used to resize wireframes.
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
 1. [Balsamiq](https://balsamiq.com/) is used to create the wireframing for the project.
+1. [Am I responsive?](http://ami.responsivedesign.is/) is used to create a mockup of the project.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.
 1. [Heroku](https://signup.heroku.com/) has been used to deploy the project.
