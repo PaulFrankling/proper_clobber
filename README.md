@@ -146,6 +146,46 @@ The Database Schema was designed by using [Quick Database Diagrams](https://app.
 * **BlogPost** - Contains the blog posts and all the information regarding the author and its origins.
 * **ContactMessages** - Contains the messages and queries sent by customers.
 
+## Features:
+
+### Home page
+
+The user is first met with the home page when visiting the website. The page presents a hero image of a man dressed stylishly, sat on a bench as they view New York.
+The page presents a slogan, as well as a 'Shop Now' CTA button that takes the user to the products page.
+
+### Products page
+
+The user can view all products by selecting 'All Products' in the navigation bar, or they can view products by their specific category in navigation dropdown menus; Tailoring, Footwear and Accessories.
+
+When the user arrives on a particular product page, they can sort the products in a particular order such as 'Product name' (Alphabetically), 'Price' or 'Rating'.
+
+The products are presented with the use of cards, showing its image, name, price, category and rating. Clicking on these cards takes the user to its specific Product Detail page.
+
+### Products Detail page
+
+Each product has its own Product Detail page and presents its image in a larger form. Clicking on the image creates a new tab with a full screen image of the product.
+
+The page also presents the products name, price, description, category and rating. As well as, a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item.
+
+### Basket page
+
+### Checkout page
+
+### Checkout Success page
+
+### Profile page
+
+### Product Management page
+
+### Blog page
+
+### Blog Detail page
+
+### Blog Management page
+
+### Contact page
+
+
 ## Features left to implement
 
 ### Pagination
