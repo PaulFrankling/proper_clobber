@@ -126,6 +126,19 @@ The sign in/register pages background was a black and white image of a suited ma
 
 ![Database Schema](readme/database_schema/database-schema.png)
 
+The Database Schema was designed by using [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/).
+
+#### Models
+
+* **Category** - Contains the categories of each product.
+* **Product** - Contains specific information for each product.
+* **Order** - Contains details of the customers order, delivery information and products ordered.
+* **OrderLineItem** - Contains information of the products, quantities and total for the customers order.
+* **User** - Contains username, password and email from [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html).
+* **UserProfile** - Contains the details for future orders as well as historical ones.
+* **BlogPost** - Contains the blog posts and all the information regarding the author and its origins.
+* **ContactMessages** - Contains the messages and queries sent by customers.
+
 ### Technology used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
