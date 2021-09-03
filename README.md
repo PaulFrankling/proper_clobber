@@ -120,7 +120,7 @@ The sign in/register pages background was a black and white image of a suited ma
 
 * [Contact Page Wireframe](readme/wireframes/contact-page-wireframe.png)
 
-## Development
+## Development:
 
 ### Database Schema
 
@@ -139,7 +139,13 @@ The Database Schema was designed by using [Quick Database Diagrams](https://app.
 * **BlogPost** - Contains the blog posts and all the information regarding the author and its origins.
 * **ContactMessages** - Contains the messages and queries sent by customers.
 
-### Technology used:
+## Features left to implement
+
+### Pagination
+
+* Pagination would be ideal to add to the products and blog posts pages as it would be better for the user experience. The Back to top button helps the user quickly get back to the top but the site would benefit from pagination.
+
+## Technology used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
