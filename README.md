@@ -8,6 +8,13 @@
 
 Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order. The user is also able view different blogs and contact the owners of the website via the contact app.
 
+> **Please note:** This project is solely for educational purposes, so do not attempt to enter real Debit/Credit Card details whilst using the Stripe functionality in the Checkout app.
+> To test the Stripe Functionality for yourself, enter the following details:
+> * **Card Number** - 4242 4242 4242 4242
+>* **Expiry Date** - Any date.
+> * **CVV** - Any 3 digit number.
+
+
 ## UX (User Experience):
 
 ### User Stories
