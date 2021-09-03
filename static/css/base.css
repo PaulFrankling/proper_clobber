@@ -343,7 +343,6 @@ footer {
 .zoom:hover {
     transform: scale(1.04);
     z-index: 1;
-    color: #7E7F83;
 }
 
 .card-body {

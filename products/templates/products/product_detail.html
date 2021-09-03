@@ -19,12 +19,12 @@
             <div class="card h-100 border-0 mt-4">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
-                    <img src="{{ product.image.url }}" class="card-img-top img-fluid product-detail-img"
+                    <img src="{{ product.image.url }}" class="card-img-top img-fluid product-detail-img zoom"
                         alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid product-detail-img"
+                    <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid product-detail-img zoom"
                         alt="{{ product.name }}">
                 </a>
                 {% endif %}

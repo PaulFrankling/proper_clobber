@@ -629,6 +629,7 @@ Once you have the added the environmental variables and their relevant keys, you
 * The project was helped established by the Code Institute Tutorial **Boutique Ado** created by Chris Zielinski.
 * [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari/) was used to prevent the telephone number from hyperlinking on mobile devices.
 * [Stack Overflow](https://stackoverflow.com/questions/61058107/remove-char-from-the-required-field-label-in-form) was used to remove asterisks from the contact page input field labels.
+* [W3 Schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp) helped with zooming in to a product image card ever so slightly.
 
 ### Content
 
