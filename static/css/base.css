@@ -225,6 +225,7 @@ footer {
 .copyright-info {
     background-color: #7E7F83;
     margin-top: 10px;
+    padding: 2.5px 0 2.5px 0;
 }
 
 .copyright-info h6 {
@@ -587,11 +588,5 @@ footer {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 160px;
-    }
-}
-
-@media (max-width: 992px) {
-    .about-us-section {
-        margin-top: 160px;
     }
 }

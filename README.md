@@ -173,6 +173,11 @@ The page also presents the products name, price, description, category and ratin
 
 If the user hasn't added an item to the basket, they are given the option of being guided back to the products page with a 'Continue Shopping' CTA button.
 
+When the user has items in the basket, the user can view which items they have added. They can see the image, name, sku code, size of item, price, quantity and subtotal, which shows the quantity selected multiplied by price of individual item.
+The total and delivery is shown below as well as the grand total. The grand total shows the price of the basket total and delivery fee added together (if delivery fee is applied). A message appears advising the user if they order x amount more they will qualify for free delivery. This message disappears if the user is spending over £50 and puts the delivery fee to £0.
+
+The total price information is detailed at the top of medium and small device screen as opposed to the bottom of large size screens.
+
 ### Checkout page
 
 ### Checkout Success page
