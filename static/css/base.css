@@ -336,6 +336,16 @@ footer {
     box-shadow: 2px 2px 4px #000000;
 }
 
+.zoom {
+    transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.04);
+    z-index: 1;
+    color: #7E7F83;
+}
+
 .card-body {
     background-color: #F5F5F5;
     border-top: 1px solid #7E7F83;

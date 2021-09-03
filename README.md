@@ -165,9 +165,13 @@ The products are presented with the use of cards, showing its image, name, price
 
 Each product has its own Product Detail page and presents its image in a larger form. Clicking on the image creates a new tab with a full screen image of the product.
 
-The page also presents the products name, price, description, category and rating. As well as, a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item.
+The page also presents the products name, price, description, category and rating. As well as, a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item. There is an 'Add To Basket' button as well, which adds the item to the basket.
+
+> The quantity box only allows the user to add up to ten items at a time. I researched a few clothing websites and found this to be a common maximum amount.
 
 ### Basket page
+
+If the user hasn't added an item to the basket, they are given the option of being guided back to the products page with a 'Continue Shopping' CTA button.
 
 ### Checkout page
 
