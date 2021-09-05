@@ -203,9 +203,15 @@ The Product management page is only available to the superuser. On this page, cr
 
 ### Blog page
 
+The Blog page shows a list of blogs the user can preview and the user can view the full blog post by clicking on the 'Read More' button. An image, title, author, blog preview and post date is available to the user for each post.
+
 ### Blog Detail page
 
+This page shows the full article of the specific blog chosen by the user. It presents the same information on the blog post from the Blog page but also has a credit for the source and a 'Read Full Article Here' button. This button takes the user to the original source of the blog post.
+
 ### Blog Management page
+
+The Blog management page is only available to the superuser. On this page, crispy forms have been used and the superuser can create a blog post to add to the website. The user is also taken to this page when they have selected to edit a blog from the Blog or Blog Detail pages.
 
 ### Contact page
 
