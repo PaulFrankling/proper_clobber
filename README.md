@@ -161,11 +161,15 @@ When the user arrives on a particular product page, they can sort the products i
 
 The products are presented with the use of cards, showing its image, name, price, category and rating. Clicking on these cards takes the user to its specific Product Detail page.
 
-### Products Detail page
+If the superuser is on this page, they can edit the chosen product by clicking on the 'Edit' button and it'll take them to the Product Management page (Edit Product). They can also delete a product on the Product page. The 'Delete' button is next to the 'Edit' button and when the 'Delete' button is clicked on, it activates a modal which gives the superuser a chance to cancel or confirm deletion. 
+
+### Product Detail page
 
 Each product has its own Product Detail page and presents its image in a larger form. Clicking on the image creates a new tab with a full screen image of the product.
 
 The page also presents the products name, price, description, category and rating. As well as, a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item. There is an 'Add To Basket' button as well, which adds the item to the basket.
+
+If the superuser is on this page, they can edit the chosen product by clicking on the 'Edit' button and it'll take them to the Product Management page (Edit Product). They can also delete a product on the Product Detail page. The 'Delete' button is next to the 'Edit' button and when the 'Delete' button is clicked on, it activates a modal which gives the superuser a chance to cancel or confirm deletion. 
 
 > The quantity box only allows the user to add up to ten items at a time. I researched a few clothing websites and found this to be a common maximum amount.
 
@@ -176,15 +180,26 @@ If the user hasn't added an item to the basket, they are given the option of bei
 When the user has items in the basket, the user can view which items they have added. They can see the image, name, sku code, size of item, price, quantity and subtotal, which shows the quantity selected multiplied by price of individual item.
 The total and delivery is shown below as well as the grand total. The grand total shows the price of the basket total and delivery fee added together (if delivery fee is applied). A message appears advising the user if they order x amount more they will qualify for free delivery. This message disappears if the user is spending over £50 and puts the delivery fee to £0.
 
-The total price information is detailed at the top of medium and small device screen as opposed to the bottom of large size screens.
+To end with, there is a 'Secure Checkout' button that takes the user to the Checkout page for them to complete the order process.
+The total price information and 'Secure Checkout' button are placed at the top of medium and small device screen as opposed to the bottom of large size screens.
 
 ### Checkout page
 
+Once the user is satisfied with their basket, they are taken to the Checkout page. On arrival the user is met with a group of input fields for personal information, i.e name, phone number and email. Then below that is a group of input fields for delivery details, such as street address, town or city and postcode of where the delivery is being sent too. Below that is the payment input field that is linked to Stripe for the user to purchase their order. 
+
+On the right hand side of the page (on large size screens) is the current basket of items that the user is going to buy and the grand total they are paying. This section is shown at the top on mobiles and medium sized devices as opposed to the forementioned right side of the page of large sized screens.
+
 ### Checkout Success page
+
+Once the order has been completed successfully, the user is taken to this page where they are able to view the receipt of their order. It presents order date and order number, order items and their details and quantities. It shows where the order is to be delivered and the total of the order. An order confirmation email is sent to the buyer of their order details too.
 
 ### Profile page
 
+On the Profile page is two sections; Default delivery information and order history. The default delivery information can be edited and saved by clicking the 'Update information' button. Next to that is the order history which shows the users previous orders and the details of them. The orders each have a link that takes the user to its specific order details.
+
 ### Product Management page
+
+The Product management page is only available to the superuser. On this page, crispy forms have been used and the superuser can create a product to add to the website. The user is also taken to this page when they have selected to edit a product from the Product or Product Detail pages.
 
 ### Blog page
 
