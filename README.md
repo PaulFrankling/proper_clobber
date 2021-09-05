@@ -215,6 +215,8 @@ The Blog management page is only available to the superuser. On this page, crisp
 
 ### Contact page
 
+This page is designed to allow the user to contact the owner of the website. The user can input their first name, last name, email, a subject and a message. When the message is submitted, the message is sent to the email of the superuser. A confirmation email is also sent to the user, advising them the message has been received by the superuser.
+
 
 ## Features left to implement
 
