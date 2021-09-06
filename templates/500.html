@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<!-- 500 Error page -->
+<div class="overlay"></div>
+<div class="container error-pages">
+    <div class="row">
+        <div class="col-12 text-center text-uppercase">
+            <h3>500 Error</h3>
+            <hr class="title-line">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p class="text-uppercase font-weight-bold mb-4">Something went wrong. Page not found.</p>
+            <a href="{% url 'home' %}" class="font-weight-bold mb-2">Return Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

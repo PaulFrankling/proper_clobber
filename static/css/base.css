@@ -175,7 +175,8 @@ body {
 .checkout-page,
 .profile-page,
 .blog-pages,
-.contact-page {
+.contact-page,
+.error-pages {
     flex: 1 0 auto;
 }
 
