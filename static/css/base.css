@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    /* Google Fonts Implementation */
     font-family: Archivo, Montserrat, Sans-serif;
     background: url("/media/homepage-bg.jpg") no-repeat top center fixed;
     background-size: cover;
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
 }
 
+/* Header/Navigation bar styling */
 .site-header {
     background-color: #000000;
 }
@@ -68,6 +70,17 @@ body {
     background-color: transparent;
 }
 
+.delivery-notice {
+    background-color: #CEFF1A;
+    color: #000000;
+}
+
+/* Homepage */
+.homepage {
+    padding-top: 75px;
+    flex: 1 0 auto;
+}
+
 .home-slogan {
     display: inline-flex;
     padding: 5px 20px;
@@ -77,7 +90,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.shop-now-btn, 
+/* Button styling */
+.shop-now-btn,
 .basket-btn {
     color: #FFFFFF;
     background-color: #000000;
@@ -156,20 +170,8 @@ body {
     border: 3px solid #000000;
 }
 
-.delivery-notice {
-    background-color: #CEFF1A;
-    color: #000000;
-}
-
-.allauth-pages {
-    flex: 1 0 auto;
-}
-
-.homepage {
-    padding-top: 75px;
-    flex: 1 0 auto;
-}
-
+/* Pushes footer downwards */
+.allauth-pages,
 .product-pages,
 .basket-page,
 .checkout-page,
@@ -180,6 +182,7 @@ body {
     flex: 1 0 auto;
 }
 
+/* Footer styling */
 .site-footer {
     background: #000000;
     bottom: 0;
@@ -235,14 +238,7 @@ footer {
     font-size: 14px;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    background: #FFFFFF;
-    top: 0;
-    position: fixed;
-}
-
+/* Allauth pages styling */
 .allauth-overlay {
     background: url("/media/allauth-bg.jpg") no-repeat center center fixed;
     background-blend-mode: lighten;
@@ -306,22 +302,26 @@ footer {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
     background-color: #CEFF1A;
     border: 3px solid #000000;
     color: #000000;
     font-weight: bold;
 }
 
+/* Adds white overlay */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    top: 0;
+    position: fixed;
+}
+
+/* Product pages styling */
 .product-image {
     height: 250px;
     object-fit: cover;
-}
-
-.post-image {
-    height: 250px;
-    object-fit: cover;
-    box-shadow: 2px 2px 4px #000000;
 }
 
 .title-line {
@@ -338,10 +338,12 @@ footer {
     box-shadow: 2px 2px 4px #000000;
 }
 
+/* Credit: https://www.w3schools.com/howto/howto_css_zoom_hover.asp -
+    Helped in creating a slight zoom on image cards in product and product_detail page */
 .zoom {
     transition: transform .2s;
 }
-  
+
 .zoom:hover {
     transform: scale(1.04);
     z-index: 1;
@@ -370,6 +372,10 @@ footer {
     color: #7E7F83;
 }
 
+.product-amount {
+    color: #7E7F83;
+}
+
 .product-detail-img {
     height: 350px;
     object-fit: cover;
@@ -380,10 +386,12 @@ footer {
     color: #7E7F83;
 }
 
+/* Admin buttons on product card in products page styling */
 .admin-btns {
     text-align: right;
 }
 
+/* Modal styling */
 .modal {
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -392,6 +400,7 @@ footer {
     pointer-events: auto;
 }
 
+/* Increment/decrement quantity button styling */
 .increment-quantity,
 .decrement-quantity {
     background-color: #000000;
@@ -404,6 +413,7 @@ footer {
     color: #000000;
 }
 
+/* Back to top button styling */
 .back-to-top-btn i {
     position: fixed;
     bottom: 10px;
@@ -422,15 +432,13 @@ footer {
     cursor: pointer;
 }
 
-.product-amount {
-    color: #7E7F83;
-}
-
+/* Typography styling when query returns nothing */
 .search-not-found {
     font-weight: bold;
     color: #000000;
 }
 
+/* Basket page styling */
 .basket-icon i {
     padding-top: 20px;
 }
@@ -478,6 +486,14 @@ footer {
     text-decoration: underline;
 }
 
+/* Blog post image styling */
+.post-image {
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+/* Toast styling */
 .message-container {
     position: fixed;
     top: 80px;
@@ -528,6 +544,7 @@ footer {
     color: #CEFF1A;
 }
 
+/* Image file button on add/edit product/blog pages */
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -562,14 +579,17 @@ footer {
     border-radius: 0;
 }
 
+/* Credit: https://stackoverflow.com/questions/61058107/remove-char-from-the-required-field-label-in-form -
+    Removes asterisks from contact form */
 .asteriskField {
     display: none;
 }
 
+/* Media queries */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 @media (min-width: 992px) {
