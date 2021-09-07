@@ -18,6 +18,7 @@
 
 {% block content %}
 <div class="overlay"></div>
+<!-- Checkout page title -->
 <div class="container checkout-page">
     <div class="row">
         <div class="col-12 text-center text-md-left text-uppercase">
@@ -26,6 +27,7 @@
         </div>
     </div>
 
+    <!-- Items to be ordered list - Shows first on mobiles and medium screens and last on large screens -->
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
             <h6 class="text-uppercase text-muted mb-2">Order Summary ({{ product_amount }}):</h6>
@@ -38,31 +40,31 @@
                 </div>
             </div>
             {% for item in basket_items %}
-                <div class="row">
-                    <div class="col-3 mb-3">
-                        <a href="{% url 'product_detail' item.product.id %}">
-                            {% if item.product.image %}
-                                <img src="{{ item.product.image.url }}" class="checkout-image w-100" alt="{{ product.name }}">
-                            </a>
-                            {% else %}
-                                <img src="{{ MEDIA_URL }}no_image.png" class="checkout-image w-100" alt="{{ product.name }}">
-                            {% endif %}
-                        </a>
-                    </div>
-                    <div class="col-6 mb-3 text-uppercase">
-                        <p class="my-0 small"><b>{{ item.product.name }}</b></p>
-                        <p class="text-muted my-0 small">Size:<b>
-                        {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
-                            {{ item.size }}
-                        {% else %}
-                            N/A
-                        {% endif %}</b></p>
-                        <p class="text-muted my-0 small">Quantity: <b>{{ item.quantity }}</b></p>
-                    </div>
-                    <div class="col-3 text-right">
-                        <p class="my-0 small">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                    </div>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <a href="{% url 'product_detail' item.product.id %}">
+                        {% if item.product.image %}
+                        <img src="{{ item.product.image.url }}" class="checkout-image w-100" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <img src="{{ MEDIA_URL }}no_image.png" class="checkout-image w-100" alt="{{ product.name }}">
+                    {% endif %}
+                    </a>
                 </div>
+                <div class="col-6 mb-3 text-uppercase">
+                    <p class="my-0 small"><b>{{ item.product.name }}</b></p>
+                    <p class="text-muted my-0 small">Size:<b>
+                            {% if item.product.has_clothing_sizing or item.product.has_footwear_sizing %}
+                            {{ item.size }}
+                            {% else %}
+                            N/A
+                            {% endif %}</b></p>
+                    <p class="text-muted my-0 small">Quantity: <b>{{ item.quantity }}</b></p>
+                </div>
+                <div class="col-3 text-right">
+                    <p class="my-0 small">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                </div>
+            </div>
             {% endfor %}
             <hr class="title-line">
             <div class="row text-uppercase">
@@ -79,6 +81,8 @@
             </div>
             <hr class="title-line">
         </div>
+
+        <!-- Order form -->
         <div class="col-12 col-lg-6">
             <h6 class="text-uppercase text-md-left text-muted mb-2">To complete the order, please fill out the form
                 below:</h6>
@@ -129,10 +133,12 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
                 <div class="submit-button my-5">
+                    <!-- Takes user back to basket page -->
                     <a href="{% url 'view_basket' %}" class="adjust-basket-btn btn btn-dark text-uppercase rounded-0">
                         <span><i class="fas fa-chevron-left"></i></span>
                         <span>Adjust Basket</span></a>
                     <button id="submit-button" class="order-btn btn btn-dark text-uppercase rounded-0">
+                        <!-- Completes order button and if successful, takes user to checkout_success page -->
                         <span>Complete Order</span>
                         <span><i class="fas fa-lock"></i></span>
                     </button>
@@ -145,6 +151,8 @@
         </div>
     </div>
 </div>
+
+<!-- Loading icon shows when order submitted -->
 <div id="loading-overlay">
     <h1 class="loading-spinner">
         <i class="fas fa-spinner fa-spin fa-2x"></i>
@@ -153,8 +161,8 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"id_client_secret" }}
-    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
