@@ -148,6 +148,16 @@ The Database Schema was designed by using [Quick Database Diagrams](https://app.
 
 ## Features:
 
+### General
+
+The base of the website implements a fixed top navigation bar that presents the Logo, Search bar and icons representing accounts and basket. The accounts tab is a dropdown menu for registering an account or signing in. When the user is signed in, those options don't appear any more and their profile page and the logging out function become available. When the superuser is signed in they can visit the Blog and Product Management pages to add new blog posts or products. Lastly at the top of the navigation bar is the icon that links to the basket app and below it shows the price of the users current basket. When an item is added to the basket, the price changes to match the basket total and changes colour.
+
+On the next row of the fixed top header, is the navigation links, which are Home, All Products, Tailoring dropdown menu, Footwear dropdown menu, Accessories dropdown menu, Blog and Contact. Below that is a general notice telling the user it is free delivery for orders above £50.00.
+
+When appropriate actions are taken, Toast messages appear below the basket icon. For example, when someone signs in or logs out, one appears. A Toast message will appear when the user adds an item to the basket and will provide information of the current basket every time an item is added to it.
+
+The footer of the project presents social media icons that open up the sites on another tab. There is also company information, as well as copyright information.
+
 ### Home page
 
 The user is first met with the home page when visiting the website. The page presents a hero image of a man dressed stylishly, sat on a bench as they view New York.
