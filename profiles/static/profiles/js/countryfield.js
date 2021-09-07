@@ -1,3 +1,4 @@
+// Country Field JS for Profile page
 let countrySelected = $('#id_default_country').val();
 if (!countrySelected) {
     $('#id_default_country').css('color', '#7E7F83');
