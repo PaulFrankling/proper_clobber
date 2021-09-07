@@ -13,6 +13,7 @@
 
 {% block content %}
     <div class="overlay"></div>
+    <!-- Contact page title and paragraph -->
         <div class="container contact-page">
             <div class="row">
                 <div class="col-12 text-center text-uppercase">
@@ -24,6 +25,7 @@
                 </div>
             </div>
 
+            <!-- Contact form -->
             <form action="{% url 'contact' %}" method="POST" class="text-uppercase">
                 {% csrf_token %}
                 <div class="row">
@@ -51,6 +53,7 @@
                 </div>
                 <div class="row mt-2 mb-4">
                     <div class="col-12 text-center">
+                        <!-- Sends message to admin email on submission -->
                         <button class="contact-btn text-uppercase btn btn-dark rounded-0" type="submit">
                             <span>Send Message</span>
                             <span><i class="fas fa-share"></i></span>
@@ -60,17 +63,18 @@
             </form>
         </div>
 
-            <div class="back-to-top-btn">
-                <a class="back-to-top-link">
-                    <i class="fas fa-arrow-up fa-2x"></i>
-                </a>
-            </div>
+        <!-- Back to top button -->
+<div class="back-to-top-btn">
+    <a class="back-to-top-link">
+        <i class="fas fa-arrow-up fa-2x"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
-    // Back to top button
+    // Back to top button function
         $('.back-to-top-link').click(function() {
             $('html, body').scrollTop(0); // Takes the user to the top of the page
         });
