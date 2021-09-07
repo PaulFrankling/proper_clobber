@@ -18,6 +18,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container profile-page">
+    <!-- Profile title -->
     <div class="row">
         <div class="col-12 text-md-left text-center text-uppercase">
             <h3>My Profile</h3>
@@ -25,6 +26,7 @@
         </div>
     </div>
 
+    <!-- Default delivery information of user -->
     <div class="row text-uppercase">
         <div class="col-12 col-lg-6 pb-3">
             <h6 class="text-black mb-3">Default Delivery Information</h6>
@@ -34,6 +36,8 @@
                 <button class="update-info-btn btn btn-dark text-uppercase rounded-0">Update Information</button>
             </form>
         </div>
+
+        <!-- Users order history -->
         <div class="col-12 col-lg-6 pb-3">
             <h6 class="text-black mb-3">Order History</h6>
             <div class="order-history table-responsive rounded-0">
@@ -50,8 +54,7 @@
                         {% for order in orders %}
                         <tr class="small">
                             <td>
-                                <a href="{% url 'order_history' order.order_number %}"
-                                title="{{ order.order_number }}">
+                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
                                     {{ order.order_number|truncatechars:6 }}
                                 </a>
                             </td>
@@ -59,9 +62,9 @@
                             <td>
                                 <ul class="list-unstyled">
                                     {% for item in order.lineitems.all %}
-                                        <li>
-                                            {{ item.product.name }} x {{ item.quantity }}
-                                        </li>
+                                    <li>
+                                        {{ item.product.name }} x {{ item.quantity }}
+                                    </li>
                                     {% endfor %}
                                 </ul>
                             </td>
@@ -70,13 +73,13 @@
                         {% endfor %}
                     </tbody>
                 </table>
-            </div> 
+            </div>
         </div>
     </div>
 </div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{{ block.super }}
+<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
