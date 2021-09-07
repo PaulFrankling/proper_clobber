@@ -1,3 +1,4 @@
+/* Checkout buttons styling */
 .adjust-basket-btn {
     background-color: #FFFFFF;
     color: #000000;
@@ -26,10 +27,19 @@
     border: 3px solid #000000;
 }
 
+/* Checkout image styling */
+.checkout-image {
+    object-fit: cover;
+    height: 80px;
+    width: 100px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
 .form-control {
     color: #000000;
 }
 
+/* Stripe fields styling */
 .StripeElement,
 .stripe-style-input,
 select,
@@ -49,7 +59,7 @@ select option {
 .stripe-style-input:focus,
 .stripe-style-input:active,
 select,
-select option  {
+select option {
     box-shadow: 0 1px 3px 0 #7E7F83;
 }
 
@@ -71,12 +81,14 @@ select option[value=""] {
     color: #7E7F83 !important;
 }
 
+/* Checkout success page styling that borders all order information */
 .order-confirm-wrapper {
     border: 2px solid #000000 !important;
     box-shadow: 2px 2px 4px #000000;
     padding: 10px;
 }
 
+/* Loading spinner when payment processing styling */
 #loading-overlay {
     display: none;
     position: fixed;
@@ -84,7 +96,7 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(222,222,222, 0.50);
+    background-color: rgba(222, 222, 222, 0.50);
     z-index: 9999;
 }
 
@@ -98,11 +110,4 @@ select option[value=""] {
 
 .loading-spinner i {
     color: #000000;
-}
-
-.checkout-image {
-    object-fit: cover;
-    height: 80px;
-    width: 100px;
-    box-shadow: 2px 2px 4px #000000;
 }
