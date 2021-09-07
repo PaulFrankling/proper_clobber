@@ -1,3 +1,4 @@
+<!-- Success Toast -->
 <div class="toast custom-toast rounded-0" data-autohide="false">
     <div class="toast-header toast-header-success rounded-0">
         <strong class="mr-auto text-uppercase">Good news!</strong>
@@ -11,6 +12,7 @@
                 {{ message }}
             </div>
         </div>
+        <!-- Shows basket preview of items when they've been added to basket -->
         {% if grand_total and not on_profile_page %}
         <h6 class="bg-white font-weight-bold text-uppercase">Your Basket - {{ product_amount }} item(s)</h6>
         <div class="toast-wrapper">
@@ -48,6 +50,7 @@
                     Receive free delivery by spending <b>£{{ free_delivery_delta }}</b> more!
                 </p>
                 {% endif %}
+                <!-- Takes user to basket -->
                 <a href="{% url 'view_basket' %}" class="checkout-btn btn btn-dark btn-block text-uppercase rounded-0">
                     <span>Go To Secure Checkout</span>
                     <span><i class="fas fa-lock"></i></span>

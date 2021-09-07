@@ -1,4 +1,5 @@
 <ul class="list-inline">
+    <!-- Mobile Navigation bar -->
     <li class="list-inline-item">
         <a class="text-white nav-link mt-4 d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -6,6 +7,8 @@
                 <div><i class="fas fa-search mob-nav-icons"></i></div>
             </div>
         </a>
+
+        <!-- Mobile Search bar -->
         <div class="dropdown-menu border-0 p-3 rounded-0 my-0 w-100 site-search" aria-labelledby="mobile-search">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
@@ -21,6 +24,8 @@
             </form>
         </div>
     </li>
+
+    <!-- Mobile Account dropdown menu -->
     <li class="list-inline-item dropdown">
         <a href="#" class="nav-link text-white d-block d-lg-none" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -42,6 +47,8 @@
             {% endif %}
         </div>
     </li>
+
+    <!-- Mobile Basket link -->
     <li class="list-inline-item">
         <a href="{% url 'view_basket' %}" class="nav-link text-white d-block d-lg-none">
             <div class="text-center shop-basket">

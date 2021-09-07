@@ -1,33 +1,45 @@
 <div class="collapse navbar-collapse" id="site-nav">
+    <!-- Site Navigation -->
     <ul class="navbar-nav mx-auto w-auto">
+
+        <!-- Home link -->
         <li class="nav-item">
             <a class="nav-link mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
+
+        <!-- All Products link -->
         <li class="nav-item">
             <a class="nav-link mr-5" href="{% url 'products' %}" id="all-products-link">
                 All Products
             </a>
         </li>
+
+        <!-- Tailoring dropdown menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="tailoring-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link mr-5" href="#" id="tailoring-link" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Tailoring
             </a>
+            <!-- Tailoring dropdown menu links -->
             <div class="dropdown-menu border" aria-labelledby="tailoring-link">
                 <a href="{% url 'products' %}?category=suits" class="dropdown-item">Suits</a>
                 <a href="{% url 'products' %}?category=suit_jackets" class="dropdown-item">Suit Jackets</a>
                 <a href="{% url 'products' %}?category=suit_trousers" class="dropdown-item">Suit Trousers</a>
                 <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
-                <a href="{% url 'products' %}?category=suits,suit_jackets,suit_trousers,shirts" class="dropdown-item">All Tailoring</a>
+                <a href="{% url 'products' %}?category=suits,suit_jackets,suit_trousers,shirts"
+                    class="dropdown-item">All Tailoring</a>
             </div>
         </li>
+
+        <!-- Footwear dropdown menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="footwear-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link mr-5" href="#" id="footwear-link" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Footwear
             </a>
+            <!-- Footwear dropdown menu links -->
             <div class="dropdown-menu border" aria-labelledby="footwear-link">
                 <a href="{% url 'products' %}?category=brogue" class="dropdown-item">Brogue</a>
                 <a href="{% url 'products' %}?category=loafers" class="dropdown-item">Loafers</a>
@@ -35,11 +47,14 @@
                 <a href="{% url 'products' %}?category=brogue,loafers,oxford" class="dropdown-item">All Footwear</a>
             </div>
         </li>
+
+        <!-- Accessories dropdown menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="accessories-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link mr-5" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Accessories
             </a>
+            <!-- Accessories dropdown menu links -->
             <div class="dropdown-menu border" aria-labelledby="accessories-link">
                 <a href="{% url 'products' %}?category=belts" class="dropdown-item">Belts</a>
                 <a href="{% url 'products' %}?category=ties" class="dropdown-item">Ties</a>
@@ -47,15 +62,20 @@
                 <a href="{% url 'products' %}?category=belts,ties,watches" class="dropdown-item">All Accessories</a>
             </div>
         </li>
+
+        <!-- Blog page link -->
         <li class="nav-item">
             <a class="nav-link mr-5" href="{% url 'blog' %}" id="blog-link">
                 Blog
             </a>
         </li>
+
+        <!-- Contact page link -->
         <li class="nav-item">
             <a class="nav-link mr-5" href="{% url 'contact' %}" id="contact-link">
                 Contact
             </a>
         </li>
+
     </ul>
 </div>
