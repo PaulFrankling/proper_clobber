@@ -1,8 +1,25 @@
 /* Profile page form styling */
 #profile-update-form .form-control {
-    box-shadow: 0 1px 3px 0 #7E7F83;
+    -webkit-box-shadow: 0 1px 3px 0 #7E7F83;
+            box-shadow: 0 1px 3px 0 #7E7F83;
     border-radius: 0;
     color: #000000;
+}
+
+#profile-update-form input::-webkit-input-placeholder {
+    color: #7E7F83;
+}
+
+#profile-update-form input::-moz-placeholder {
+    color: #7E7F83;
+}
+
+#profile-update-form input:-ms-input-placeholder {
+    color: #7E7F83;
+}
+
+#profile-update-form input::-ms-input-placeholder {
+    color: #7E7F83;
 }
 
 #profile-update-form input::placeholder {

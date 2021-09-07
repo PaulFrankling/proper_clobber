@@ -260,6 +260,7 @@ This page is designed to allow the user to contact the owner of the website. The
 1. [Hover.css](https://ianlunn.github.io/Hover/) is used to apply a colour change to certain elements on the page when hovered over with the mouse.
 1. [Balsamiq](https://balsamiq.com/) is used to create the wireframing for the project.
 1. [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) is used to create the database schema for the project.
+1. [Autoprefixer](https://autoprefixer.github.io/) is used to add web prefixes to all the CSS files in the project so the styling renders properly on all browsers.
 1. [Am I responsive?](http://ami.responsivedesign.is/) is used to create a mockup of the project.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.

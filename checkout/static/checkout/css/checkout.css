@@ -29,10 +29,12 @@
 
 /* Checkout image styling */
 .checkout-image {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 80px;
     width: 100px;
-    box-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 .form-control {
@@ -44,15 +46,21 @@
 .stripe-style-input,
 select,
 select option {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 40px;
     padding: 10px 12px;
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: #FFFFFF;
-    box-shadow: 0 1px 3px 0 #7E7F83;
+    -webkit-box-shadow: 0 1px 3px 0 #7E7F83;
+            box-shadow: 0 1px 3px 0 #7E7F83;
     -webkit-transition: box-shadow 150ms ease;
+    -webkit-transition: -webkit-box-shadow 150ms ease;
+    transition: -webkit-box-shadow 150ms ease;
+    -o-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
 }
 
 .StripeElement--focus,
@@ -60,11 +68,28 @@ select option {
 .stripe-style-input:active,
 select,
 select option {
-    box-shadow: 0 1px 3px 0 #7E7F83;
+    -webkit-box-shadow: 0 1px 3px 0 #7E7F83;
+            box-shadow: 0 1px 3px 0 #7E7F83;
 }
 
 .StripeElement--webkit-autofill {
     background-color: #7E7F83 !important;
+}
+
+.stripe-style-input::-webkit-input-placeholder {
+    color: #7E7F83;
+}
+
+.stripe-style-input::-moz-placeholder {
+    color: #7E7F83;
+}
+
+.stripe-style-input:-ms-input-placeholder {
+    color: #7E7F83;
+}
+
+.stripe-style-input::-ms-input-placeholder {
+    color: #7E7F83;
 }
 
 .stripe-style-input::placeholder {
@@ -84,7 +109,8 @@ select option[value=""] {
 /* Checkout success page styling that borders all order information */
 .order-confirm-wrapper {
     border: 2px solid #000000 !important;
-    box-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
     padding: 10px;
 }
 
@@ -101,9 +127,15 @@ select option[value=""] {
 }
 
 .loading-spinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     height: 100%;
 }

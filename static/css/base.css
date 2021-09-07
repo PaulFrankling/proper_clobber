@@ -8,9 +8,14 @@ body {
     font-family: Archivo, Montserrat, Sans-serif;
     background: url("/media/homepage-bg.jpg") no-repeat top center fixed;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 /* Header/Navigation bar styling */
@@ -78,10 +83,14 @@ body {
 /* Homepage */
 .homepage {
     padding-top: 75px;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 .home-slogan {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 5px 20px;
     color: #CEFF1A;
@@ -179,7 +188,9 @@ body {
 .blog-pages,
 .contact-page,
 .error-pages {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 /* Footer styling */
@@ -280,6 +291,22 @@ footer {
     display: none;
 }
 
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #7E7F83;
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #7E7F83;
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #7E7F83;
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #7E7F83;
+}
+
 .allauth-form-inner-content input::placeholder {
     color: #7E7F83;
 }
@@ -321,12 +348,14 @@ footer {
 /* Product pages styling */
 .product-image {
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .title-line {
     border-top: 1px solid #000000;
-    box-shadow: 0 0 5px #7E7F83;
+    -webkit-box-shadow: 0 0 5px #7E7F83;
+            box-shadow: 0 0 5px #7E7F83;
 }
 
 .card-title {
@@ -335,17 +364,24 @@ footer {
 }
 
 .product-card {
-    box-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 /* Credit: https://www.w3schools.com/howto/howto_css_zoom_hover.asp -
     Helped in creating a slight zoom on image cards in product and product_detail page */
 .zoom {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
     transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 }
 
 .zoom:hover {
-    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
     z-index: 1;
 }
 
@@ -378,8 +414,10 @@ footer {
 
 .product-detail-img {
     height: 350px;
-    object-fit: cover;
-    box-shadow: 2px 2px 4px #000000;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 .product-desc {
@@ -455,13 +493,16 @@ footer {
 .basket-image {
     height: 200px;
     width: 300px;
-    object-fit: cover;
-    box-shadow: 2px 2px 4px #000000;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 .table-header,
 .table-footer {
-    box-shadow: 2px 2px 4px #7E7F83;
+    -webkit-box-shadow: 2px 2px 4px #7E7F83;
+            box-shadow: 2px 2px 4px #7E7F83;
     background-color: #F5F5F5;
 }
 
@@ -489,8 +530,10 @@ footer {
 /* Blog post image styling */
 .post-image {
     height: 250px;
-    object-fit: cover;
-    box-shadow: 2px 2px 4px #000000;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 /* Toast styling */
@@ -533,10 +576,12 @@ footer {
 }
 
 .toast-image {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 75px;
     width: 100px;
-    box-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 2px 2px 4px #000000;
+            box-shadow: 2px 2px 4px #000000;
 }
 
 .toast-delivery-notice {
