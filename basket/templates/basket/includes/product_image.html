@@ -1,7 +1,6 @@
+<!-- Shows basket item on Basket page -->
 {% if item.product.image %}
-    <img src="{{ item.product.image.url }}" class="card-img-top img-fluid basket-image"
-        alt="{{ item.product.name }}">
+<img src="{{ item.product.image.url }}" class="card-img-top img-fluid basket-image" alt="{{ item.product.name }}">
 {% else %}
-    <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid basket-image"
-        alt="{{ item.product.name }}">
+<img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid basket-image" alt="{{ item.product.name }}">
 {% endif %}
