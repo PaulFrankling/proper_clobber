@@ -3,8 +3,6 @@ from django.shortcuts import (render, redirect, reverse,
 from django.contrib import messages
 from products.models import Product
 
-# Create your views here.
-
 
 def view_basket(request):
     """ A view to render the basket contents page """
