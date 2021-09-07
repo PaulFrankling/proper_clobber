@@ -45,7 +45,7 @@
                 <a href="{{ post.source_url }}" target="_blank">{{ post.blog_source }}</a>
                 {% endif %}</p>
             {% if request.user.is_superuser %}
-            <!-- Edit post button (Takes user to Blog Management (Edit_post page))-->
+            <!-- Edit post button (Takes superuser to Blog Management (Edit_post page))-->
             <div class="text-uppercase pt-3 mb-2">
                 <a href="{% url 'edit_post' post.id %}" class="btn btn-primary rounded-0">Edit
                     <i class="fas fa-pen"></i>
@@ -100,5 +100,10 @@
     $('.back-to-top-link').click(function () {
         $('html, body').scrollTop(0); // Takes the user to the top of the page
     });
+</script>
+
+<script type="text/javascript">
+    // Delete product confirmation modal
+    $('#mymodal').modal('show');
 </script>
 {% endblock %}

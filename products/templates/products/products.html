@@ -3,147 +3,166 @@
 
 {% block page_header %}
 
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-        <div class="container product-pages">
-            <div class="row">
-                <div class="col-12 text-center text-uppercase">
-                    <h3>Products</h3>
-                    <hr class="title-line">
-                </div>
-            </div>
+<div class="overlay"></div>
+<div class="container product-pages">
+    <!-- Product page title -->
+    <div class="row">
+        <div class="col-12 text-center text-uppercase">
+            <h3>Products</h3>
+            <hr class="title-line">
+        </div>
+    </div>
 
-            <div class="row mt-2">
-                <div class="col-12 col-md-6 col-lg-3 my-auto">
-                    <div class="sort-select w-100">
-                        <select id="sort-selector" class="custom-select border border-black rounded-2">
-                            <option value="reset" {% if current_sorting != 'None_None' %}selected{% endif %}>Sort by</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Product name (From A-Z)</option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Product name (From Z-A)</option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (Low to High)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (High to Low)</option>
-                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (Low to High)</option>
-                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (High to Low)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 co-lg-3 my-auto">
-                    <p class="text-center text-md-right text-lg-left text-uppercase mt-3 product-amount">
-                    <small><b>{{ products|length }} Products</b>{% if search_term %} found for <strong class="search-not-found">"{{ search_term }}"</strong>{% endif %}</small>
-                    </p>
-                </div>
+    <div class="row mt-2">
+        <!-- Product sort by select field -->
+        <div class="col-12 col-md-6 col-lg-3 my-auto">
+            <div class="sort-select w-100">
+                <select id="sort-selector" class="custom-select border border-black rounded-2">
+                    <option value="reset" {% if current_sorting != 'None_None' %}selected{% endif %}>Sort by</option>
+                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Product name
+                        (From A-Z)</option>
+                    <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Product name
+                        (From Z-A)</option>
+                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (Low to
+                        High)</option>
+                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (High
+                        to Low)</option>
+                    <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (Low
+                        to High)</option>
+                    <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating
+                        (High to Low)</option>
+                </select>
             </div>
+        </div>
+        <!-- Shows the amount of products belonging to that category or search query -->
+        <div class="col-12 col-md-6 co-lg-3 my-auto">
+            <p class="text-center text-md-right text-lg-left text-uppercase mt-3 product-amount">
+                <small><b>{{ products|length }} Products</b>{% if search_term %} found for <strong
+                        class="search-not-found">"{{ search_term }}"</strong>{% endif %}</small>
+            </p>
+        </div>
+    </div>
 
-            <div class="row mt-4 mb-4">
-                {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
-                        <div class="card product-card h-100 border-0 zoom">
-                            {% if product.image %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img src="{{ product.image.url }}" class="card-img-top img-fluid product-image" alt="{{ product.name }}">
-                            </a>
-                            {% else %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid product-image" alt="{{ product.name }}">
-                            </a>
-                            {% endif %}
-                            <div class="card-body pb-3">
-                                <h5 class="card-title text-uppercase mb-0">{{ product.name }}</h5>
-                                <p class="card-text font-weight-bold lead mb-1">£{{ product.price }}</p>
-                                {% if product.category %}
-                                <span class="card-text product-category">
-                                    <a href="{% url 'products' %}?category={{ product.category.name }}">
-                                        <i class="fas fa-tshirt mr-1"></i>{{ product.category.friendly_name }}
-                                    </a>
-                                </span>
-                                {% endif %}
-                                {% if product.rating %}
-                                <span class="card-text product-rating"><i class="fas fa-star mr-1"></i>{{ product.rating }}/ 5.00</span>
-                                {% else %}
-                                <span class="card-text product-rating">No Rating Available</span>
-                                {% endif %}
-                            </div>
-                            {% if request.user.is_superuser %}
-                            <div class="admin-btns card-footer text-uppercase">
-                                <a href="{% url 'edit_product' product.id %}" class="btn btn-primary rounded-0">Edit
-                                    <i class="fas fa-pen"></i>
-                                </a>
-                                <a href="#myModal" class="btn btn-danger rounded-0" data-toggle="modal">Delete
-                                    <i class="far fa-trash-alt"></i></a>
-                            </div>
-                                <div class="modal text-uppercase" id="myModal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog bg-white" role="document">
-                                        <div class="modal-header">
-                                          <h6 class="modal-title font-weight-bold">Are you sure you want to delete this Product?</h6>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button class="btn btn-primary rounded-0 text-uppercase" data-dismiss="modal">Cancel</button>
-                                          <a href="{% url 'delete_product' product.id %}" class="btn btn-danger rounded-0">Delete
-                                            <i class="far fa-trash-alt"></i></a>
-                                          </button>
-                                        </div>
-                                    </div>
-                                  </div>
-                            {% endif %}
+    <!-- Products -->
+    <div class="row mt-4 mb-4">
+        {% for product in products %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
+            <div class="card product-card h-100 border-0 zoom">
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img src="{{ product.image.url }}" class="card-img-top img-fluid product-image"
+                        alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img src="{{ MEDIA_URL }}no_image.png" class="card-img-top img-fluid product-image"
+                        alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-3">
+                    <h5 class="card-title text-uppercase mb-0">{{ product.name }}</h5>
+                    <p class="card-text font-weight-bold lead mb-1">£{{ product.price }}</p>
+                    {% if product.category %}
+                    <span class="card-text product-category">
+                        <a href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tshirt mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </span>
+                    {% endif %}
+                    {% if product.rating %}
+                    <span class="card-text product-rating"><i class="fas fa-star mr-1"></i>{{ product.rating }}/
+                        5.00</span>
+                    {% else %}
+                    <span class="card-text product-rating">No Rating Available</span>
+                    {% endif %}
+                </div>
+                {% if request.user.is_superuser %}
+                <div class="admin-btns card-footer text-uppercase">
+                    <!-- Edit product button (Takes superuser to Product Management (Edit_post page))-->
+                    <a href="{% url 'edit_product' product.id %}" class="btn btn-primary rounded-0">Edit
+                        <i class="fas fa-pen"></i>
+                    </a>
+                    <!-- Delete product button that pops up a deletion confirmation modal -->
+                    <a href="#myModal" class="btn btn-danger rounded-0" data-toggle="modal">Delete
+                        <i class="far fa-trash-alt"></i></a>
+                </div>
+                <!-- Delete product confirmation modal -->
+                <div class="modal text-uppercase" id="myModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog bg-white" role="document">
+                        <div class="modal-header">
+                            <h6 class="modal-title font-weight-bold">Are you sure you want to delete this Product?</h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary rounded-0 text-uppercase"
+                                data-dismiss="modal">Cancel</button>
+                            <a href="{% url 'delete_product' product.id %}" class="btn btn-danger rounded-0">Delete
+                                <i class="far fa-trash-alt"></i></a>
+                            </button>
                         </div>
                     </div>
-                {% endfor %}
                 </div>
+                {% endif %}
             </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 
-            <div class="back-to-top-btn">
-                <a class="back-to-top-link">
-                    <i class="fas fa-arrow-up fa-2x"></i>
-                </a>
-            </div>
+<!-- Back to top button -->
+<div class="back-to-top-btn">
+    <a class="back-to-top-link">
+        <i class="fas fa-arrow-up fa-2x"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-    // Back to top button
-        $('.back-to-top-link').click(function() {
-            $('html, body').scrollTop(0); // Takes the user to the top of the page
-        });
-    </script>
+{{ block.super }}
+<script type="text/javascript">
+    // Back to top button function
+    $('.back-to-top-link').click(function () {
+        $('html, body').scrollTop(0); // Takes the user to the top of the page
+    });
+</script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
     // Function that sorts products via option selected 
-        $('#sort-selector').change(function() {
-            let selector = $(this);
-            let currentUrl = new URL(window.location);
+    $('#sort-selector').change(function () {
+        let selector = $(this);
+        let currentUrl = new URL(window.location);
 
-            let selectedVal = selector.val();
-            if (selectedVal != "reset") {
-                let sort = selectedVal.split("_")[0];
-                let direction = selectedVal.split("_")[1];
+        let selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            let sort = selectedVal.split("_")[0];
+            let direction = selectedVal.split("_")[1];
 
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
 
-                window.location.replace(currentUrl);
-            }
-        });
-    </script>
+            window.location.replace(currentUrl);
+        }
+    });
+</script>
 
-    <script type="text/javascript">
-        // Delete product confirmation modal
-         $('#mymodal').modal('show');
-    </script>
+<script type="text/javascript">
+    // Delete product confirmation modal
+    $('#mymodal').modal('show');
+</script>
 {% endblock %}
