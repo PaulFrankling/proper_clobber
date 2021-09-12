@@ -1,10 +1,11 @@
+""" Blog forms.py """
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import BlogPost
 
 
 class BlogForm(forms.ModelForm):
-
+    """ Form to create blog post """
     class Meta:
         model = BlogPost
         fields = '__all__'

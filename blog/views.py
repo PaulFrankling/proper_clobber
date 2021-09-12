@@ -1,11 +1,13 @@
+""" Blog views.py """
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import BlogPost
-from .forms import BlogForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .models import BlogPost
+from .forms import BlogForm
 
 
 def all_posts(request):
+    """ A view that returns all blog posts """
     posts = BlogPost.objects.all().order_by('-post_date')
 
     context = {
@@ -16,6 +18,7 @@ def all_posts(request):
 
 
 def blog_detail(request, post_id):
+    """ A view to return an individual blog posts details """
     post = get_object_or_404(BlogPost, pk=post_id)
 
     context = {
@@ -27,6 +30,7 @@ def blog_detail(request, post_id):
 
 @login_required
 def add_post(request):
+    """ Add a blog post to blog page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, \
             only store owners are authorised to do that.')
@@ -54,6 +58,7 @@ def add_post(request):
 
 @login_required
 def edit_post(request, post_id):
+    """ Edit a blog post on the blog page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, \
             only store owners are authorised to do that.')
@@ -83,6 +88,7 @@ def edit_post(request, post_id):
 
 @login_required
 def delete_post(request, post_id):
+    """ Delete a blog post on the blog page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, \
             only store owners are authorised to do that.')
