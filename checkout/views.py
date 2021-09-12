@@ -1,3 +1,4 @@
+""" Checkout views.py """
 import json
 import stripe
 

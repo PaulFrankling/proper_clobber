@@ -1,13 +1,14 @@
+""" Contact views.py """
 from django.shortcuts import render
-from .forms import ContactForm
 from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import render_to_string
 from django.contrib import messages
+from .forms import ContactForm
 
 
 def contact(request):
-
+    """ A view to return contact page """
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
 

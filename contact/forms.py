@@ -1,9 +1,10 @@
+""" Contact forms.py """
 from django import forms
 from .models import ContactMessages
 
 
 class ContactForm(forms.ModelForm):
-
+    """ Form to contact site owner """
     class Meta:
         model = ContactMessages
         fields = (
