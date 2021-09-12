@@ -2,7 +2,7 @@ from django.db import models
 
 
 class BlogPost(models.Model):
-
+    """ Blog post model """
     title = models.CharField(max_length=254, null=False, blank=False)
     preview = models.TextField(max_length=254, null=True, blank=True)
     article = models.TextField(null=True, blank=True)

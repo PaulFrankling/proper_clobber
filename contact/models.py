@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ContactMessages(models.Model):
-
+    """ Contact model """
     class Meta:
         verbose_name = 'Received Messages'
 
