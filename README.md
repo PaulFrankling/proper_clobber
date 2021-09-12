@@ -268,6 +268,8 @@ This page is designed to allow the user to contact the owner of the website. The
 
 ## Testing:
 
+To view the testing process, view [here](TESTING.md)
+
 ## Deployment:
 
 * This project repository was created on [GitHub](https://github.com/) using the Code Institute Gitpod Template.
