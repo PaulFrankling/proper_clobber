@@ -1,8 +1,10 @@
+""" Profiles forms.py """
 from django import forms
 from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """ Form for users information """
     class Meta:
         model = UserProfile
         exclude = ('user',)
