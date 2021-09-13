@@ -75,7 +75,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <p class="blog-preview text-uppercase">{{ post.article|linebreaks }}</p>
+            {{ post.article|linebreaks }}
             <!-- Button takes user to the origin of blog post -->
             <a href="{{ post.source_url }}" target="_blank"
                 class="read-more-btn btn btn-dark rounded-0 text-uppercase float-right mt-2 mb-4">Read Full Article
@@ -101,7 +101,7 @@
     });
 </script>
 
-<script type="text/javascript">
+<script>
     // Delete product confirmation modal
     $('#mymodal').modal('show');
 </script>
