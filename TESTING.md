@@ -22,6 +22,10 @@
 
 ##### JSHint
 
+* All JavaScript files or snippets of JavaScript at the bottom of HTML files were validated successfully through JSHint.
+
+! [JavaScript Validation](readme/testing/validation/jshint.png)
+
 ### Testing of User stories from UX section of README.md
 
 ### Testing process
