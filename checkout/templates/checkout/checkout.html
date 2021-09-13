@@ -43,9 +43,8 @@
             <div class="row">
                 <div class="col-3 mb-3">
                     <a href="{% url 'product_detail' item.product.id %}">
-                        {% if item.product.image %}
-                        <img src="{{ item.product.image.url }}" class="checkout-image w-100" alt="{{ product.name }}">
-                    </a>
+                    {% if item.product.image %}
+                    <img src="{{ item.product.image.url }}" class="checkout-image w-100" alt="{{ product.name }}">
                     {% else %}
                     <img src="{{ MEDIA_URL }}no_image.png" class="checkout-image w-100" alt="{{ product.name }}">
                     {% endif %}
@@ -154,13 +153,11 @@
 
 <!-- Loading icon shows when order submitted -->
 <div id="loading-overlay">
-    <h1 class="loading-spinner">
-        <i class="fas fa-spinner fa-spin fa-2x"></i>
-    </h1>
+    <span class="loading-spinner"><i class="fas fa-spinner fa-spin fa-2x"></i></span>
 </div>
 {% endblock %}
 
-{% block postloadjs %}
+{% block postloadjs %}s
 {{ block.super }}
 {{ stripe_public_key|json_script:"id_stripe_public_key" }}
 {{ client_secret|json_script:"id_client_secret" }}
