@@ -8,6 +8,13 @@
 
 ![HTML Validation](readme/testing/validation/html-validation.png)
 
+#### W3C CSS Validation Service
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the project. As well as showing no errors when validating the projects CSS through its URI, there was also no errors when each CSS file was validated through direct input.
+
+![CSS Validation](readme/testing/validation/css-validation.png)
+
+
 ### Testing of User stories from UX section of README.md
 
 ### Testing process
