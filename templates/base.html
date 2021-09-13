@@ -176,6 +176,11 @@
     <!-- Shows toast when relevant action taken -->
     <script>
         $('.toast').toast('show');
+        /* Fades and times out toast.
+        Credit: https://stackoverflow.com/questions/19296688/how-to-set-display-time-of-toastmessage */
+        setTimeout(function () {
+            $('.toast').fadeOut(2000);
+        }, 6000);
     </script>
 
     {% endblock %}
