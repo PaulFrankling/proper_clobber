@@ -71,7 +71,6 @@
                                 data-dismiss="modal">Cancel</button>
                             <a href="{% url 'delete_product' product.id %}" class="btn btn-danger rounded-0">Delete
                                 <i class="far fa-trash-alt"></i></a>
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -111,8 +110,8 @@
                         </div>
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </form>
             </div>
-            </form>
         </div>
     </div>
 </div>
