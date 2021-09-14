@@ -108,9 +108,29 @@
 
 
     * *I want to be able to filter the products by specific details such as price or alphabetical order.*
+
+        * The user is able to view products by a specific order with the use of a 'Sort by' select box. It is placed at the top left of the products page and the user can view the products by their price for instance, as they may have budget limitations or might want buy something slightly more expensive.
+
+        ![Product sorting example](readme/testing/ux-testing/ux-sorting-example.png)
+
     * *I would like to be able to view separate categories of clothing for convenience.*
+
+        * The user is able to view specific categories by using the 'Tailoring', 'Footwear' and 'Accessories' navigation bar dropdown menus:
+
+        ![Category page example](readme/testing/ux-testing/ux-categories.png)
+
+        * This way the user is able to view a category they are specifically looking for. They can also view a product by category by using the link on each product card when they are viewing 'All Products'.
+
     * *I would like to be able to view individual products on another page.*
+
+        * The user can click on each individual product in order to view the products specific details.
+
     * *I would like to interact with that product, by changing quantity, choosing size or adding it to the basket.*
+
+        * When the user has clicked on an individual product, they are able to change the quantity and choose a size required. When happy with their selection they can add their product to the basket by clicking on the 'Add to Basket' button.
+
+        ![Product detail example](readme/testing/ux-testing/ux-product-detail.png)
+
     * *I want a toast message to appear every time I add a product to see the current contents of my basket.*
 
     #### Basket
