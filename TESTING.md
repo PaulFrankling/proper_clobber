@@ -32,7 +32,7 @@
 
 ![Python Validation](readme/testing/validation/python-validation.png)
 
-* A Gitpod built in linter called pylint was also used to fix bugs within the python code and provided many suggestions on how to improve the code. For instance it advised to place a docstring at the top of all the python files.
+* A Gitpod built-in linter called pylint was also used to fix bugs within the python code and provided many suggestions on how to improve the code. For instance it advised to place a docstring at the top of all the python files.
 
 ![Pylint Example](readme/testing/validation/pylint-example.png)
 
