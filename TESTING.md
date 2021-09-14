@@ -78,14 +78,35 @@
 
     * *I want to be notified when making specific actions on the website.*
 
-        * The user is presented with a toast message on the top right of the screen when a specific action is taken. When adding products the user is shown their current basket. They are also notified when registering, signing in, logging out or when a user purchases their order. An example of a toast message notifying the user of a specific action:
+        * The user is presented with a toast message on the top right of the screen when a specific action is taken. When adding products the user is shown their current basket. They are also notified when registering, signing in, logging out or when a user purchases their order. Below is an example of a toast message notifying the user of a specific action:
 
         ![Toast message example](readme/testing/ux-testing/ux-toast-example.png)
 
     #### Products
 
     * *I would like to view all the products the website is selling.*
+
+        * The user is able to view all the products the website is selling by clicking on the home page 'Shop now' CTA button. The user can also access all the products by clicking on the navigation link 'All Products'. This is so the user can easily view all the variety of products the site has to offer.
+    
     * *I want to be able to search in the header for a specific product I am looking for.*
+
+        * The user is able to search for specific products in the search bar of the website header.
+
+        ![Search bar](readme/testing/ux-testing/ux-searchbar.png)
+
+        * The user can search for a product by inputting a query into the search bar and pressing enter or clicking on the magnifying glass. Below is an example of a search query result:
+
+        ![Search result example](readme/testing/ux-testing/ux-search-results.png)
+
+        * If the user searches for a product that doesn't exist, they are met with the following page:
+
+        ![Nothing found search result](readme/testing/ux-testing/ux-search-nothingfound.png)
+
+        * The user is also informed if they failed to input anything in the searchbar with a toast presenting an error message:
+
+        ![Empty search query](readme/testing/ux-testing/ux-search-error.png)
+
+
     * *I want to be able to filter the products by specific details such as price or alphabetical order.*
     * *I would like to be able to view separate categories of clothing for convenience.*
     * *I would like to be able to view individual products on another page.*
