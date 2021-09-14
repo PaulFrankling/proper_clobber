@@ -50,4 +50,63 @@
 
 ## Testing of User stories from UX section of README.md
 
+* As an unregistered customer...
+
+    #### General
+
+    1. *I want to be able to understand the purpose of the website.*
+    1. *I want to be able to easily navigate around the website.*
+    1. *I want to be able to easily locate and create a new account.*
+    1. *I want to be notified when making specific actions on the website.*
+
+    #### Products
+
+    1. *I would like to view all the products the website is selling.*
+    1. *I want to be able to search in the header for a specific product I am looking for.*
+    1. *I want to be able to filter the products by specific details such as price or alphabetical order.*
+    1. *I would like to be able to view separate categories of clothing for convenience.*
+    1. *I would like to be able to view individual products on another page.*
+    1. *I would like to interact with that product, by changing quantity, choosing size or adding it to the basket.*
+    1. *I want a toast message to appear every time I add a product to see the current contents of my basket.*
+
+    #### Basket
+
+    1. *I want to be able to view my selected products in the basket.*
+    1. *I would like to update quantity amount of a certain product or remove it from the basket.*
+    1. *I want to be able to see the total of my basket and see it regularly updated by any changes.*
+    
+    #### Checkout
+
+    1. *I want to be able to securely checkout and purchase the products.*
+    1. *I want to receive an order confirmation once the items are purchased and for it to possess all the details of the order.*
+
+    #### Blog
+
+    1. *I want to view the website blog and see what useful insights there might be.*
+
+    #### Contact
+
+    1. *I would like to be able to contact the store owners with any query I have.*
+    1. *I want to receive a confirmation email notifying me they know of my query.*
+
+* As a registered customer:
+
+    1. *I want to be able to login and out of the website comfortably.*
+    1. *I want to be able to reset my password.*
+    1. *I want to be able to view my personal profile.*
+    1. *I want to be able to save default delivery details to skip the process of adding them in on a second order.*
+    1. *I want to be able to update my default delivery details.*
+    1. *I want to be able to view previous orders in the order history.*
+
+* As the store owner:
+
+    1. *I want customers to be able to select and purchase products comfortably.*
+    1. *I want customers to enjoy reading the blogs and insights the website has to offer.*
+    1. *I want to the user to be able to contact us with any queries or problems.*
+    1. *I want to be able to add/edit/update products.*
+    1. *I want to be able to delete products.*
+    1. *I want to be able to add/edit/update blog posts.*
+    1. *I want to be able to delete blog posts.*
+    1. *I want to be able to maintain the use of the website information with the use of the admin panel.*
+
 ## Testing process
