@@ -71,7 +71,7 @@ Proper Clobber is an e-commerce website that sells smart tailored clothing for m
 
     * I want customers to be able to select and purchase products comfortably.
     * I want customers to enjoy reading the blogs and insights the website has to offer.
-    * I want to the user to be able to contact us with any queries or problems.
+    * I want the user to be able to contact us with any queries or problems.
     * I want to be able to add/edit/update products.
     * I want to be able to delete products.
     * I want to be able to add/edit/update blog posts.

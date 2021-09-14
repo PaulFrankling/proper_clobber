@@ -133,10 +133,24 @@
 
     * *I want a toast message to appear every time I add a product to see the current contents of my basket.*
 
+        * When the user adds a product to the basket, a toast pops up showing the user what the contents of the basket are. It shows the products, the products description, size and quantity selected. The user is also able to visit the basket page by clicking on the 'Secure Checkout' button.
+
+        ![Basket toast](readme/testing/ux-testing/ux-basket-toast.png)
+
     #### Basket
 
     * *I want to be able to view my selected products in the basket.*
+
+        * The user is able to view the contents of the basket by navigating to the basket page. The user can see the all the relevant information belonging to the item selected, i.e. description, size and quantity.
+
+        ![Basket page example](readme/testing/ux-testing/ux-basket-example.png)
+
     * *I would like to update quantity amount of a certain product or remove it from the basket.*
+
+        * The user can update the quantity of the chosen product by clicking on the plus and minus icons at either side of the select box field. Once altered to the amount the user wants, they need to click on 'Update' and it will update to the correct quantity selected. They can also remove the item altogether by selecting 'Remove'.
+
+    ![Basket quantity field](readme/testing/ux-testing/ux-basket-quantity.png)
+
     * *I want to be able to see the total of my basket and see it regularly updated by any changes.*
     
     #### Checkout
@@ -166,7 +180,7 @@
 
     * *I want customers to be able to select and purchase products comfortably.*
     * *I want customers to enjoy reading the blogs and insights the website has to offer.*
-    * *I want to the user to be able to contact us with any queries or problems.*
+    * *I want the user to be able to contact us with any queries or problems.*
     * *I want to be able to add/edit/update products.*
     * *I want to be able to delete products.*
     * *I want to be able to add/edit/update blog posts.*
