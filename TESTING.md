@@ -65,7 +65,22 @@
         * The user is able to navigate around the site easily by the use of the Fixed top navigation bar on every page of the website. The user can change page very quickly with close access to the navigation bar at all times. All links in the navigation bar are easily identifiable and dropdown menus are located on some links to help the user find something more specific for their needs.
 
     * *I want to be able to easily locate and create a new account.*
+
+        * The user is able to create an account by selecting 'Sign up' from the 'Account' dropdown menu.
+
+        ![Sign up location](readme/testing/ux-testing/ux-signup-location.png)
+
+        * The user is then taken to the sign up page where the form prompts the user what to input in each input field with the help of placeholder text.
+
+        ![Sign up form](readme/testing/ux-testing/ux-signup-form.png)
+
+        * The user is then informed their account needs verifying. An email is then sent to the user with a link taking them to a page on the website allowing them to confirm their email. Once confirmed, they are redirected to the login page in which they can now sign in with their new account credentials.
+
     * *I want to be notified when making specific actions on the website.*
+
+        * The user is presented with a toast message on the top right of the screen when a specific action is taken. When adding products the user is shown their current basket. They are also notified when registering, signing in, logging out or when a user purchases their order. An example of a toast message notifying the user of a specific action:
+
+        ![Toast message example](readme/testing/ux-testing/ux-toast-example.png)
 
     #### Products
 
