@@ -149,9 +149,15 @@
 
         * The user can update the quantity of the chosen product by clicking on the plus and minus icons at either side of the select box field. Once altered to the amount the user wants, they need to click on 'Update' and it will update to the correct quantity selected. They can also remove the item altogether by selecting 'Remove'.
 
-    ![Basket quantity field](readme/testing/ux-testing/ux-basket-quantity.png)
+        ![Basket quantity field](readme/testing/ux-testing/ux-basket-quantity.png)
 
     * *I want to be able to see the total of my basket and see it regularly updated by any changes.*
+
+        * Any alteration made by the user such as updating the quantity of product or removing it will adjust the basket total accordingly. Below shows an image of one item and the second image, shows the updated basket total when there is two products:
+
+        ![Basket total price before](readme/testing/ux-testing/ux-total-price-before.png)
+        
+        ![Basket total price before](readme/testing/ux-testing/ux-total-price-after.png)
     
     #### Checkout
 
