@@ -36,6 +36,18 @@
 
 ![Pylint Example](readme/testing/validation/pylint-example.png)
 
+#### Lighthouse
+
+* Lighthouse was also used to test the project on both desktop and mobile.
+
+Desktop
+
+![Lighthouse Desktop Result](readme/testing/lighthouse-results/lighthouse-desktop-result.png)
+
+Mobile
+
+![Lighthouse Mobile Result](readme/testing/lighthouse-results/lighthouse-mobile-result.png)
+
 ### Testing of User stories from UX section of README.md
 
 ### Testing process
