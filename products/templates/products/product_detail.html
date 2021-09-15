@@ -84,19 +84,21 @@
                             <!-- Product quantity field -->
                             <h6 class="my-2">Quantity:</h6>
                             <div class="form-group w-100">
-                                <div class="input-group">
+                                <div class="input-group input-group-{{ product.id }}">
                                     <div class="input-group-prepend">
-                                        <button class="btn btn-black btn-dark rounded-0 decrement-quantity"
-                                            data-item_id="{{ product.id }}" id="decrement-quantity_{{ product.id }}">
+                                        <button
+                                            class="btn btn-black btn-dark decrement-quantity decrement-quantity_{{ product.id }} rounded-0"
+                                            data-item_id="{{ product.id }}">
                                             <i class="fas fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input class="form-control quantity_input rounded-0" type="number" name="quantity"
-                                        value="1" min="1" max="10" data-item_id="{{ product.id }}"
-                                        id="id_quantity_{{ product.id }}">
+                                    <input class="form-control quantity_input id_quantity_{{ product.id }} rounded-0"
+                                        type="number" name="quantity" value="1" min="1" max="10"
+                                        data-item_id="{{ product.id }}">
                                     <div class="input-group-append">
-                                        <button class="btn btn-black btn-dark rounded-0 increment-quantity"
-                                            data-item_id="{{ product.id }}" id="increment-quantity_{{ product.id }}">
+                                        <button
+                                            class="btn btn-black btn-dark rounded-0 increment-quantity increment-quantity_{{ product.id }}"
+                                            data-item_id="{{ product.id }}">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>

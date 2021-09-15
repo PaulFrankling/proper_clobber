@@ -1,12 +1,12 @@
 <script>
     // Disables minus/plus buttons outside of 1-10 range 
     function handleEnableDisable(itemId) {
-        let currentValue = parseInt($(`#id_quantity_${itemId}`).val());
+        let currentValue = parseInt($(`.id_quantity_${itemId}`).val());
         let minusDisabled = currentValue < 2;
         let plusDisabled = currentValue > 9;
-        $(`#decrement-quantity_${itemId}`).prop('disabled',
+        $(`.decrement-quantity_${itemId}`).prop('disabled',
         minusDisabled); // Disables minus button when quantity is at 1
-        $(`#increment-quantity_${itemId}`).prop('disabled',
+        $(`.increment-quantity_${itemId}`).prop('disabled',
         plusDisabled); // Disables plus button when quantity is at 10
     }
 
@@ -26,20 +26,22 @@
     // Increment quantity function
     $('.increment-quantity').click(function (e) {
         e.preventDefault();
-        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
-        let currentValue = parseInt($(closestInput).val());
-        $(closestInput).val(currentValue + 1);
         let itemId = $(this).data('item_id');
+        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
+        let allInputs = $(`.input-group-${itemId} input`);
+        let currentValue = parseInt($(closestInput).val());
+        $(allInputs).val(currentValue + 1);
         handleEnableDisable(itemId);
     });
 
     // Decrement quantity function
     $('.decrement-quantity').click(function (e) {
         e.preventDefault();
-        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
-        let currentValue = parseInt($(closestInput).val());
-        $(closestInput).val(currentValue - 1);
         let itemId = $(this).data('item_id');
+        let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
+        let allInputs = $(`.input-group-${itemId} input`);
+        let currentValue = parseInt($(closestInput).val());
+        $(allInputs).val(currentValue - 1);
         handleEnableDisable(itemId);
     });
 </script>
