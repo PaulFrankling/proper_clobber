@@ -186,7 +186,20 @@
     #### Contact
 
     * *I would like to be able to contact the store owners with any query I have.*
+
+        * The user can access the contact page by clicking on the 'Contact' page link on the navigation bar. The user is able to provide their name, email, subject and message before submitting it to the site owner.
+
+        ![Contact page example](readme/testing/ux-testing/ux-contact-example.png) 
+
     * *I want to receive a confirmation email notifying me they know of my query.*
+
+        * Once the form is valid and the user clicks on the 'Send Message' button, the site owner receives an email with the users information and query.
+
+        ![Contact confirmation email](readme/testing/ux-testing/ux-contact-conf-email.png)
+
+        * A toast also appears advising the user, the site owner has received the email and will respond shortly.
+
+        ![Contact page toast](readme/testing/ux-testing/ux-contact-toast.png)
 
 * As a registered customer:
 
