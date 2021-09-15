@@ -5,9 +5,9 @@ This is confirmation of your order with Proper Clobber. Your order information i
 Order No : {{ order.order_number }}
 Order Date: {{ order.date }}
 
-Order Total: ${{ order.order_total }}
-Delivery Fee: ${{ order.delivery_cost }}
-Grand Total: ${{ order.grand_total }}
+Order Total: £{{ order.order_total }}
+Delivery Fee: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
 
 Your order will be delivered to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
 
