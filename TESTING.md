@@ -244,12 +244,51 @@
 * As the store owner:
 
     * *I want customers to be able to select and purchase products comfortably.*
+
+        * Customers are able to easily view products, choose a size and quantity and add it to their basket before checking out securely. They are then provided with a order confirmation reciept on the checkout success page as well as an email confirming their order.
+
     * *I want customers to enjoy reading the blogs and insights the website has to offer.*
+
+        * Users are able to visit the blog easily on the main navigation bar. They can view all the previews on the blog page, visit each page to view the full article and they can visit the origin of the blog too. The blogs have potential useful information relevant to the user with regards to clothing.
+
     * *I want the user to be able to contact us with any queries or problems.*
+
+        * The user can easily contact the site owner through the Contact page. They are notified of their message has been successfully sent through the use of a toast and a confirmation email.
+
     * *I want to be able to add/edit/update products.*
+
+        * As the site owner, products are able to be added by going to the Product Management page which is located in the 'Accounts' dropdown menu.
+
+        ![Add product page](readme/testing/ux-testing/ux-add-product.png)
+
+        * Products can be edited and updated by clicking on the 'Edit' button on the Product page or Product Detail page. This takes the site owner to the Product Management (Edit Product) page where the input fields are prepopulated with existing product information so it can be easily edited and updated.
+
+        ![Edit product page](readme/testing/ux-testing/ux-edit-product.png)
+
     * *I want to be able to delete products.*
+
+        * Products can be deleted by the site owner when they are on the Product or Product Detail page. If they click on the 'Delete' button, a modal appears giving the user the option to confirm the deletion to better prevent accidental deletion of a product.
+
+        ![Product modal](readme/testing/ux-testing/ux-product-modal.png)
+
     * *I want to be able to add/edit/update blog posts.*
+
+        * As the site owner, blog posts are able to be added by going to the Blog Management page which is located in the 'Accounts' dropdown menu. 
+
+        ![Add blog page](readme/testing/ux-testing/ux-add-blog.png)
+
+        * Blog posts can be edited and updated by clicking on the 'Edit' button on the Blog page or Blog Detail page. This takes the site owner to the Blog Management (Edit Post) page where the input fields are prepopulated with existing blog post information so it can be easily edited and updated.
+
+        ![Edit blog page](readme/testing/ux-testing/ux-edit-blog.png)
+
     * *I want to be able to delete blog posts.*
+
+        * Blog posts can be deleted by the site owner when they are on the Blog or Blog Detail page. If they click on the 'Delete' button, a modal appears giving the user the option to confirm the deletion to better prevent accidental deletion of a blog post.
+
+        ![Blog modal](readme/testing/ux-testing/ux-blog-modal.png)
+
     * *I want to be able to maintain the use of the website information with the use of the admin panel.*
+
+        * As a site owner, the admin panel is very useful in managing things like products, blog posts, users,messages from users and orders.
 
 ## Testing process
