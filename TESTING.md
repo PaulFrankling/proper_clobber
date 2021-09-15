@@ -197,7 +197,7 @@
 
         ![Contact confirmation email](readme/testing/ux-testing/ux-contact-conf-email.png)
 
-        * A toast also appears advising the user, the site owner has received the email and will respond shortly.
+        * A toast also appears advising the user the site owner will be touch shortly.
 
         ![Contact page toast](readme/testing/ux-testing/ux-contact-toast.png)
 
