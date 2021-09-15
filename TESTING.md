@@ -193,7 +193,7 @@
 
     * *I want to receive a confirmation email notifying me they know of my query.*
 
-        * Once the form is valid and the user clicks on the 'Send Message' button, the site owner receives an email with the users information and query.
+        * Once the form is valid and the user clicks on the 'Send Message' button, the user receives an email advising them the site owner will be in touch shortly.
 
         ![Contact confirmation email](readme/testing/ux-testing/ux-contact-conf-email.png)
 
