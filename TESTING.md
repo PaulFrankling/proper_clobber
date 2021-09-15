@@ -162,6 +162,13 @@
     #### Checkout
 
     * *I want to be able to securely checkout and purchase the products.*
+
+        * Once the user is happy with their basket and click on the 'Secure Checkout' button on the Basket page, they will be taken to the checkout page. On the right of the screen, the user is able to clarify the items in the basket are what they want. The user can change any of them by clicking on the 'Adjust Basket' button below the form on the left and go back to the Basket page.
+
+        * The user can checkout their order by filling out the form and inputting their card details. Once the form is valid, the checkout process can be completed successfully.
+
+        ![Checkout page example](readme/testing/ux-testing/ux-checkout-example.png)
+
     * *I want to receive an order confirmation once the items are purchased and for it to possess all the details of the order.*
 
     #### Blog
