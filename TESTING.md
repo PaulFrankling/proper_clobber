@@ -175,6 +175,14 @@
 
     * *I want to view the website blog and see what useful insights there might be.*
 
+        * The user can visit the blog by clicking on the 'Blog' link in the navigation bar. They can view all the blogs added on this page.
+
+        ![Blog page example](readme/testing/ux-testing/ux-blog-example.png)
+
+        * The user can click on the 'Read More' button to read that specific blogs full article. On a specific blog detail page, the user can see the origin of the blog by clicking on the credit link near the top of the page or on the 'Read Full Artcile Here' button at the bottom of the page.
+
+        ![Blog detail page example](readme/testing/ux-testing/ux-blog-detail-example.png)
+
     #### Contact
 
     * *I would like to be able to contact the store owners with any query I have.*
