@@ -171,6 +171,10 @@
 
     * *I want to receive an order confirmation once the items are purchased and for it to possess all the details of the order.*
 
+        * Once the user has successfully checked out and ordered their items, the user is taken to the checkout success page. On this page the user can see their order information from the order just made.
+
+        ![Checkout success page](readme/testing/ux-testing/ux-checkout-success.png)
+
     #### Blog
 
     * *I want to view the website blog and see what useful insights there might be.*
@@ -204,11 +208,38 @@
 * As a registered customer:
 
     * *I want to be able to login and out of the website comfortably.*
+
+        * The user is able to successfully login to the website by going to to the 'Account' dropdown menu on the top right of the navigation bar. The login page requires an email or username and a password to access their account and the details can be remembered by an optional checkbox, making it quicker for the user logging into the website in the future.
+
+        ![Login page example](readme/testing/ux-testing/ux-log-in.png)
+
+        * The user can also log out by going to the 'Account' dropdown menu when signed in and selecting 'Log Out'. The user is then taken to the log out confirmation page allowing them to change their mind if necessary.
+
+        ![Log out example](readme/testing/ux-testing/ux-log-out.png)
+
     * *I want to be able to reset my password.*
+
+        * The user is able to reset their password by clicking on the 'Forgot Password?' link on the login page. When they click on it, they are taken to a page instructing them to input their email so an email can be sent with a link for the user to reset their password. When the user clicks on the link, they are then able to change their password and confirm it by inputting it a second time. Once the user has finished, they are advised it has been successfully reset and a toast message advises them too.
+
     * *I want to be able to view my personal profile.*
+
+        * When the user is signed in, they can access their profile by going to the 'Account' dropdown menu and clicking on 'My Profile'. This page shows default delivery details and previous order history information belonging to the specific logged in profile.
+
     * *I want to be able to save default delivery details to skip the process of adding them in on a second order.*
+
+        * The user can do this on the Checkout page when purchasing their order. Below the order form, is an optional checkbox for the user to interact with. If it is clicked when the order is submitted, the delivery information is saved to the profile page.
+
+        ![Profile default delivery details](readme/testing/ux-testing/ux-profile-delivery-update.png)
+
     * *I want to be able to update my default delivery details.*
+
+        * The user can do this by visiting their profile page and filling out the form and when finished they can save it by clicking on 'Update Information'. When they return to the Checkout page, they will then see the updated delivery address details.
+
     * *I want to be able to view previous orders in the order history.*
+
+        * The order history can be viewed on the right hand side of the profile page. It shows a list of all orders made and the user can view the full details of an order by clicking on the order number link.
+
+        ![Profile order history](readme/testing/ux-testing/ux-order-history.png)
 
 * As the store owner:
 
