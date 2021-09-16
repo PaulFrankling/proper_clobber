@@ -476,6 +476,10 @@ The website was visited and interacted with by family members and friends who pr
 
 #### Stripe Testing
 
+* The Stripe functionality has been tested and the result below shows the webhooks generated from a successful order.
+
+![Stripe payment test](readme/testing/validation/stripe-testing.png)
+
 #### Defensive Programming
 
 #### Fixed Bugs
@@ -489,3 +493,9 @@ The website was visited and interacted with by family members and friends who pr
 ![Mobile bug fix](readme/testing/bugs/mobile-dropdown-bug-fix.png)
 
 #### Known Bugs
+
+* If the superuser adds a product and selects 'Yes' to both clothing size and footwear size, it will show both size boxes on the product detail page as shown below:
+
+![Sizing bug](readme/testing/bugs/sizing-bug.png)
+
+* The superuser though should never find themselves in a position where both sizing select fields need to be used for an individal product. It would be highly unlikely a product needs to yield both size fields.
