@@ -315,7 +315,33 @@
 
 #### Sign up page
 
+* The user can sign up and create an account by visiting the 'Accounts' dropdown menu. When they click on 'Sign Up' they are taken to the correct page to register. &check;
+* Each form field provides a message if they have not been filled in correctly. &check;
+* A notification will appear if a user has already registered with the email address they are using. &check;
+* A message saying username exists will appear if the user inputs one already taken. &check;
+* A 'password is too short' message appears if the user doesn't fill it in correctly. &check;
+* Password 'too common will also appear. &check;
+* It will show Password is 'entirely numeric. &check;
+* Email is successfully sent to user when taken to verification page. &check;
+* The link in the email takes the user to a page in which they can confirm verification. &check;
+* Once signed up successfully, the user is redirected to login page so they can sign in with new credentials. &check;
+* The link that takes the user to the login page works as intended. &check;
+* All Allauth buttons works as expected. &check;
+
 #### Login page
+
+* A message will appear advising the user that the 'Username and/or Password specified are not correct'. &check;
+* The user can sign in with a username or email. &check;
+* The link that takes the user to the sign up page works as intended. &check;
+* The user can reset their password by clicking on 'Forgot Password?'. It takes them to a page where they input their email address. When the user clicks on the link, they are able to change password and are advised its been successfully reset. &check;
+* The form fields alert the user if they haven't input anything into each field. &check;
+* All Allauth buttons works as expected. &check;
+
+
+#### Logging out
+
+* When the user is logged in they can log out by going to the 'Accounts' dropdown menu and selecting 'Log Out'. It correctly takes them to the Log out page where the user can log out. &check;
+* When the user confirms they are logging out, by clicking on the 'Sign Out' button it correctly signs them out of their account. &check;
 
 #### Products
 
@@ -370,7 +396,28 @@
 
 #### Blog Management
 
+* The user is correctly taken to the page where they can add a blog post when selecting 'Blog Management' on the 'Accounts dropdown menu. &check;
+* All form fields work as expected, the form fields which need something inputting in will inform the user if nothing has been added to them and stop them submitting. &check;
+* The image field works successfully and adds a blog post image. If no image is given, the default one shows instead. &check;
+* Edit buttons on both the Blog page and Blog Detail page take the user to the correct Edit post page. &check;
+* The Delete buttons both work on the Blog page and Blog Detail page, opening up a modal successfully. &check;
+* The cancel button works correctly on the modal and so does the cross, cancelling the deletion. &check;
+* The Delete button on the modal works successfully removing the blog post from the site and showing a toast, saying its been deleted successfully.
+* The use of `linebreaks` works on the blog article when a new post is created. &check;
+* The 'Create Post' button works when all the form is valid on the add blog post page. &check;
+* The 'Edit Post' button works when all the form is valid on the edit blog post page. &check;
+
 #### Product Management
+
+* The user is correctly taken to the page where they can add a product when selecting 'Product Management' on the 'Accounts dropdown menu. &check;
+* All form fields work as expected, the form fields which need something inputting in will inform the user if nothing has been added to them and stop them submitting. &check;
+* The image field works successfully and adds a product image. If no image is given, the default one shows instead. &check;
+* Edit buttons on both the Product page and Product Detail page take the user to the correct Edit product page. &check;
+* The Delete buttons both work on the Product page and Product Detail page, opening up a modal successfully. &check;
+* The cancel button works correctly on the modal and so does the cross, cancelling the deletion. &check;
+* The Delete button on the modal works successfully removing the product from the site and showing a toast, saying its been deleted successfully.
+* The 'Create Product' button works when all the form is valid on the add product page. &check;
+* The 'Edit Product' button works when all the form is valid on the edit product page. &check;
 
 #### Blog
 
@@ -392,3 +439,6 @@
 
 #### Toasts
 
+* The toasts appear correctly any time a relevant action has been taken. &check;
+* The JavaScript used for the toast messages work as intended. The toast appears for 6 seconds and fades out for 2 seconds. &check;
+* All information and links work as expected on the Basket toast. &check;
