@@ -307,6 +307,8 @@ The website was thoroughly tested and a detailed account of the manual testing i
 * If a search query doesn't match a product on the site, the user is informed that '0 Products found for "*Query*". &check;
 * If nothing is inputted, the user receives a toast advising they haven't 'entered any search criteria!'. &check;
 
+> The link to the Profile page on mobile was missed until it was fixed in the testing process. &check;
+
 #### Footer
 
 * All social media links take the user to the correct page and correctly open a new tab for the user to view them on. &check;
@@ -477,5 +479,13 @@ The website was visited and interacted with by family members and friends who pr
 #### Defensive Programming
 
 #### Fixed Bugs
+
+* During the testing process, I realised that on mobile devices when the superuser was logged in, that the dropdown menu didn't fit the screen correctly due to the navigation links being very long.
+
+![Mobile bug](readme/testing/bugs/mobile-dropdown-bug.png)
+
+* I visited [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) and added `dropleft` to the dropdown menu class and although I think it might look better below the icon, it at least shows the navgation links fully.
+
+![Mobile bug fix](readme/testing/bugs/mobile-dropdown-bug-fix.png)
 
 #### Known Bugs
