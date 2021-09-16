@@ -297,4 +297,40 @@
 
 #### Navigation bar
 
-* All navigation bar links were tested and worked correctly &check;
+* All navigation bar links were tested and worked correctly. &check;
+* All dropdown menus appear correctly when their link has been clicked and all dropdown menu links take the user to the right page. &check;
+* The 'Proper Clobber' logo takes the user back to the home page as intended. &check;
+* Below the basket icon, shows the total price of the current basket and correctly changes price every time an item is added or removed. &check;
+* The search bar works as expected, it returns a page of products if the user correctly matches something in the product database. &check;
+* If a search query doesn't match a product on the site, the user is informed that '0 Products found for "*Query*". &check;
+* If nothing is inputted, the user receives a toast advising they haven't 'entered any search criteria!'. &check;
+
+#### Footer
+
+* All social media links take the user to the correct page and correctly open a new tab for the user to view them on. &check;
+
+#### Home
+
+* The 'Shop Now' CTA button takes the user to the 'All Products' page as intended. &check;
+
+#### Products
+
+##### Product page
+
+* Each product takes the user to that specific products detail page. &check;
+* Each product zooms in slightly when hovered over correctly &check;
+* The sort by select box options were all tested and ordered all the products correctly. &check;
+* The number of products on the page presented next to the sort by select box always shows the correct amount of products currently on the page. &check;
+
+##### Product Detail page
+
+* When the user hovers over the product image, it zooms in slightly as expected. &check;
+* When the user clicks on the product image, it opens a new tab for the user to view a full page image of the product as intended. &check;
+* The size select box shows the correct sizes for the product and works as intended. &check;
+* If an item has clothing sizing it will shows sizes; XS to XXL as intended and for footwear sizing; UK 6 to UK 13 as intended. &check;
+* The quantity select box minus and plus buttons work correctly. i.e they decrease or increase quantity by 1 each time they are pressed. &check;
+* The quantity will not go below 1 as intended and above 10 as intended. If the user tries to manually input a number out of this range, they aren't able to add the product to basket and will be informed it must be 'less than or equal to 10'. &check;
+* The 'Add to Basket' button works as expected and adds the item(s) to basket. &check;
+
+
+
