@@ -313,6 +313,10 @@
 
 * The 'Shop Now' CTA button takes the user to the 'All Products' page as intended. &check;
 
+#### Sign up page
+
+#### Login page
+
 #### Products
 
 ##### Product page
@@ -343,10 +347,26 @@
 * Both Basket page and the Basket toast shows the free delivery message advising the user if they spend a certain amount, they'll receive free delivery. If the total price is above £50, the message doesn't appear correctly. &check;
 * The 'Secure Checkout' button correctly takes the user to the Checkout page. &check;
 * The 'Secure Checkout' button on the Basket toast correctly takes the user to the Basket page as intended. &check;
+* The subtotal and grand total prices correctly change with compliance to any changes made to items. &check;
 
 #### Checkout
 
+* The checkout page shows the correct items in the basket. &check;
+* If the user has added any delivery details to their profile and saved them, they are automatically filled in on the Checkout page. &check;
+* The checkbox allowing the user to save their delivery information when they order their items works as intended. It doesn't save the information if left blank but does stay their the next time the user goes to their Profile page or goes to the Checkout page again. &check;
+* If the user isn't logged in, two links to create or login to an account to save delivery information is shown and both links take the user to the right page. &check;
+* All form fields with asterisks need to be filled in and the user is met with a message for each one if its not filled in or valid. &check;
+* The country form field correctly shows all the countries the user can input and works when one is selected. &check;
+* The 'Adjust Basket' button takes the user back to the Basket page as intended. &check;
+* The card payment field shows a specific message if a card number is not entered correctly or the expiry date, security code or ZIP code is entered correctly either. &check;
+* When every form field is valid and the user presses on the button 'Create Order', they are met with a loading screen and then taken to the Checkout Success page. &check;
+* The Checkout Success page shows the order details to the user and they are saved in the order history of the users Profile page if a user ordered it signed in. &check;
+* The user is also sent an email confirming their order and is given all the appropriate order information in the email too. &check;
+
 #### Profile
+
+* The Default delivery information can be edited and saved by pressing on the 'Update Information' button which saves it as intended and a toast appears saying the Profile is updated successfully. &check;
+* The users order history also shows a list of all past orders and each order has a link to its order information on the order number which works correctly. &check;
 
 #### Blog Management
 
