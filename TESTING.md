@@ -295,6 +295,8 @@
 
 ### Manual Testing
 
+The website was thoroughly tested and a detailed account of the manual testing is below:
+
 #### Navigation bar
 
 * All navigation bar links were tested and worked correctly. &check;
@@ -442,3 +444,34 @@
 * The toasts appear correctly any time a relevant action has been taken. &check;
 * The JavaScript used for the toast messages work as intended. The toast appears for 6 seconds and fades out for 2 seconds. &check;
 * All information and links work as expected on the Basket toast. &check;
+
+#### CRUD Functionality
+
+* All CRUD functionality was tested and worked as expected.
+
+#### Responsiveness
+
+* The websites responsiveness was established with the help of the framework [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/). The project was tested on numerous devices and on Google Chrome Dev Tools and resulted in no issues with regards to responsiveness.
+
+#### Browsers and devices
+
+* The website was tested on the following:
+
+    * ASUS ZENBOOK UX434
+    * iPhone 12
+    * iPhone X
+    * iPad
+    * Huawei P Smart
+
+* The website was tested on the following browsers:
+
+    * Safari
+    * Firefox
+    * Google Chrome
+    * Microsoft Edge
+
+#### Defensive Programming
+
+#### Fixed Bugs
+
+#### Known Bugs
