@@ -293,7 +293,7 @@
 
 ## Testing process
 
-### Manual Testing
+### Manual Testing 
 
 The website was thoroughly tested and a detailed account of the manual testing is below:
 
@@ -447,13 +447,15 @@ The website was thoroughly tested and a detailed account of the manual testing i
 
 #### CRUD Functionality
 
-* All CRUD functionality was tested and worked as expected.
+* All CRUD functionality was tested and worked as expected. &check;
 
 #### Responsiveness
 
 * The websites responsiveness was established with the help of the framework [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/). The project was tested on numerous devices and on Google Chrome Dev Tools and resulted in no issues with regards to responsiveness.
 
 #### Browsers and devices
+
+The website was visited and interacted with by family members and friends who provided feedback and provided their technology for me test the project on.
 
 * The website was tested on the following:
 
@@ -469,6 +471,8 @@ The website was thoroughly tested and a detailed account of the manual testing i
     * Firefox
     * Google Chrome
     * Microsoft Edge
+
+#### Stripe Testing
 
 #### Defensive Programming
 
