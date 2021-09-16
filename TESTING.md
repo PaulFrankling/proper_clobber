@@ -292,3 +292,9 @@
         * As a site owner, the admin panel is very useful in managing things like products, blog posts, users,messages from users and orders.
 
 ## Testing process
+
+### Manual Testing
+
+#### Navigation bar
+
+* All navigation bar links were tested and worked correctly &check;
