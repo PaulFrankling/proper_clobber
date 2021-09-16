@@ -298,7 +298,7 @@
 #### Navigation bar
 
 * All navigation bar links were tested and worked correctly. &check;
-* All dropdown menus appear correctly when their link has been clicked and all dropdown menu links take the user to the right page. &check;
+* All dropdown menus appear correctly when their link has been clicked and all dropdown menu links take the user to the right page. i.e dropdown menus for categories take the user to the specific one selected. &check;
 * The 'Proper Clobber' logo takes the user back to the home page as intended. &check;
 * Below the basket icon, shows the total price of the current basket and correctly changes price every time an item is added or removed. &check;
 * The search bar works as expected, it returns a page of products if the user correctly matches something in the product database. &check;
@@ -332,5 +332,43 @@
 * The quantity will not go below 1 as intended and above 10 as intended. If the user tries to manually input a number out of this range, they aren't able to add the product to basket and will be informed it must be 'less than or equal to 10'. &check;
 * The 'Add to Basket' button works as expected and adds the item(s) to basket. &check;
 
+#### Basket
 
+* When no items have been added to the basket, the Basket page shows a 'Continue Shopping' button which correctly takes the user to the 'All Products' page. &check;
+* The Basket page correctly shows all the items and the item specifics selected by the user and matches the basket toast shown every time a user adds something to the basket. &check;
+* The user is able to change quantity of an item by clicking the minus and plus buttons. &check;
+* The user cannot go below 1 or above 10 when selecting a quantity. &check;
+* The update and remove links were as expected. When a quantity has been increased or decreased and the update link is clicked, the user is met with the new updated quantity and the price changes correctly too. &check;
+* When the user clicks on the remove link, the item is removed successfully and the total basket price changes accordingly too. &check;
+* Both Basket page and the Basket toast shows the free delivery message advising the user if they spend a certain amount, they'll receive free delivery. If the total price is above £50, the message doesn't appear correctly. &check;
+* The 'Secure Checkout' button correctly takes the user to the Checkout page. &check;
+* The 'Secure Checkout' button on the Basket toast correctly takes the user to the Basket page as intended. &check;
+
+#### Checkout
+
+#### Profile
+
+#### Blog Management
+
+#### Product Management
+
+#### Blog
+
+##### Blog page
+
+* The blog page shows a list of blogs added and can view a full specific blog post succesfully by clicking on the 'Read More' button.
+
+##### Blog Detail page
+
+* The blog detail page has two links to the origin of its specific blog post by clicking on either the credit link at the top of the page or the 'Read Full Article Here' button and both work correctly. &check;
+* Clicking either of the links above will open the blog origin on a new tab as intended &check;
+* The 'linebreaks' used on the `{{ post.article|linebreaks }}` works correctly. It separates the blog post article into paragraphs if the superuser has paragraphed in the add/edit blog page article input field. &check;
+
+#### Contact
+
+* All form fields show a message if nothing is inputted into them or its content is not valid and stops the user submitting the form until it is valid. &check;
+* When the form is submitted, the user receives a confirmation email advising them the 'Proper Clobber' have received the query and will be touch shortly. &check;
+* A toast also appears on successful submission telling the user, 'Proper Clobber' will be in touch shortly.
+
+#### Toasts
 
