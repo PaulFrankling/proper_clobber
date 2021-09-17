@@ -21,6 +21,8 @@
                 <div class="col-4 my-1">
                     {% if item.product.image %}
                     <img src="{{ item.product.image.url }}" class="w-100 toast-image" alt="{{ item.product.name }}">
+                    {% elif item.product.image_url %}
+                    <img src="{{ item.product.image_url }}" class="w-100 toast-image" alt="{{ item.product.name }}">
                     {% else %}
                     <img src="{{ MEDIA_URL }}no_image.png" class="w-100 toast-image" alt="{{ item.product.name }}">
                     {% endif %}
