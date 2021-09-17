@@ -5,7 +5,7 @@ from django.db import models
 class ContactMessages(models.Model):
     """ Contact model """
     class Meta:
-        verbose_name = 'Received Messages'
+        verbose_name = 'Received Message'
 
     first_name = models.CharField(max_length=54, null=False, blank=False)
     last_name = models.CharField(max_length=54, null=False, blank=False)
