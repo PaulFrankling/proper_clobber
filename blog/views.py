@@ -40,7 +40,7 @@ def add_post(request):
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            messages.success(request, 'Added Post successfully!')
+            messages.success(request, f'Added {post.title} successfully!')
             return redirect(reverse('blog_detail', args=[post.id]))
         else:
             messages.error(request, 'Failed to add post. \
@@ -96,5 +96,5 @@ def delete_post(request, post_id):
 
     post = get_object_or_404(BlogPost, pk=post_id)
     post.delete()
-    messages.success(request, 'Post deleted!')
+    messages.success(request, f'Blog post: {post.title} deleted!')
     return redirect(reverse('blog'))

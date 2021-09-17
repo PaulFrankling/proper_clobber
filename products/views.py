@@ -88,7 +88,7 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Added Product successfully!')
+            messages.success(request, f'Added {product.name} successfully!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add product. \
@@ -146,5 +146,5 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
+    messages.success(request, f'Product {product.name} deleted!')
     return redirect(reverse('products'))
