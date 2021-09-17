@@ -433,6 +433,7 @@ footer {
 /* Admin buttons on product card in products page styling */
 .admin-btns {
     text-align: right;
+    color: white;
 }
 
 /* Modal styling */

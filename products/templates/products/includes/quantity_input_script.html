@@ -27,8 +27,9 @@
     $('.increment-quantity').click(function (e) {
         e.preventDefault();
         let itemId = $(this).data('item_id');
+        let size = $(this).data('product_size');
         let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
-        let allInputs = $(`.input-group-${itemId} input`);
+        let allInputs = $(`.id_quantity_${itemId}_${size}`);
         let currentValue = parseInt($(closestInput).val());
         $(allInputs).val(currentValue + 1);
         handleEnableDisable(itemId);
@@ -38,8 +39,9 @@
     $('.decrement-quantity').click(function (e) {
         e.preventDefault();
         let itemId = $(this).data('item_id');
+        let size = $(this).data('product_size');
         let closestInput = $(this).closest('.input-group').find('.quantity_input')[0];
-        let allInputs = $(`.input-group-${itemId} input`);
+        let allInputs = $(`.id_quantity_${itemId}_${size}`);
         let currentValue = parseInt($(closestInput).val());
         $(allInputs).val(currentValue - 1);
         handleEnableDisable(itemId);

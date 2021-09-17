@@ -61,9 +61,11 @@ def adjust_basket(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
+    print(request.POST)
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
+        print("size", size)
     basket = request.session.get('basket', {})
 
     if size:
