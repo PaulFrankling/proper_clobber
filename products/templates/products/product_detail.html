@@ -121,9 +121,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
-    // Delete product confirmation modal
-    $('#mymodal').modal('show');
-</script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
