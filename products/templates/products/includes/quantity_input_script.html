@@ -1,12 +1,17 @@
 <script>
     // Disables minus/plus buttons outside of 1-10 range 
-    function handleEnableDisable(itemId) {
-        let currentValue = parseInt($(`.id_quantity_${itemId}`).val());
+    function handleEnableDisable(itemId, size) {
+        if (typeof size === 'undefined') {
+            console.log("test");
+            size = 0;
+        }
+
+        let currentValue = parseInt($(`.id_quantity_${itemId}_${size}`).val());
         let minusDisabled = currentValue < 2;
         let plusDisabled = currentValue > 9;
-        $(`.decrement-quantity_${itemId}`).prop('disabled',
+        $(`.decrement-quantity_${itemId}_${size}`).prop('disabled',
         minusDisabled); // Disables minus button when quantity is at 1
-        $(`.increment-quantity_${itemId}`).prop('disabled',
+        $(`.increment-quantity_${itemId}_${size}`).prop('disabled',
         plusDisabled); // Disables plus button when quantity is at 10
     }
 
@@ -14,13 +19,16 @@
     let allQuantityInputs = $('.quantity_input');
     for (let i = 0; i < allQuantityInputs.length; i++) {
         let itemId = $(allQuantityInputs[i]).data('item_id');
-        handleEnableDisable(itemId);
+        let size = $(allQuantityInputs[i]).data('product_size');
+        console.log(size);
+        handleEnableDisable(itemId, size);
     }
 
     // Checks enabling and disabling whenever the input is changed
     $('.quantity_input').change(function () {
         let itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
+        let size = $(this).data('product_size');
+        handleEnableDisable(itemId, size);
     });
 
     // Increment quantity function
@@ -32,7 +40,7 @@
         let allInputs = $(`.id_quantity_${itemId}_${size}`);
         let currentValue = parseInt($(closestInput).val());
         $(allInputs).val(currentValue + 1);
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId, size);
     });
 
     // Decrement quantity function
@@ -44,6 +52,6 @@
         let allInputs = $(`.id_quantity_${itemId}_${size}`);
         let currentValue = parseInt($(closestInput).val());
         $(allInputs).val(currentValue - 1);
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId, size);
     });
 </script>
