@@ -484,6 +484,8 @@ The website was visited and interacted with by family members and friends who pr
 
 #### Fixed Bugs
 
+##### Bug 1
+
 * During the testing process, I realised that on mobile devices when the superuser was logged in, that the dropdown menu didn't fit the screen correctly due to the navigation links being very long.
 
 ![Mobile bug](readme/testing/bugs/mobile-dropdown-bug.png)
@@ -491,6 +493,18 @@ The website was visited and interacted with by family members and friends who pr
 * I visited [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) and added `dropleft` to the dropdown menu class and although I think it might look better below the icon, it at least shows the navgation links fully.
 
 ![Mobile bug fix](readme/testing/bugs/mobile-dropdown-bug-fix.png)
+
+##### Bug 2
+
+* During the testing process, all the modals were tested throughout the website and out of four of them, three worked as expected. The one with the bug was on the Product page. When the 'Delete' button is clicked on by the superuser, the modal will appear so the superuser can confirm deletion. When the modal was activated, the screen would furiously flicker and modal buttons wouldn't be able to be interacted with easily. The issue was solved by moving the modal code and pasting it below a couple of closing `</div>` tags.
+
+##### Bug 3
+
+* Again the Product page modal provided another bug. This time when a product was deleted, it would delete a different product to the one selected. I added `_{{product.id}}` to the delete buttons `data-target="#myModal"` tag and the modals `id="myModal` tag. I created a couple of products and tested the modal and both the correct products were deleted.
+
+##### Bug 4
+
+* When adding a product, I noticed that when the superuser inputted a valid image URL into the relevant input field and nothing in the image file, the default 'no_image.png' would appear. I added an `elif` statement to each occurence of product imagery in the project so that if nothing was entered in the image file field, the URL would render correctly.
 
 #### Known Bugs
 
