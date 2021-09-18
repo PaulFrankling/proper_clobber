@@ -515,6 +515,10 @@ The website was visited and interacted with by family members and friends who pr
 
 * When adding a product, I noticed that when the superuser inputted a valid image URL into the relevant input field and nothing in the image file, the default 'no_image.png' would appear. I added an `elif` statement to each occurence of product imagery in the project so that if nothing was entered in the image file field, the URL would render correctly.
 
+##### Bug 5
+
+* During the testing process, the increment and decrement buttons weren't disabling when the quantity was at 1 or 10 on the basket page. Eventually the issue was resolved and extensively tested to ensure no bugs were still present. 
+
 #### Known Bugs
 
 * If the superuser adds a product and selects 'Yes' to both clothing size and footwear size, it will show both size boxes on the product detail page as shown below:
