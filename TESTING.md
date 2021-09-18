@@ -1,5 +1,7 @@
 # Testing
 
+The project was tested thoroughly and the results are presented below:
+
 ## Validation
 
 ### HTML
@@ -481,6 +483,13 @@ The website was visited and interacted with by family members and friends who pr
 ![Stripe payment test](readme/testing/validation/stripe-testing.png)
 
 #### Defensive Programming
+
+* Both error pages were tested and worked. &check;
+* When a user inputs a URL that doesn't exist, it correctly returns a 404 error page. &check;
+* If the user tries to enter a URL that does exist, like an add product page, edit product page or delete product URL but is not signed in as the superuser, it will just redirect the user to the login page. &check;
+* A confirmation modal was added in the case of the superuser accidentally pressing the delete button. This gives the superuser chance to cancel the deletion in this instance. &check;
+* The allauth sign up process hashes the users password in the admin panel. &check;
+* As an extra security step, When the user signs up, they are required to verify their email. &check;
 
 #### Fixed Bugs
 
