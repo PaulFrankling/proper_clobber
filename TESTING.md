@@ -2,6 +2,53 @@
 
 The project was tested thoroughly and the results are presented below:
 
+## Table ofcontents:
+
+ * [Validation](#validation)
+    + [HTML](#html)
+      - [W3C Markup Validation Service](#w3c-markup-validation-service)
+    + [CSS](#css)
+      - [W3C CSS Validation Service](#w3c-css-validation-service)
+    + [JavaScript](#javascript)
+      - [JSHint](#jshint)
+    + [Python](#python)
+    + [Lighthouse](#lighthouse)
+      - [Desktop](#desktop)
+      - [Mobile](#mobile)
+  * [Testing of User stories from UX section of README.md](#testing-of-user-stories-from-ux-section-of-readmemd)
+      - [General](#general)
+      - [Products](#products)
+      - [Basket](#basket)
+      - [Checkout](#checkout)
+      - [Blog](#blog)
+      - [Contact](#contact)
+  * [Testing process](#testing-process)
+    + [Manual Testing](#manual-testing)
+      - [Navigation bar](#navigation-bar)
+      - [Footer](#footer)
+      - [Home](#home)
+      - [Sign up page](#sign-up-page)
+      - [Login page](#login-page)
+      - [Logging out](#logging-out)
+      - [Products](#products-1)
+      - [Basket](#basket)
+      - [Checkout](#checkout)
+      - [Profile](#profile)
+      - [Blog Management](#blog-management)
+      - [Product Management](#product-management)
+      - [Blog](#blog)
+      - [Contact](#contact)
+      - [Toasts](#toasts)
+      - [CRUD Functionality](#crud-functionality)
+      - [Responsiveness](#responsiveness)
+      - [Browsers and devices](#browsers-and-devices)
+      - [Stripe Testing](#stripe-testing)
+      - [Defensive Programming](#defensive-programming)
+    + [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      - [Known Bugs](#known-bugs)
+
+
 ## Validation
 
 ### HTML
@@ -490,6 +537,8 @@ The website was visited and interacted with by family members and friends who pr
 * A confirmation modal was added in the case of the superuser accidentally pressing the delete button. This gives the superuser chance to cancel the deletion in this instance. &check;
 * The allauth sign up process hashes the users password in the admin panel. &check;
 * As an extra security step, When the user signs up, they are required to verify their email. &check;
+
+### Bugs
 
 #### Fixed Bugs
 
