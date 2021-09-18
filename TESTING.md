@@ -2,7 +2,7 @@
 
 The project was tested thoroughly and the results are presented below:
 
-## Table ofcontents:
+## Table of contents:
 
  * [Validation](#validation)
     + [HTML](#html)
