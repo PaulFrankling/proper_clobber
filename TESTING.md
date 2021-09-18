@@ -517,7 +517,7 @@ The website was visited and interacted with by family members and friends who pr
 
 ##### Bug 5
 
-* During the testing process, the increment and decrement buttons weren't disabling when the quantity was at 1 or 10 on the basket page. Eventually the issue was resolved and extensively tested to ensure no bugs were still present. 
+* During the testing process, the increment and decrement buttons weren't disabling when the quantity was at 1 or 10 on the basket page. This meant the user could increase/decrease the quantity as much as possible. Eventually the issue was resolved and extensively tested to ensure no bugs were still present. 
 
 #### Known Bugs
 
