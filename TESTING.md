@@ -158,7 +158,7 @@ The project was tested thoroughly and the results are presented below:
 
     * *I want to be able to filter the products by specific details such as price or alphabetical order.*
 
-        * The user is able to view products by a specific order with the use of a 'Sort by' select box. It is placed at the top left of the products page and the user can view the products by their price for instance, as they may have budget limitations or might want buy something slightly more expensive.
+        * The user is able to view products by a specific order with the use of a 'Sort by' select box. It is placed at the top left of the products page and the user can view the products by their price for instance, as they may have budget limitations or might want to buy something slightly more expensive.
 
         ![Product sorting example](readme/testing/ux-testing/ux-sorting-example.png)
 
@@ -212,7 +212,7 @@ The project was tested thoroughly and the results are presented below:
 
     * *I want to be able to securely checkout and purchase the products.*
 
-        * Once the user is happy with their basket and click on the 'Secure Checkout' button on the Basket page, they will be taken to the checkout page. On the right of the screen, the user is able to clarify the items in the basket are what they want. The user can change any of them by clicking on the 'Adjust Basket' button below the form on the left and go back to the Basket page.
+        * Once the user is happy with their basket and clicks on the 'Secure Checkout' button on the Basket page, they will be taken to the checkout page. On the right of the screen, the user is able to clarify the items in the basket are what they want. The user can change any of them by clicking on the 'Adjust Basket' button below the form on the left and go back to the Basket page.
 
         * The user can checkout their order by filling out the form and inputting their card details. Once the form is valid, the checkout process can be completed successfully.
 
@@ -294,7 +294,7 @@ The project was tested thoroughly and the results are presented below:
 
     * *I want customers to be able to select and purchase products comfortably.*
 
-        * Customers are able to easily view products, choose a size and quantity and add it to their basket before checking out securely. They are then provided with a order confirmation reciept on the checkout success page as well as an email confirming their order.
+        * Customers are able to easily view products, choose a size and quantity and add it to their basket before checking out securely. They are then provided with a order confirmation receipt on the checkout success page as well as an email confirming their order.
 
     * *I want customers to enjoy reading the blogs and insights the website has to offer.*
 
@@ -302,7 +302,7 @@ The project was tested thoroughly and the results are presented below:
 
     * *I want the user to be able to contact us with any queries or problems.*
 
-        * The user can easily contact the site owner through the Contact page. They are notified of their message has been successfully sent through the use of a toast and a confirmation email.
+        * The user can easily contact the site owner through the Contact page. They are notified that their message has been successfully sent through the use of a toast and a confirmation email.
 
     * *I want to be able to add/edit/update products.*
 
@@ -401,7 +401,7 @@ The website was thoroughly tested and a detailed account of the manual testing i
 ##### Product page
 
 * Each product takes the user to that specific products detail page. &check;
-* Each product zooms in slightly when hovered over correctly &check;
+* Each product zooms in slightly when hovered over correctly. &check;
 * The sort by select box options were all tested and ordered all the products correctly. &check;
 * The number of products on the page presented next to the sort by select box always shows the correct amount of products currently on the page. &check;
 
@@ -487,7 +487,7 @@ The website was thoroughly tested and a detailed account of the manual testing i
 #### Contact
 
 * All form fields show a message if nothing is inputted into them or its content is not valid and stops the user submitting the form until it is valid. &check;
-* When the form is submitted, the user receives a confirmation email advising them the 'Proper Clobber' have received the query and will be touch shortly. &check;
+* When the form is submitted, the user receives a confirmation email advising them that 'Proper Clobber' have received the query and will be touch shortly. &check;
 * A toast also appears on successful submission telling the user, 'Proper Clobber' will be in touch shortly.
 
 #### Toasts
@@ -506,7 +506,7 @@ The website was thoroughly tested and a detailed account of the manual testing i
 
 #### Browsers and devices
 
-The website was visited and interacted with by family members and friends who provided feedback and provided their technology for me test the project on.
+The website was visited and interacted with by family members and friends who provided feedback and provided their technology for me to test the project on.
 
 * The website was tested on the following:
 

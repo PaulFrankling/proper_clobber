@@ -6,7 +6,7 @@
 
 [Click here to view the website](https://proper-clobber-project.herokuapp.com/)
 
-Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order. The user is also able view different blogs and contact the owners of the website via the contact app.
+Proper Clobber is an e-commerce website that sells smart tailored clothing for men. The purpose of the website is for users to view different products, add their desired products to their shopping basket and securely purchase their order. The user is also able to view different blogs and contact the owners of the website via the contact app.
 
 > **Please note:** This project is solely for educational purposes, so do not attempt to enter real Debit/Credit Card details whilst using the Stripe functionality in the Checkout app.
 > To test the Stripe Functionality for yourself, enter the following details:
@@ -226,7 +226,7 @@ The page presents a slogan, as well as a 'Shop Now' CTA button that takes the us
 
 ### Products page
 
-The user can view all products by selecting 'All Products' in the navigation bar, or they can view products by their specific category in navigation dropdown menus; Tailoring, Footwear and Accessories.
+The user can view all products by selecting 'All Products' in the navigation bar, or they can view products by their specific category in the navigation dropdown menus; Tailoring, Footwear and Accessories.
 
 When the user arrives on a particular product page, they can sort the products in a particular order such as 'Product name' (Alphabetically), 'Price' or 'Rating'.
 
@@ -238,7 +238,7 @@ If the superuser is on this page, they can edit the chosen product by clicking o
 
 Each product has its own Product Detail page and presents its image in a larger form. Clicking on the image creates a new tab with a full screen image of the product.
 
-The page also presents the products name, price, description, category and rating. As well as, a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item. There is an 'Add To Basket' button as well, which adds the item to the basket.
+The page also presents the products name, price, description, category and rating. As well as a select box for the user to choose a size for the product and a quantity box for the user to potentially purchase more of the same item. There is an 'Add To Basket' button as well, which adds the item to the basket.
 
 If the superuser is on this page, they can edit the chosen product by clicking on the 'Edit' button and it'll take them to the Product Management page (Edit Product). They can also delete a product on the Product Detail page. The 'Delete' button is next to the 'Edit' button and when the 'Delete' button is clicked on, it activates a modal which gives the superuser a chance to cancel or confirm deletion. 
 
