@@ -323,6 +323,7 @@ This page is designed to allow the user to contact the owner of the website. The
 1. [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) is used to create the database schema for the project.
 1. [Autoprefixer](https://autoprefixer.github.io/) is used to add web prefixes to all the CSS files in the project so the styling renders properly on all browsers.
 1. [Am I responsive?](http://ami.responsivedesign.is/) is used to create a mockup of the project.
+1. [Markdown TOC](https://ecotrust-canada.github.io/markdown-toc/) has been used to create a table of contents for the README.md and TESTING.md files.
 1. [Git](https://git-scm.com/) is used for version control. Code produced in the Gitpod terminal is committed and then pushed to GitHub.
 1. [GitHub](https://github.com/) is used to store the project code pushed from Git.
 1. [Heroku](https://signup.heroku.com/) has been used to deploy the project.
